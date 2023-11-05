@@ -1,0 +1,213 @@
+:root {
+    --inset-shadow: rgb(192, 192, 192);
+    --button-color: #2f71dc;
+    --button-color-hover: #427fe0;
+    --header-color: #161867;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-log-in {
+    margin: auto;
+
+    font-family: QuickSand;
+    display: flex;
+}
+
+.slider {
+    width: 60%;
+    background-image: url(../images/laptop-girl-home.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: bottom left 10vb;
+}
+
+.slider .slogan {
+    width: fit-content;
+
+    padding: 4vb 5vb;
+
+    position: relative;
+    top: 50vb;
+    left: 53vb;
+    background-color: white;
+}
+
+.slogan h1 {
+    font-size: 5.5vb;
+    margin: 0;
+    margin-bottom: 1vb;
+    color: var(--header-color);
+    font-weight: bolder;
+}
+
+.slogan p {
+    font-size: 3.2vb;
+    margin: 0;
+    margin-top: 1.5vb;
+    color: var(--button-color);
+    font-weight: 550;
+}
+
+.log-in {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/circle-blue.png);
+    background-size: 90%;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.input-region {
+    width: 70%;
+
+    margin: 10vb auto;
+    padding: 4.5vb 3vb;
+
+    border-radius: 2vb;
+    box-shadow: 0.2vb 0.2vb 1vb 0.2vb gray;
+    background-color: white;
+}
+
+.input-region h3 {
+    font-size: 3vb;
+    font-weight: bolder;
+    margin-bottom: 3vb;
+    color: var(--header-color);
+}
+
+.input-region input:not([type="checkbox"]) {
+    width: 100%;
+
+    margin-bottom: 3vb;
+    font-size: 2vb;
+
+    border: 0.2vb solid gray;
+    box-shadow: inset 0.01vb 0.01vb 0.5vb 0.01vb var(--inset-shadow);
+
+    padding: 1.5vb;
+}
+
+.input-region input:not([type="checkbox"])::placeholder {
+    font-size: 2vb;
+}
+
+.accept-term {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vb;
+}
+
+.input-region input[type="checkbox"] {
+    width: 2vb;
+    height: 2vb;
+    margin-right: 1vb;
+}
+
+.input-region label {
+    font-size: 2.2vb;
+}
+
+.input-region button {
+    width: 100%;
+
+    padding: 1.7vb;
+
+    font-weight: bold;
+    font-size: 2.2vb;
+
+    border: none;
+    border-radius: 1.2vb;
+
+    color: white;
+    background-color: var(--button-color);
+}
+
+.input-region button:hover {
+    background-color: var(--button-color-hover);
+}
+
+.input-region p {
+    margin: 3vb 0;
+    text-align: center;
+    font-size: 2.2vb;
+}
+
+.account {
+    width: fit-content;
+    display: flex;
+    gap: 3vb;
+    margin: auto
+}
+
+.account .account-logo {
+    width: 7vb;
+    height: 7vb;
+
+    display: flex;
+    align-items: center;
+
+    border: 0.1vb solid black;
+    border-radius: 50%;
+}
+
+.account i {
+    font-size: 4vb;
+    margin: auto;
+}
+
+.account #microsoft {
+    color: #00A4F5;
+    border-color: #00A4F5;
+}
+
+.account #facebook {
+    color: #36589D;
+    border-color: #36589D;
+}
+
+.account #google {
+    color: #EA230F;
+    border-color: #EA230F;
+}
+
+.account #github {
+    color: #4c515f;
+    border-color: #4c515f;
+}
+
+.account #microsoft:hover {
+    color: white;
+    background-color: #00A4F5;
+}
+
+.account #facebook:hover {
+    color: white;
+    background-color: #36589D;
+}
+
+.account #google:hover {
+    color: white;
+    background-color: #EA230F;
+}
+
+.account #github:hover {
+    color: white;
+    background-color: #4c515f;
+}
+
+.account a {
+    text-decoration: none;
+}
