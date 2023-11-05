@@ -1,0 +1,150 @@
+:root {
+    --box-shadow: rgb(174, 174, 174);
+    --sign-up: #e92734;
+    --sign-up-hover: #da545d;
+    --nav-button-hover: #0D4659;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.fixed {
+    display: fixed;
+    box-shadow: 0 0.9vh 1vh var(--box-shadow);
+}
+
+.header {
+    width: 80%;
+    margin: auto;
+    padding-top: 4vh;
+    font-family: QuickSand;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar a {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    width: 70%;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar .tool-bar {
+    width: 80%;
+}
+
+.tool {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+}
+
+.search-bar {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+}
+
+.fa-magnifying-glass {
+    font-size: 3vh;
+    color: var(--box-shadow);
+    position: absolute;
+    right: 0.1vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fa-magnifying-glass:hover {
+    color: gray;
+}
+
+.fa-magnifying-glass:active {
+    color: black;
+}
+
+.search-bar input {
+    width: 100%;
+
+    font-size: 2vh;
+
+    padding: 2vh 0;
+    padding-left: 2.5vh;
+
+    border-radius: 5vh;
+
+    border: 0.3vh solid var(--box-shadow);
+    box-shadow: 0 0.5vh 0.3vh var(--box-shadow);
+}
+
+.search-bar input::placeholder {
+    color: var(--box-shadow);
+    font-family: QuickSand;
+    font-size: 2vh;
+}
+
+.search-bar input::placeholder:focus {
+    color: gray;
+}
+
+.search-bar input:hover {
+    border: 0.3vh solid gray;
+}
+
+.sign-up button {
+    width: 7vw;
+    height: 5vh;
+
+    border: none;
+    border-radius: 0.7vh;
+
+    font-size: 2vh;
+    font-family: QuickSand;
+    font-weight: bold;
+
+    color: white;
+    background-color: var(--sign-up);
+}
+
+.sign-up button:hover {
+    background-color: var(--sign-up-hover);
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-button {
+    width: 20%;
+
+    padding: 2vh 0;
+
+    font-weight: bolder;
+    text-align: center;
+}
+
+.nav-button:hover {
+    color: white;
+    background-color: var(--nav-button-hover);
+}
