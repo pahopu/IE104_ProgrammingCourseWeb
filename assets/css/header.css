@@ -45,10 +45,6 @@ body {
     height: 13.28vb;
 
     margin: auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .nav-bar .tool-bar {
