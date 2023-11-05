@@ -18,14 +18,14 @@ body {
     padding: 0;
 }
 
-.slider-log-in {
+.intro-log-in {
     margin: auto;
 
     font-family: QuickSand;
     display: flex;
 }
 
-.slider {
+.intro {
     width: 60%;
     background-image: url(../images/laptop-girl-home.png);
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body {
     background-position: bottom left 10vb;
 }
 
-.slider .slogan {
+.intro .slogan {
     width: fit-content;
 
     padding: 4vb 5vb;

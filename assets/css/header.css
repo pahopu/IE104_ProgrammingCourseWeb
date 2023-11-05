@@ -18,16 +18,10 @@ body {
     padding: 0;
 }
 
-.fixed {
-    display: fixed;
-    box-shadow: 0 0.9vb 1vb var(--box-shadow);
-}
-
 .header {
-    width: 80%;
-    margin: auto;
     padding-top: 4vb;
     font-family: QuickSand;
+    box-shadow: 0 0.9vb 1vb var(--box-shadow);
 }
 
 .nav-bar {
@@ -65,7 +59,7 @@ body {
 }
 
 .fa-magnifying-glass {
-    font-size: 3vb;
+    font-size: 3.5vb;
     color: var(--box-shadow);
     position: absolute;
     right: 0.1vb;
@@ -82,12 +76,13 @@ body {
 }
 
 .search-bar input {
+    font-family: QuickSand;
     width: 100%;
 
-    font-size: 2vb;
+    font-size: 2.5vb;
 
     padding: 2vb 0;
-    padding-left: 2.5vb;
+    padding-left: 3vb;
 
     border-radius: 5vb;
 
@@ -98,7 +93,7 @@ body {
 .search-bar input::placeholder {
     color: var(--box-shadow);
     font-family: QuickSand;
-    font-size: 2vb;
+    font-size: 2.5vb;
 }
 
 .search-bar input::placeholder:focus {
@@ -109,14 +104,43 @@ body {
     border: 0.3vb solid gray;
 }
 
-.sign-up button {
-    width: 14vb;
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.log-in button {
+    width: 16vb;
     height: 5.5vb;
+
+    margin-right: 1vb;
 
     border: none;
     border-radius: 0.7vb;
 
-    font-size: 2vb;
+    font-size: 2.2vb;
+    font-family: QuickSand;
+    font-weight: bold;
+
+    color: var(--nav-button-hover);
+    background-color: white;
+}
+
+.log-in button:hover {
+    color: white;
+    background-color: var(--nav-button-hover);
+}
+
+.sign-up button {
+    width: 14vb;
+    height: 5.5vb;
+
+    margin-right: 5vb;
+
+    border: none;
+    border-radius: 0.7vb;
+
+    font-size: 2.2vb;
     font-family: QuickSand;
     font-weight: bold;
 
@@ -137,7 +161,7 @@ body {
 
     padding: 2vb 0;
 
-    font-size: 2vb;
+    font-size: 2.5vb;
     font-weight: bolder;
     text-align: center;
 }
