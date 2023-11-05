@@ -20,13 +20,13 @@ body {
 
 .fixed {
     display: fixed;
-    box-shadow: 0 0.9vh 1vh var(--box-shadow);
+    box-shadow: 0 0.9vb 1vb var(--box-shadow);
 }
 
 .header {
     width: 80%;
     margin: auto;
-    padding-top: 4vh;
+    padding-top: 4vb;
     font-family: QuickSand;
 }
 
@@ -41,7 +41,8 @@ body {
 }
 
 .box {
-    width: 70%;
+    width: 23.5vb;
+    height: 13.28vb;
 
     margin: auto;
 
@@ -58,7 +59,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 5vh;
+    margin-bottom: 4vb;
 }
 
 .search-bar {
@@ -68,10 +69,10 @@ body {
 }
 
 .fa-magnifying-glass {
-    font-size: 3vh;
+    font-size: 3vb;
     color: var(--box-shadow);
     position: absolute;
-    right: 0.1vw;
+    right: 0.1vb;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -87,21 +88,21 @@ body {
 .search-bar input {
     width: 100%;
 
-    font-size: 2vh;
+    font-size: 2vb;
 
-    padding: 2vh 0;
-    padding-left: 2.5vh;
+    padding: 2vb 0;
+    padding-left: 2.5vb;
 
-    border-radius: 5vh;
+    border-radius: 5vb;
 
-    border: 0.3vh solid var(--box-shadow);
-    box-shadow: 0 0.5vh 0.3vh var(--box-shadow);
+    border: 0.3vb solid var(--box-shadow);
+    box-shadow: 0 0.5vb 0.3vb var(--box-shadow);
 }
 
 .search-bar input::placeholder {
     color: var(--box-shadow);
     font-family: QuickSand;
-    font-size: 2vh;
+    font-size: 2vb;
 }
 
 .search-bar input::placeholder:focus {
@@ -109,17 +110,17 @@ body {
 }
 
 .search-bar input:hover {
-    border: 0.3vh solid gray;
+    border: 0.3vb solid gray;
 }
 
 .sign-up button {
-    width: 7vw;
-    height: 5vh;
+    width: 14vb;
+    height: 5.5vb;
 
     border: none;
-    border-radius: 0.7vh;
+    border-radius: 0.7vb;
 
-    font-size: 2vh;
+    font-size: 2vb;
     font-family: QuickSand;
     font-weight: bold;
 
@@ -138,8 +139,9 @@ body {
 .nav-button {
     width: 20%;
 
-    padding: 2vh 0;
+    padding: 2vb 0;
 
+    font-size: 2vb;
     font-weight: bolder;
     text-align: center;
 }
