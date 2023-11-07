@@ -3,6 +3,8 @@
     --sign-up: #e92734;
     --sign-up-hover: #da545d;
     --nav-button-hover: #0D4659;
+    --more-color: #1165ed;
+    --hover-docs: #176e8b;
 }
 
 @font-face {
@@ -28,7 +30,7 @@ body {
     display: flex;
 }
 
-.nav-bar a {
+.nav-bar .logo {
     width: 20%;
     display: flex;
     align-items: center;
@@ -55,7 +57,7 @@ body {
 .search-bar {
     position: relative;
     display: inline-block;
-    width: 60%;
+    width: 65%;
 }
 
 .fa-magnifying-glass {
@@ -156,9 +158,17 @@ body {
     display: flex;
 }
 
-.nav-button {
-    width: 20%;
+.nav-link {
+    width: 100%;
+}
 
+.nav a {
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-button {
     padding: 2vb 0;
 
     font-size: 2.5vb;
@@ -169,4 +179,85 @@ body {
 .nav-button:hover {
     color: white;
     background-color: var(--nav-button-hover);
+}
+
+.dropdown-doc {
+    display: none;
+    gap: 10vb;
+    position: absolute;
+
+    right: 12.5%;
+
+    padding: 6vb 9vb;
+
+    border-radius: 2vb;
+
+    box-shadow: 0.3vb 0.3vb 1vb 0.3vb var(--box-shadow);
+
+    background-color: white;
+}
+
+.docs+.dropdown-doc:hover,
+.docs:hover .nav-button {
+    color: white;
+    background-color: var(--nav-button-hover);
+}
+
+.docs+.dropdown-doc:hover,
+.docs:hover .nav-button .fa-caret-down {
+    color: white;
+    transform: rotate(180deg);
+}
+
+
+.docs:hover .dropdown-doc {
+    display: flex;
+}
+
+.dropdown-doc .doc-list h3 {
+    font-size: 2.5vb;
+    margin: 0;
+}
+
+.dropdown-doc .doc-list ul {
+    list-style: none;
+    margin-top: 3.5vb;
+    margin-bottom: 2vb;
+    padding: 0;
+}
+
+.dropdown-doc .doc-list li {
+    font-size: 2.2vb;
+    margin-bottom: 1.5vb;
+}
+
+.dropdown-doc .doc-list li a {
+    width: fit-content;
+}
+
+.dropdown-doc .doc-list li a:hover {
+    text-decoration: underline;
+    color: var(--hover-docs);
+}
+
+.dropdown-doc .doc-list .more {
+    font-size: 2.0vb;
+    text-decoration: none;
+    color: var(--more-color);
+}
+
+.dropdown-doc .doc-list .more:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.docs .nav-button .fa-caret-down {
+    position: relative;
+    left: 1vb;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.docs .nav-button:hover .fa-caret-down {
+    transform: rotate(180deg);
 }
