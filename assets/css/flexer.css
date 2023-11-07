@@ -1,0 +1,86 @@
+:root {
+    --flexer-bg: #2C31CE;
+    --flexer-btn-cl: #E8505B;
+    --flexer-btn-cl-hv: #a52029;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.flexer {
+    padding: 10vb 15vb;
+    font-family: QuickSand;
+    color: white;
+    background-color: var(--flexer-bg);
+}
+
+.flexer .flex-flexer {
+    display: flex;
+    gap: 10%;
+}
+
+.flexer .flex-flexer .flexer-item {
+    width: 30%;
+}
+
+.flexer .flex-flexer .flexer-item .flexer-center {
+    width: fit-content;
+    margin: auto;
+}
+
+.flexer .flex-flexer .flexer-item .flexer-center h3 {
+    margin: 0;
+    width: fit-content;
+    font-size: 5.5vb;
+    font-weight: bolder;
+}
+
+.flexer .flex-flexer .flexer-item .flexer-center hr {
+    width: 20%;
+    margin: 0;
+    margin-top: 1vb;
+    margin-bottom: 3vb;
+    padding: 0;
+    border-width: 0.5vb;
+    border-radius: 0.5vb;
+}
+
+.flexer .flex-flexer .flexer-item .flexer-center span {
+    font-size: 3.2vb;
+    font-weight: bolder;
+}
+
+.flexer .button {
+    width: fit-content;
+    margin: auto;
+    margin-top: 7vb;
+}
+
+.flexer .button button {
+    padding: 2.5vb 5vb;
+
+    color: white;
+    font-size: 3vb;
+    font-weight: bolder;
+    font-family: QuickSand;
+
+    border: none;
+    border-radius: 0.7vb;
+
+    background-color: var(--flexer-btn-cl);
+}
+
+.flexer .button button:hover {
+    background-color: var(--flexer-btn-cl-hv);
+    transition: 0.3s ease-in-out all;
+}
