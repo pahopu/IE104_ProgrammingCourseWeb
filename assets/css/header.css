@@ -186,7 +186,7 @@ body {
     gap: 10vb;
     position: absolute;
 
-    right: 12.5%;
+    right: 13.5%;
 
     padding: 6vb 9vb;
 
@@ -195,6 +195,10 @@ body {
     box-shadow: 0.3vb 0.3vb 1vb 0.3vb var(--box-shadow);
 
     background-color: white;
+}
+
+.header .nav-bar .tool-bar .nav .docs #courses {
+    right: 42%;
 }
 
 .header .nav-bar .tool-bar .nav .docs+.header .nav-bar .tool-bar .nav .docs .dropdown-doc:hover,
@@ -217,6 +221,7 @@ body {
 .header .nav-bar .tool-bar .nav .docs .dropdown-doc .doc-list h3 {
     font-size: 2.5vb;
     margin: 0;
+    width: fit-content;
 }
 
 .header .nav-bar .tool-bar .nav .docs .dropdown-doc .doc-list ul {
@@ -229,6 +234,10 @@ body {
 .header .nav-bar .tool-bar .nav .docs .dropdown-doc .doc-list li {
     font-size: 2.2vb;
     margin-bottom: 1.5vb;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 10rem;
 }
 
 .header .nav-bar .tool-bar .nav .docs .dropdown-doc .doc-list li a {
