@@ -30,7 +30,7 @@ body {
     font-family: QuickSand;
 }
 
-.nav-tool {
+.footer .nav-tool {
     width: 80%;
     margin: auto;
     margin-bottom: 6vb;
@@ -38,24 +38,24 @@ body {
     justify-content: space-between;
 }
 
-.nav-tool .tool:first-child {
+.footer .nav-tool .tool:first-child {
     width: 26%;
     display: flex;
     align-items: center;
 }
 
-.nav-tool a img {
+.footer .nav-tool a img {
     width: 27.5vb;
     height: 17.28vb;
 
     margin: auto;
 }
 
-.nav-tool .tool {
+.footer .nav-tool .tool {
     width: 16%;
 }
 
-.tool h3 {
+.footer .nav-tool .tool h3 {
     margin: 0;
     margin-bottom: 3vb;
 
@@ -64,37 +64,37 @@ body {
     font-size: 3vb;
 }
 
-.tool ul {
+.footer .nav-tool .tool ul {
     list-style: none;
     padding: 0;
     margin-top: 4vb;
 }
 
-.tool li {
+.footer .nav-tool .tool li {
     font-size: 2.3vb;
     margin-bottom: 1.5vb;
 }
 
-.tool li a {
+.footer .nav-tool .tool li a {
     color: black;
     text-decoration: none;
 }
 
-.tool li a:hover {
+.footer .nav-tool .tool li a:hover {
     color: var(--hover-nav-tool);
     text-decoration: underline;
 }
 
-.social {
+.footer .nav-tool .tool .social {
     display: flex;
     gap: 10px;
 }
 
-.social a {
+.footer .nav-tool .tool .social a {
     text-decoration: none;
 }
 
-.social .logo {
+.footer .nav-tool .tool .social .logo {
     width: 5vb;
     height: 5vb;
     display: flex;
@@ -102,45 +102,45 @@ body {
     border-radius: 0.5vb;
 }
 
-.social .logo .fa-brands {
+.footer .nav-tool .tool .social .logo .fa-brands {
     margin: auto;
     color: white;
     font-size: 2.5vb;
 }
 
-.social #fb {
+.footer .nav-tool .tool .social #fb {
     background-color: var(--fb);
 }
 
-.social #ig {
+.footer .nav-tool .tool .social #ig {
     background-color: var(--ig);
 }
 
-.social #x {
+.footer .nav-tool .tool .social #x {
     background-color: var(--x);
 }
 
-.social #yt {
+.footer .nav-tool .tool .social #yt {
     background-color: var(--yt);
 }
 
-.social #fb:hover {
+.footer .nav-tool .tool .social #fb:hover {
     background-color: var(--fb-hover);
 }
 
-.social #ig:hover {
+.footer .nav-tool .tool .social #ig:hover {
     background-color: var(--ig-hover);
 }
 
-.social #x:hover {
+.footer .nav-tool .tool .social #x:hover {
     background-color: var(--x-hover);
 }
 
-.social #yt:hover {
+.footer .nav-tool .tool .social #yt:hover {
     background-color: var(--yt-hover);
 }
 
-.copyright {
+.footer .copyright {
     padding: 2vb 0;
     text-align: center;
     font-size: 2.5vb;
@@ -149,11 +149,11 @@ body {
     background-color: var(--copyright);
 }
 
-.copyright a {
+.footer .copyright a {
     color: white;
     text-decoration: none;
 }
 
-.copyright a:hover {
+.footer .copyright a:hover {
     text-decoration: underline;
 }

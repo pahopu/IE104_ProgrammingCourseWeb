@@ -26,41 +26,41 @@ body {
     box-shadow: 0 0.9vb 1vb var(--box-shadow);
 }
 
-.nav-bar {
+.header .nav-bar {
     display: flex;
 }
 
-.nav-bar .logo {
+.header .nav-bar .logo {
     width: 20%;
     display: flex;
     align-items: center;
 }
 
-.box {
+.header .nav-bar .logo .box {
     width: 23.5vb;
     height: 13.28vb;
 
     margin: auto;
 }
 
-.nav-bar .tool-bar {
+.header .nav-bar .tool-bar {
     width: 80%;
 }
 
-.tool {
+.header .nav-bar .tool-bar .tool {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 4vb;
 }
 
-.search-bar {
+.header .nav-bar .tool-bar .tool .search-bar {
     position: relative;
     display: inline-block;
     width: 65%;
 }
 
-.fa-magnifying-glass {
+.header .nav-bar .tool-bar .tool .search-bar .fa-magnifying-glass {
     font-size: 3.5vb;
     color: var(--box-shadow);
     position: absolute;
@@ -69,15 +69,15 @@ body {
     transform: translateY(-50%);
 }
 
-.fa-magnifying-glass:hover {
+.header .nav-bar .tool-bar .tool .search-bar .fa-magnifying-glass:hover {
     color: gray;
 }
 
-.fa-magnifying-glass:active {
+.header .nav-bar .tool-bar .tool .search-bar .fa-magnifying-glass:active {
     color: black;
 }
 
-.search-bar input {
+.header .nav-bar .tool-bar .tool .search-bar input {
     font-family: QuickSand;
     width: 100%;
 
@@ -92,26 +92,26 @@ body {
     box-shadow: 0 0.5vb 0.3vb var(--box-shadow);
 }
 
-.search-bar input::placeholder {
+.header .nav-bar .tool-bar .tool .search-bar input::placeholder {
     color: var(--box-shadow);
     font-family: QuickSand;
     font-size: 2.5vb;
 }
 
-.search-bar input::placeholder:focus {
+.header .nav-bar .tool-bar .tool .search-bar input::placeholder:focus {
     color: gray;
 }
 
-.search-bar input:hover {
+.header .nav-bar .tool-bar .tool .search-bar input:hover {
     border: 0.3vb solid gray;
 }
 
-.login-button {
+.header .nav-bar .tool-bar .tool .login-button {
     display: flex;
     align-items: center;
 }
 
-.log-in button {
+.header .nav-bar .tool-bar .tool .login-button .log-in button {
     width: 16vb;
     height: 5.5vb;
 
@@ -128,12 +128,12 @@ body {
     background-color: white;
 }
 
-.log-in button:hover {
+.header .nav-bar .tool-bar .tool .login-button .log-in button:hover {
     color: white;
     background-color: var(--nav-button-hover);
 }
 
-.sign-up button {
+.header .nav-bar .tool-bar .tool .login-button .sign-up button {
     width: 14vb;
     height: 5.5vb;
 
@@ -150,25 +150,25 @@ body {
     background-color: var(--sign-up);
 }
 
-.sign-up button:hover {
+.header .nav-bar .tool-bar .tool .login-button .sign-up button:hover {
     background-color: var(--sign-up-hover);
 }
 
-.nav {
+.header .nav-bar .tool-bar .nav {
     display: flex;
 }
 
-.nav-link {
+.header .nav-bar .tool-bar .nav .nav-link {
     width: 100%;
 }
 
-.nav a {
+.header .nav-bar .tool-bar .nav .nav-link a {
     width: 100%;
     color: black;
     text-decoration: none;
 }
 
-.nav-button {
+.header .nav-bar .tool-bar .nav .nav-link a .nav-button {
     padding: 2vb 0;
 
     font-size: 2.5vb;
@@ -176,12 +176,12 @@ body {
     text-align: center;
 }
 
-.nav-button:hover {
+.header .nav-bar .tool-bar .nav .nav-link a .nav-button:hover {
     color: white;
     background-color: var(--nav-button-hover);
 }
 
-.dropdown-doc {
+.header .nav-bar .tool-bar .nav .docs .dropdown-doc {
     display: none;
     gap: 10vb;
     position: absolute;
@@ -197,67 +197,67 @@ body {
     background-color: white;
 }
 
-.docs+.dropdown-doc:hover,
-.docs:hover .nav-button {
+.header .nav-bar .tool-bar .nav .docs+.header .nav-bar .tool-bar .nav .docs .dropdown-doc:hover,
+.header .nav-bar .tool-bar .nav .docs:hover .nav-button {
     color: white;
     background-color: var(--nav-button-hover);
 }
 
-.docs+.dropdown-doc:hover,
-.docs:hover .nav-button .fa-caret-down {
+.header .nav-bar .tool-bar .nav .docs+.header .nav-bar .tool-bar .nav .docs .dropdown-doc:hover,
+.header .nav-bar .tool-bar .nav .docs:hover .nav-button .fa-caret-down {
     color: white;
     transform: rotate(180deg);
 }
 
 
-.docs:hover .dropdown-doc {
+.header .nav-bar .tool-bar .nav .docs:hover .dropdown-doc {
     display: flex;
 }
 
-.dropdown-doc .doc-list h3 {
+.header .nav-bar .tool-bar .nav .docs .dropdown-doc .doc-list h3 {
     font-size: 2.5vb;
     margin: 0;
 }
 
-.dropdown-doc .doc-list ul {
+.header .nav-bar .tool-bar .nav .docs .dropdown-doc .doc-list ul {
     list-style: none;
     margin-top: 3.5vb;
     margin-bottom: 2vb;
     padding: 0;
 }
 
-.dropdown-doc .doc-list li {
+.header .nav-bar .tool-bar .nav .docs .dropdown-doc .doc-list li {
     font-size: 2.2vb;
     margin-bottom: 1.5vb;
 }
 
-.dropdown-doc .doc-list li a {
+.header .nav-bar .tool-bar .nav .docs .dropdown-doc .doc-list li a {
     width: fit-content;
 }
 
-.dropdown-doc .doc-list li a:hover {
+.header .nav-bar .tool-bar .nav .docs .dropdown-doc .doc-list li a:hover {
     text-decoration: underline;
     color: var(--hover-docs);
 }
 
-.dropdown-doc .doc-list .more {
+.header .nav-bar .tool-bar .nav .docs .dropdown-doc .doc-list .more {
     font-size: 2.0vb;
     text-decoration: none;
     color: var(--more-color);
 }
 
-.dropdown-doc .doc-list .more:hover {
+.header .nav-bar .tool-bar .nav .docs .dropdown-doc .doc-list .more:hover {
     text-decoration: underline;
     font-weight: 600;
 }
 
-.docs .nav-button .fa-caret-down {
+.header .nav-bar .tool-bar .nav .docs .nav-button .fa-caret-down {
     position: relative;
     left: 1vb;
     transform: rotate(0deg);
     transition: 0.3s ease-in-out all;
 }
 
-.docs .nav-button:hover .fa-caret-down {
+.header .nav-bar .tool-bar .nav .docs .nav-button:hover .fa-caret-down {
     transform: rotate(180deg);
 }

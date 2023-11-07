@@ -26,7 +26,7 @@ body {
     display: flex;
 }
 
-.intro {
+.intro-log-in .intro {
     width: 60%;
     background-image: url(../images/laptop-girl-home.png);
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@ body {
     background-position: bottom left 10vb;
 }
 
-.intro .slogan {
+.intro-log-in .intro .slogan {
     width: fit-content;
 
     padding: 4vb 5vb;
@@ -45,7 +45,7 @@ body {
     background-color: white;
 }
 
-.slogan h1 {
+.intro-log-in .intro .slogan h1 {
     font-size: 5.5vb;
     margin: 0;
     margin-bottom: 1vb;
@@ -53,7 +53,7 @@ body {
     font-weight: bolder;
 }
 
-.slogan p {
+.intro-log-in .intro .slogan p {
     font-size: 3.2vb;
     margin: 0;
     margin-top: 1.5vb;
@@ -61,7 +61,7 @@ body {
     font-weight: 550;
 }
 
-.log-in {
+.intro-log-in .log-in {
     width: 40%;
     display: flex;
     align-items: center;
@@ -71,7 +71,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.input-region {
+.intro-log-in .log-in .input-region {
     width: 70%;
 
     margin: 10vb auto;
@@ -82,18 +82,20 @@ body {
     background-color: white;
 }
 
-.input-region h3 {
+.intro-log-in .log-in .input-region h3 {
     font-size: 3vb;
     font-weight: bolder;
     margin-bottom: 3vb;
     color: var(--header-color);
 }
 
-.input-region input:not([type="checkbox"]) {
+.intro-log-in .log-in .input-region input:not([type="checkbox"]) {
     width: 100%;
+    box-sizing: border-box;
 
     margin-bottom: 3vb;
     font-size: 2vb;
+    font-family: QuickSand;
 
     border: 0.1vb solid var(--input-border);
     border-radius: 0.5vb;
@@ -102,33 +104,35 @@ body {
     padding: 1.5vb;
 }
 
-.input-region input:not([type="checkbox"])::placeholder {
+.intro-log-in .log-in .input-region input:not([type="checkbox"])::placeholder {
     font-size: 2vb;
+    font-family: QuickSand;
 }
 
-.accept-term {
+.intro-log-in .log-in .input-region .accept-term {
     display: flex;
     align-items: center;
     margin-bottom: 3vb;
 }
 
-.input-region input[type="checkbox"] {
+.intro-log-in .log-in .input-region input[type="checkbox"] {
     width: 2vb;
     height: 2vb;
     margin-right: 1vb;
 }
 
-.input-region label {
+.intro-log-in .log-in .input-region label {
     font-size: 2.2vb;
 }
 
-.input-region button {
+.intro-log-in .log-in .input-region button {
     width: 100%;
 
     padding: 1.7vb;
 
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 2.2vb;
+    font-family: QuickSand;
 
     border: none;
     border-radius: 1.2vb;
@@ -137,24 +141,24 @@ body {
     background-color: var(--button-color);
 }
 
-.input-region button:hover {
+.intro-log-in .log-in .input-region button:hover {
     background-color: var(--button-color-hover);
 }
 
-.input-region p {
+.intro-log-in .log-in .input-region p {
     margin: 3vb 0;
     text-align: center;
     font-size: 2.2vb;
 }
 
-.account {
+.intro-log-in .log-in .input-region .account {
     width: fit-content;
     display: flex;
     gap: 3vb;
     margin: auto
 }
 
-.account .account-logo {
+.intro-log-in .log-in .input-region .account .account-logo {
     width: 7vb;
     height: 7vb;
 
@@ -165,51 +169,51 @@ body {
     border-radius: 50%;
 }
 
-.account i {
+.intro-log-in .log-in .input-region .account i {
     font-size: 4vb;
     margin: auto;
 }
 
-.account #microsoft {
+.intro-log-in .log-in .input-region .account #microsoft {
     color: #00A4F5;
     border-color: #00A4F5;
 }
 
-.account #facebook {
+.intro-log-in .log-in .input-region .account #facebook {
     color: #36589D;
     border-color: #36589D;
 }
 
-.account #google {
+.intro-log-in .log-in .input-region .account #google {
     color: #EA230F;
     border-color: #EA230F;
 }
 
-.account #github {
+.intro-log-in .log-in .input-region .account #github {
     color: #4c515f;
     border-color: #4c515f;
 }
 
-.account #microsoft:hover {
+.intro-log-in .log-in .input-region .account #microsoft:hover {
     color: white;
     background-color: #00A4F5;
 }
 
-.account #facebook:hover {
+.intro-log-in .log-in .input-region .account #facebook:hover {
     color: white;
     background-color: #36589D;
 }
 
-.account #google:hover {
+.intro-log-in .log-in .input-region .account #google:hover {
     color: white;
     background-color: #EA230F;
 }
 
-.account #github:hover {
+.intro-log-in .log-in .input-region .account #github:hover {
     color: white;
     background-color: #4c515f;
 }
 
-.account a {
+.intro-log-in .log-in .input-region .account a {
     text-decoration: none;
 }
