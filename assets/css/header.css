@@ -1,7 +1,7 @@
 :root {
     --box-shadow: rgb(174, 174, 174);
     --sign-up: #e92734;
-    --sign-up-hover: #da545d;
+    --sign-up-hover: #cf4a53;
     --nav-button-hover: #464bef;
     --more-color: #1165ed;
     --hover-docs: #176e8b;
@@ -69,10 +69,12 @@ body {
     right: 3vb;
     top: 50%;
     transform: translateY(-50%);
+    transition: 0.3s ease-in-out all;
 }
 
 .header .nav-bar .tool-bar .tool .search-bar .fa-magnifying-glass:hover {
     color: gray;
+    transition: 0.3s ease-in-out all;
 }
 
 .header .nav-bar .tool-bar .tool .search-bar .fa-magnifying-glass:active {
@@ -93,6 +95,8 @@ body {
 
     border: 0.3vb solid var(--box-shadow);
     box-shadow: 0 0.5vb 0.3vb var(--box-shadow);
+
+    transition: 0.3s ease-in-out all;
 }
 
 .header .nav-bar .tool-bar .tool .search-bar input::placeholder {
@@ -107,6 +111,7 @@ body {
 
 .header .nav-bar .tool-bar .tool .search-bar input:hover {
     border: 0.3vb solid gray;
+    transition: 0.3s ease-in-out all;
 }
 
 .header .nav-bar .tool-bar .tool .login-button {
@@ -129,11 +134,14 @@ body {
 
     color: var(--nav-button-hover);
     background-color: white;
+
+    transition: 0.3s ease-in-out all;
 }
 
 .header .nav-bar .tool-bar .tool .login-button .log-in button:hover {
     color: white;
     background-color: var(--nav-button-hover);
+    transition: 0.3s ease-in-out all;
 }
 
 .header .nav-bar .tool-bar .tool .login-button .sign-up button {
@@ -151,10 +159,13 @@ body {
 
     color: white;
     background-color: var(--sign-up);
+
+    transition: 0.3s ease-in-out all;
 }
 
 .header .nav-bar .tool-bar .tool .login-button .sign-up button:hover {
     background-color: var(--sign-up-hover);
+    transition: 0.3s ease-in-out all;
 }
 
 .header .nav-bar .tool-bar .nav {
@@ -177,11 +188,15 @@ body {
     font-size: 2.5vb;
     font-weight: bolder;
     text-align: center;
+
+    transition: 0.3s ease-in-out all;
 }
 
 .header .nav-bar .tool-bar .nav .nav-link a .nav-button:hover {
     color: white;
     background-color: var(--nav-button-hover);
+
+    transition: 0.3s ease-in-out all;
 }
 
 .header .nav-bar .tool-bar .nav .docs .dropdown-doc {
@@ -189,9 +204,10 @@ body {
     gap: 10vb;
     position: absolute;
 
-    right: 13%;
+    right: 13.5%;
 
     padding: 6vb 9vb;
+    margin-top: 0.1vb;
 
     border-radius: 2vb;
 
@@ -201,7 +217,7 @@ body {
 }
 
 .header .nav-bar .tool-bar .nav .docs #courses {
-    right: 41%;
+    right: 41.5%;
 }
 
 .header .nav-bar .tool-bar .nav .docs+.header .nav-bar .tool-bar .nav .docs .dropdown-doc:hover,

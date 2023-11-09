@@ -110,34 +110,42 @@ body {
 
 .footer .nav-tool .tool .social #fb {
     background-color: var(--fb);
+    transition: 0.3s ease-in-out all;
 }
 
 .footer .nav-tool .tool .social #ig {
     background-color: var(--ig);
+    transition: 0.3s ease-in-out all;
 }
 
 .footer .nav-tool .tool .social #x {
     background-color: var(--x);
+    transition: 0.3s ease-in-out all;
 }
 
 .footer .nav-tool .tool .social #yt {
     background-color: var(--yt);
+    transition: 0.3s ease-in-out all;
 }
 
 .footer .nav-tool .tool .social #fb:hover {
     background-color: var(--fb-hover);
+    transition: 0.3s ease-in-out all;
 }
 
 .footer .nav-tool .tool .social #ig:hover {
     background-color: var(--ig-hover);
+    transition: 0.3s ease-in-out all;
 }
 
 .footer .nav-tool .tool .social #x:hover {
     background-color: var(--x-hover);
+    transition: 0.3s ease-in-out all;
 }
 
 .footer .nav-tool .tool .social #yt:hover {
     background-color: var(--yt-hover);
+    transition: 0.3s ease-in-out all;
 }
 
 .footer .copyright {
