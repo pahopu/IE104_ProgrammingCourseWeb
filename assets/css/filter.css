@@ -1,0 +1,120 @@
+:root {
+    --header-color: #0D4659;
+    --hover-nav-tool: #176e8b;
+    --copyright: #1C1D31;
+    --fb: #37599E;
+    --ig: #BF1B8F;
+    --x: #00A2F9;
+    --yt: #B21010;
+    --fb-hover: #273f6f;
+    --ig-hover: #7a0f5a;
+    --x-hover: #003f61;
+    --yt-hover: #690a0a;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.filter{
+    width: 30%;
+    height: auto;
+    border: 2px solid rgb(181, 181, 181);
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px #e0e0e0;
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: QuickSand;
+}
+
+.switch-on-off {
+    position: relative;
+    display: inline-block;
+    margin-top: 0.5%;
+    float: right;
+    width: 60px;
+    height: 34px;
+}
+
+.switch-on-off input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4CAF50; 
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white; 
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #ccc; 
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.filter .condition{
+    padding-left: 2%;
+}
+
+.condition h2{
+    display: inline;
+}   
+
+.condition title{
+    float: left;
+    font-size: 1.5vb;
+}
+  
+.condition i{
+    float: left;
+    margin-right: 4%;
+    cursor: pointer;
+}
+
+.condition i:hover{
+    color: gray;
+}
+
+.condition ul{
+    text-decoration: none;
+    list-style: none;
+    font-size: 3vb;
+    padding:  0;
+}
+
+.condition 
