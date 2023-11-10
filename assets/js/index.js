@@ -1,27 +1,36 @@
-function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /*loop through a collection of all HTML elements:*/
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain attribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-            /*make an HTTP request using the attribute value as the file name:*/
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4) {
-                    if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-                    if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-                    /*remove the attribute, and call this function once more:*/
-                    elmnt.removeAttribute("w3-include-html");
-                    includeHTML();
-                }
-            }
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            /*exit the function:*/
-            return;
-        }
-    }
-};
+function loadHTML(url, elementId) {
+    fetch(url)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(elementId).innerHTML = data;
+        });
+}
+
+function loadCSS(url) {
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = url;
+    document.head.appendChild(link);
+}
+
+function loadJS(url) {
+    var script = document.createElement("script");
+    script.src = url;
+    document.head.appendChild(script);
+}
+
+
+loadHTML("template/header.html", "header");
+loadHTML("template/intro-log-in.html", "intro-log-in");
+loadHTML("template/flexer.html", "flexer");
+loadHTML("template/recommend-courses.html", "recommend-courses");
+loadHTML("template/footer.html", "footer");
+
+loadCSS("assets/css/header.css");
+loadCSS("assets/css/intro-log-in.css");
+loadCSS("assets/css/flexer.css");
+loadCSS("assets/css/recommend-courses.css")
+loadCSS("assets/css/footer.css");
+
+loadJS("assets/js/recommend-courses.js");
