@@ -29,16 +29,12 @@ function hideListofCondition(listname) {
 }
 
 function toggleCheckbox(checkboxId) {
-    // Lấy checkbox theo id
     var checkbox = document.getElementById(checkboxId);
-    
-    // Đảm bảo checkbox tồn tại
     if (checkbox) {
-      // Nếu checkbox đang ẩn, thì hiển thị; ngược lại, ẩn đi
       if (checkbox.style.display === 'none') {
         checkbox.style.display = 'inline-block';
       } else {
         checkbox.style.display = 'none';
       }
     }
-  }
+}

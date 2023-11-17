@@ -1,17 +1,3 @@
-:root {
-    --header-color: #0D4659;
-    --hover-nav-tool: #176e8b;
-    --copyright: #1C1D31;
-    --fb: #37599E;
-    --ig: #BF1B8F;
-    --x: #00A2F9;
-    --yt: #B21010;
-    --fb-hover: #273f6f;
-    --ig-hover: #7a0f5a;
-    --x-hover: #003f61;
-    --yt-hover: #690a0a;
-}
-
 @font-face {
     font-family: QuickSand;
     src: url(../font/Quicksand-VariableFont_wght.ttf);
@@ -94,31 +80,51 @@ input:checked+.slider:before {
     padding-left: 2%;
 }
 
-.condition h2 {
+.filter .condition h2 {
     display: inline;
 }   
 
-.condition title{
+.filter .condition title{
     float: left;
     font-size: 1.5vb;
     cursor: pointer;
 }
 
-.condition i {
+.filter .condition i {
     float: left;
     margin-right: 4%;
     cursor: pointer;
 }
 
-.condition i:hover{
+.filter .condition i:hover{
     color: gray;
 }
 
-.condition ul {
+.filter .condition h2:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.filter .condition ul {
     text-decoration: none;
     list-style: none;
     font-size: 3vb;
-    padding: 0;
+    padding-left: 5%;
 }
 
-.condition 
+.filter .condition li{
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.filter .condition label, .filter .condition input{
+    cursor: pointer;
+}
+
+.filter .condition label:hover, .filter .condition input:hover {
+    font-weight: bolder;
+}
+
+.filter .condition .select{
+    font-weight: bolder;
+}
