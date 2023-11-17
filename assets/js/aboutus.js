@@ -20,11 +20,18 @@ function loadJS(url) {
     document.head.appendChild(script);
 }
 
-
 loadHTML("template/header.html", "header");
-loadHTML("template/intro-aboutus.html", "intro-aboutus")
+loadHTML("template/intro-aboutus.html", "intro-aboutus");
+loadHTML("template/history.html", "history");
 loadHTML("template/footer.html", "footer");
 
 loadCSS("assets/css/header.css");
 loadCSS("assets/css/intro-aboutus.css");
+loadCSS("assets/css/history.css");
 loadCSS("assets/css/footer.css");
+
+const navs = document.getElementsByClassName("nav-button");
+window.addEventListener("load", () => {
+    navs[4].style.backgroundColor = "#464bef";
+    navs[4].style.color = "white";
+})
