@@ -25,12 +25,16 @@ body {
 }
 
 .filter{
-    width: 30%;
+    float: left;
+    width: 25.5%;
     height: auto;
     border: 2px solid rgb(181, 181, 181);
     border-radius: 20px;
     box-shadow: 3px 3px 8px #e0e0e0;
     overflow: hidden;
+    margin-top: 1%;
+    margin-left: 2%;
+    padding-top: -0.5%;
     padding-left: 1%;
     padding-right: 1%;
     font-family: QuickSand;
@@ -39,7 +43,7 @@ body {
 .switch-on-off {
     position: relative;
     display: inline-block;
-    margin-top: 0.5%;
+    margin-top: 0%;
     float: right;
     width: 60px;
     height: 34px;
@@ -93,21 +97,23 @@ input:checked + .slider:before {
 
 .condition h2{
     display: inline;
+    cursor: pointer;
 }   
 
+.condition h2:hover{
+    color: gray;
+}
+
 .condition title{
-    float: left;
+    display: flex;
     font-size: 1.5vb;
+    cursor: pointer;
 }
   
 .condition i{
     float: left;
     margin-right: 4%;
     cursor: pointer;
-}
-
-.condition i:hover{
-    color: gray;
 }
 
 .condition ul{
@@ -117,4 +123,17 @@ input:checked + .slider:before {
     padding:  0;
 }
 
-.condition 
+.condition li{
+    margin-bottom: 2%;
+    font-size: 3vb;
+}
+
+.condition li:hover{
+    margin-top: 1%;
+    margin-left: 1%;
+    font-weight: bolder;
+}
+
+.condition input, .condition label{
+    cursor: pointer;
+}

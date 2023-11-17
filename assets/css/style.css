@@ -1,0 +1,42 @@
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: QuickSand;
+}
+
+.Header-Title ul{
+    list-style: none;
+    display: flex;
+    align-items: left; 
+    padding: 0;
+    margin-left: 1%;
+    margin-bottom: -1%;
+}
+
+.Header-Title li{
+    font-size: 3vb;
+    font-weight: bold;
+    margin: 1%;
+}
+
+.Header-Title a{
+    text-decoration: none;
+    color: rgb(222, 222, 222);
+}
+
+.Header-Title a:hover{
+    color: black;
+    font-size: 3vb;
+}
+
+.Header-Title i{
+    color: rgb(222, 222, 222);
+}
+
