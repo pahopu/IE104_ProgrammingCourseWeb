@@ -1,4 +1,5 @@
 :root {
+    --f-bg: rgb(202, 202, 202);
     --header-color: #0D4659;
     --hover-nav-tool: #176e8b;
     --copyright: #1C1D31;
@@ -26,6 +27,7 @@ body {
 }
 
 .footer {
+    border-top: 0.1vb solid var(--f-bg);
     padding-top: 6vb;
     font-family: QuickSand;
 }

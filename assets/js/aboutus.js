@@ -23,11 +23,13 @@ function loadJS(url) {
 loadHTML("template/header.html", "header");
 loadHTML("template/intro-aboutus.html", "intro-aboutus");
 loadHTML("template/history.html", "history");
+loadHTML("template/ourteam.html", "ourteam");
 loadHTML("template/footer.html", "footer");
 
 loadCSS("assets/css/header.css");
 loadCSS("assets/css/intro-aboutus.css");
 loadCSS("assets/css/history.css");
+loadCSS("assets/css/ourteam.css");
 loadCSS("assets/css/footer.css");
 
 const navs = document.getElementsByClassName("nav-button");

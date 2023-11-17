@@ -1,9 +1,9 @@
 :root {
     --box-shadow: rgb(174, 174, 174);
-    --h-background: rgb(237, 237, 237);
+    --h-background: rgb(240, 240, 240);
     --h-header: #4F97FF;
     --h-circle-shadow: rgb(59, 59, 255);
-    --h-mini-bg: rgb(244, 244, 244);
+    --h-mini-bg: rgb(253, 253, 253);
 }
 
 @font-face {
