@@ -7,7 +7,37 @@
     <title>Filter</title>
     <link rel="stylesheet" href="../assets/css/filter.css">
     <script src="https://kit.fontawesome.com/c32c52563f.js" crossorigin="anonymous"></script>
-    <script type="text/JavaScript" src="../assets/js/KhoaHoc.js"></script>
+    <script>
+        function toggleElement() {
+            var element = document.getElementById("content"); 
+            var checkbox = document.getElementById("switch-on-off"); 
+
+            if (checkbox.checked) {
+                element.style.display = "block"; 
+            } else {
+                element.style.display = "none"; 
+            }
+        }
+
+        function hideOtherCheckboxes(checkbox, listname) {
+            var checkboxes = document.getElementsByName(listname); 
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i] != checkbox) {
+                checkboxes[i].checked = false;
+                }
+            }
+        }
+
+        function hideListofCondition(listname) {
+            var element = document.getElementById(listname); 
+
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block"; 
+            } else {
+                element.style.display = "none"; 
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -21,8 +51,8 @@
         </h1>
         <div id="content">
             <div class="condition">
-                <h2 onclick="hideListofCondition('topic-content')">
-                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;"></i>
+                <h2>
+                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;" onclick="hideListofCondition('topic-content')"></i>
                     <p class="title">Chủ đề</p>
                 </h2>
                 <ul id="topic-content" style="display: none">
@@ -55,82 +85,83 @@
                         <label for="topic7">Điện toán đám mây</label>
                     </li>
                 </ul>
+                
             </div>
             <div class="condition">
-                <h2 onclick="hideListofCondition('program-language-content')">
-                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;"></i>
+                <h2>
+                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;" onclick="hideListofCondition('program-language-content')"></i>
                     <p class="title">Ngôn ngữ lập trình</p>
                 </h2>
                 <ul id="program-language-content" style="display: none">
-                    <li onclick="hideOtherCheckboxes(this, 'program-language1')">
-                        <input type="checkbox" id="program-language1" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
-                        <label for="program-language1">Chọn tất cả</label>
+                    <li>
+                        <input type="checkbox" id="program-language" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
+                        <label for="program-language">Chọn tất cả</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'program-language2')">
-                        <input type="checkbox" id="program-language2" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
-                        <label for="program-language2">Python</label>
+                    <li>
+                        <input type="checkbox" id="program-language" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
+                        <label for="program-language">Python</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'program-language3')">
-                        <input type="checkbox" id="program-language3" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
-                        <label for="program-language3">HTML & CSS</label>
+                    <li>
+                        <input type="checkbox" id="program-language" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
+                        <label for="program-language">HTML & CSS</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'program-language4')">
-                        <input type="checkbox" id="program-language4" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
-                        <label for="program-language4">JavaScript</label>
+                    <li>
+                        <input type="checkbox" id="program-language" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
+                        <label for="program-language">JavaScript</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'program-language5')">
-                        <input type="checkbox" id="program-language5" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
-                        <label for="program-language5">C/C++</label>
+                    <li>
+                        <input type="checkbox" id="program-language" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
+                        <label for="program-language">C/C++</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'program-language6')">
-                        <input type="checkbox" id="program-language6" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
-                        <label for="program-language6">C#</label>
+                    <li>
+                        <input type="checkbox" id="program-language" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
+                        <label for="program-language">C#</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'program-language7')">
-                        <input type="checkbox" id="program-language7" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
-                        <label for="program-language7">PHP</label>
+                    <li>
+                        <input type="checkbox" id="program-language" name="program-language" onclick="hideOtherCheckboxes(this, 'program-language')">
+                        <label for="program-language">PHP</label>
                     </li>
                 </ul>
-            </div> 
+            </div>
             <div class="condition">
-                <h2 onclick="hideListofCondition('language-content')">
-                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;"></i>
+                <h2>
+                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;" onclick="hideListofCondition('language-content')"></i>
                     <p class="title">Ngôn ngữ học tập</p>
                 </h2>
                 <ul id="language-content" style="display: none">
-                    <li onclick="hideOtherCheckboxes(this, 'language1')">
-                        <input type="checkbox" id="language1" name="language" onclick="hideOtherCheckboxes(this, 'language')">
-                        <label for="language1">Chọn tất cả</label>
+                    <li>
+                        <input type="checkbox" id="language" name="language-content" onclick="hideOtherCheckboxes(this, 'language')">
+                        <label for="language">Chọn tất cả</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'language2')">
-                        <input type="checkbox" id="language2" name="language" onclick="hideOtherCheckboxes(this, 'language')">
-                        <label for="language2">Python</label>
+                    <li>
+                        <input type="checkbox" id="language" name="language" onclick="hideOtherCheckboxes(this, 'language')">
+                        <label for="language">Python</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'language3')">
-                        <input type="checkbox" id="language3" name="language" onclick="hideOtherCheckboxes(this, 'language')">
-                        <label for="language3">HTML & CSS</label>
+                    <li>
+                        <input type="checkbox" id="language" name="language" onclick="hideOtherCheckboxes(this, 'language')">
+                        <label for="language">HTML & CSS</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'language4')">
-                        <input type="checkbox" id="language4" name="language" onclick="hideOtherCheckboxes(this, 'language')">
-                        <label for="language4">JavaScript</label>
+                    <li>
+                        <input type="checkbox" id="language" name="language" onclick="hideOtherCheckboxes(this, 'language')">
+                        <label for="language">JavaScript</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'language5')">
-                        <input type="checkbox" id="language5" name="language" onclick="hideOtherCheckboxes(this, 'language')">
-                        <label for="language5">C/C++</label>
+                    <li>
+                        <input type="checkbox" id="language" name="language" onclick="hideOtherCheckboxes(this, 'language')">
+                        <label for="language">C/C++</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'language6')">
-                        <input type="checkbox" id="language6" name="language" onclick="hideOtherCheckboxes(this, 'language')">
-                        <label for="language6">C#</label>
+                    <li>
+                        <input type="checkbox" id="language" name="language" onclick="hideOtherCheckboxes(this, 'language')">
+                        <label for="language">C#</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'language7')">
-                        <input type="checkbox" id="language7" name="language" onclick="hideOtherCheckboxes(this, 'language')">
-                        <label for="language7">PHP</label>
+                    <li>
+                        <input type="checkbox" id="language" name="language" onclick="hideOtherCheckboxes(this, 'language')">
+                        <label for="language">PHP</label>
                     </li>
                 </ul>
-            </div>    
+            </div>
             <div class="condition">
-                <h2 onclick="hideListofCondition('level-content')">
-                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;"></i>
+                <h2>
+                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;" onclick="hideListofCondition('level-content')"></i>
                     <p class="title">Cấp độ bài học</p>
                 </h2>
                 <ul id="level-content" style="display: none">
@@ -155,32 +186,32 @@
                         <label for="level5">Áp dung</label>
                     </li>
                 </ul>
-            </div>  
+            </div>
             <div class="condition">
-                <h2 onclick="hideListofCondition('duration-content')">
-                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;"></i>
+                <h2>
+                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;" onclick="hideListofCondition('duration-content')"></i>
                     <p class="title">Thời lượng bài học</p>
                 </h2>
                 <ul id="duration-content" style="display: none;">
-                    <li onclick="hideOtherCheckboxes(this, 'duration1')">
-                        <input type="checkbox" id="duration1" name="duration" onclick="hideOtherCheckboxes(this, 'duration')">
-                        <label for="duration1">Chọn tất cả</label>
+                    <li>
+                        <input type="checkbox" id="duration" name="duration" onclick="hideOtherCheckboxes(this, 'duration')">
+                        <label for="duration">Chọn tất cả</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'duration2')">
-                        <input type="checkbox" id="duration2" name="duration" onclick="hideOtherCheckboxes(this, 'duration')">
-                        <label for="duration2">0 - 25 giờ</label>
+                    <li>
+                        <input type="checkbox" id="duration" name="duration" onclick="hideOtherCheckboxes(this, 'duration')">
+                        <label for="duration">0 - 25 giờ</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'duration3')">
-                        <input type="checkbox" id="duration3" name="duration" onclick="hideOtherCheckboxes(this, 'duration')">
-                        <label for="duration3">26 - 40 giờ</label>
+                    <li>
+                        <input type="checkbox" id="duration" name="duration" onclick="hideOtherCheckboxes(this, 'duration')">
+                        <label for="duration">26 - 40 giờ</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'duration4')">
-                        <input type="checkbox" id="duration4" name="duration" onclick="hideOtherCheckboxes(this, 'duration')">
-                        <label for="duration4">41 - 60 giờ</label>
+                    <li>
+                        <input type="checkbox" id="duration" name="duration" onclick="hideOtherCheckboxes(this, 'duration')">
+                        <label for="duration">41 - 60 giờ</label>
                     </li>
-                    <li onclick="hideOtherCheckboxes(this, 'duration5')">
-                        <input type="checkbox" id="duration5" name="duration" onclick="hideOtherCheckboxes(this, 'duration')">
-                        <label for="duration5">Trên 60 giờ </label>
+                    <li>
+                        <input type="checkbox" id="duration" name="duration" onclick="hideOtherCheckboxes(this, 'duration')">
+                        <label for="duration">Trên 60 giờ </label>
                     </li>
                 </ul>
             </div>

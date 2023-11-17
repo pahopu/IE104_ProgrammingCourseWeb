@@ -1,0 +1,114 @@
+:root {
+    --box-shadow: rgb(174, 174, 174);
+    --h-background: rgb(240, 240, 240);
+    --h-header: #4F97FF;
+    --h-circle-shadow: rgb(59, 59, 255);
+    --h-mini-bg: rgb(253, 253, 253);
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.history {
+    background-color: var(--h-background);
+    font-family: QuickSand;
+    padding: 6vb 0;
+}
+
+.history h1 {
+    color: var(--h-header);
+    text-align: center;
+    font-size: 5vb;
+    margin: 0;
+    margin-bottom: 4vb;
+}
+
+.history .timeline {
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 3.5vb;
+    display: grid;
+    grid-template-columns: 1fr 0.25vb 1fr;
+    color: black;
+}
+
+.history .timeline__component {
+    margin: 4vb;
+    margin-top: 0;
+}
+
+.history .timeline__component--bg {
+    padding: 4vb;
+    background: var(--h-mini-bg);
+    box-shadow: 0.1vb 0.1vb 1vb 0.1vb var(--box-shadow);
+    border-radius: 1.5vb;
+}
+
+.history .timeline__component--bottom {
+    margin-bottom: 10vb;
+}
+
+.history .timeline__middle {
+    position: relative;
+    background: black;
+}
+
+.history .timeline__middle--last {
+    background: none;
+}
+
+.history .timeline__point {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.2vb;
+    height: 2.2vb;
+    box-shadow: 0.1vb 0.1vb 2.5vb 0.1vb var(--h-circle-shadow);
+    background: var(--h-header);
+    border-radius: 50%;
+}
+
+.history .timeline__point--bottom {
+    top: initial;
+    bottom: 0;
+}
+
+.history .timeline__date {
+    font-size: 2.2vb;
+    color: gray;
+    font-weight: bold;
+}
+
+.history .timeline__date--right {
+    text-align: right;
+}
+
+.history .timeline__title {
+    margin: 0;
+    font-size: 4vb;
+    font-weight: bold;
+    color: var(--h-header);
+}
+
+.history .timeline__paragraph {
+    font-size: 2.2vb;
+    line-height: 1.5;
+}
+
+.history .timeline__image {
+    width: 50%;
+    border: 1vb solid white;
+    border-radius: 1vb;
+    box-shadow: 0 0 0.2vb 0 var(--box-shadow);
+}

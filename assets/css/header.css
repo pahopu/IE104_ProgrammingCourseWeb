@@ -21,9 +21,12 @@ body {
 }
 
 .header {
+    width: 100%;
+    background-color: white;
     padding-top: 4vb;
     font-family: QuickSand;
     box-shadow: 0 0.9vb 1vb var(--box-shadow);
+    z-index: 100;
 }
 
 .header .nav-bar {

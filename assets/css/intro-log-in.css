@@ -28,9 +28,9 @@ body {
 
 .intro-log-in .intro {
     width: 60%;
-    background-image: url(../images/laptop-girl-home.png);
+    background-image: url(../images/banner-01.png);
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 50%;
     background-position: bottom left 10vb;
 }
 

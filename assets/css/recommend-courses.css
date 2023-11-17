@@ -1,0 +1,230 @@
+:root {
+    --rc-box-shadow: rgb(174, 174, 174);
+    --rc-header-color: #161867;
+    --rc-button-hover: #6166e4;
+    --rc-circle-hover: #DEE2E6;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.recommend-courses {
+    padding: 8vb 15vb;
+    font-family: QuickSand;
+    background-image: url(../images/re-courses-banner.jpg);
+}
+
+.recommend-courses h1 {
+    display: flex;
+
+    width: fit-content;
+
+    margin: 0;
+
+    color: var(--rc-header-color);
+    font-size: 5vb;
+    align-items: center;
+}
+
+.recommend-courses h1 .long-dash {
+    display: inline-block;
+
+    width: 1.5em;
+    height: 0.5vb;
+
+    margin: 0 0.25em;
+    border-radius: 2vb;
+
+    background-color: var(--rc-header-color);
+}
+
+.recommend-courses .selection-section {
+    display: flex;
+
+    width: fit-content;
+
+    font-size: 2.5vb;
+
+    margin: 6vb auto;
+
+    border-radius: 2vb;
+
+    background-color: white;
+
+    box-shadow: 0.1vb 0.1vb 1vb 0.1vb var(--rc-box-shadow);
+}
+
+.recommend-courses .option-section {
+    font-weight: bold;
+    padding: 3vb 5vb;
+    border-radius: 2vb;
+    transition: 0.3s ease-in-out all;
+    cursor: pointer;
+}
+
+.recommend-courses .option-section:hover {
+    color: white;
+    background-color: var(--rc-button-hover);
+    transition: 0.3s ease-in-out all;
+}
+
+.recommend-courses .selected {
+    color: white;
+    background-color: var(--rc-button-hover);
+}
+
+.recommend-courses .courses-choosing {
+    display: flex;
+    align-items: center;
+    gap: 3vb;
+    margin: auto;
+    transition: opacity 0.3s;
+}
+
+.recommend-courses .courses-choosing .fa-caret-left,
+.fa-caret-right {
+    color: white;
+    font-size: 12vb;
+    text-shadow: 0.1vb 0.1vb 1vb var(--rc-box-shadow);
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+}
+
+.recommend-courses .course-frame {
+    display: flex;
+    border-radius: 2vb;
+    margin-bottom: 4vb;
+    background-color: white;
+}
+
+.recommend-courses .carousel {
+    display: none;
+    overflow: hidden;
+}
+
+.recommend-courses .carousel:first-child {
+    display: flex;
+}
+
+.recommend-courses .courses-section {
+    width: 100%;
+    flex: 0 0 auto;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3.5vb;
+
+    padding: 3.5vb;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.recommend-courses .course {
+    border-radius: 15px;
+
+    width: 100%;
+    height: fit-content;
+
+    overflow: hidden;
+
+    box-shadow: 0.2vb 0.2vb 1vb 0.2vb var(--rc-box-shadow);
+}
+
+.recommend-courses .course img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+    height: 50%;
+}
+
+.recommend-courses .course a {
+    margin-left: 5%;
+    font-size: 3vb;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.recommend-courses .course a:hover {
+    text-decoration: underline;
+}
+
+.recommend-courses .course .info {
+    margin-left: 5%;
+    font-size: 2vb;
+    height: 200%;
+}
+
+.recommend-courses .course .th-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5%;
+}
+
+.recommend-courses .course .time {
+    font-size: 2vb;
+}
+
+.recommend-courses .course .student {
+    display: flex;
+    align-items: center;
+}
+
+.recommend-courses .course .student .num_student {
+    font-size: 2vb;
+    margin-left: 10%;
+}
+
+.recommend-courses .course .student i {
+    font-size: 2.5vb;
+    color: #bababa;
+    margin-top: 5.5%;
+}
+
+.recommend-courses .button-selection {
+    display: flex;
+    gap: 3vb;
+    width: fit-content;
+    margin: auto;
+}
+
+.recommend-courses .circle {
+    width: 3.5vb;
+    height: 3.5vb;
+
+    border-radius: 50%;
+    background-color: white;
+
+    box-shadow: 0.1vb 0.1vb 1vb var(--rc-box-shadow);
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+}
+
+.recommend-courses .circle:hover {
+    background-color: var(--rc-circle-hover) !important;
+    transition: 0.3s ease-in-out all;
+}
+
+.recommend-courses .fa-caret-left:hover,
+.fa-caret-right:hover {
+    color: var(--rc-circle-hover);
+    transition: 0.3s ease-in-out all;
+}

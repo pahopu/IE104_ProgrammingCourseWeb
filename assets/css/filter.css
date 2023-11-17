@@ -25,8 +25,7 @@ body {
 }
 
 .filter{
-    float: left;
-    width: 25.5%;
+    width: 30%;
     height: auto;
     border: 2px solid rgb(181, 181, 181);
     border-radius: 20px;
@@ -62,7 +61,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #4CAF50; 
+    background-color: #4CAF50;
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
@@ -75,65 +74,51 @@ body {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white; 
+    background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
 }
 
-input:checked + .slider {
-    background-color: #ccc; 
+input:checked+.slider {
+    background-color: #ccc;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
 
-.filter .condition{
+.filter .condition {
     padding-left: 2%;
 }
 
-.condition h2{
+.condition h2 {
     display: inline;
-    cursor: pointer;
 }   
 
-.condition h2:hover{
-    color: gray;
-}
-
 .condition title{
-    display: flex;
+    float: left;
     font-size: 1.5vb;
     cursor: pointer;
 }
-  
-.condition i{
+
+.condition i {
     float: left;
     margin-right: 4%;
     cursor: pointer;
 }
 
-.condition ul{
+.condition i:hover{
+    color: gray;
+}
+
+.condition ul {
     text-decoration: none;
     list-style: none;
     font-size: 3vb;
-    padding:  0;
+    padding: 0;
 }
 
-.condition li{
-    margin-bottom: 2%;
-    font-size: 3vb;
-}
-
-.condition li:hover{
-    margin-top: 1%;
-    margin-left: 1%;
-    font-weight: bolder;
-}
-
-.condition input, .condition label{
-    cursor: pointer;
-}
+.condition 
