@@ -21,7 +21,7 @@ function showItem(indexItem) {
 function changePage(index) {
     pages.forEach((page, j) => {
         if (j == index)
-            page.style.backgroundColor = `#DEE2E6`;
+            page.style.backgroundColor = `#d9d9d9`;
         else
             page.style.backgroundColor = 'white';
     });

@@ -2,7 +2,7 @@
     --rc-box-shadow: rgb(174, 174, 174);
     --rc-header-color: #161867;
     --rc-button-hover: #6166e4;
-    --rc-circle-hover: #DEE2E6;
+    --rc-circle-hover: #d9d9d9;
 }
 
 @font-face {
@@ -91,8 +91,9 @@ a {
     display: flex;
     align-items: center;
     gap: 3vb;
-    margin: auto;
+    margin: 0 auto;
     transition: opacity 0.3s;
+    margin-bottom: 4vb;
 }
 
 .recommend-courses .courses-choosing .fa-caret-left,
@@ -107,7 +108,6 @@ a {
 .recommend-courses .course-frame {
     display: flex;
     border-radius: 2vb;
-    margin-bottom: 4vb;
     background-color: white;
 }
 
@@ -201,14 +201,14 @@ a {
 
 .recommend-courses .button-selection {
     display: flex;
-    gap: 3vb;
+    gap: 3.5vb;
     width: fit-content;
     margin: auto;
 }
 
 .recommend-courses .circle {
-    width: 3.5vb;
-    height: 3.5vb;
+    width: 2.5vb;
+    height: 2.5vb;
 
     border-radius: 50%;
     background-color: white;
