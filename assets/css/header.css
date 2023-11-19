@@ -139,6 +139,7 @@ body {
     background-color: white;
 
     transition: 0.3s ease-in-out all;
+    cursor: pointer;
 }
 
 .header .nav-bar .tool-bar .tool .login-button .log-in button:hover {
@@ -164,6 +165,7 @@ body {
     background-color: var(--sign-up);
 
     transition: 0.3s ease-in-out all;
+    cursor: pointer;
 }
 
 .header .nav-bar .tool-bar .tool .login-button .sign-up button:hover {

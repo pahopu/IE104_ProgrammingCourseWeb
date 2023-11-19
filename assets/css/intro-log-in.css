@@ -139,6 +139,7 @@ body {
 
     color: white;
     background-color: var(--button-color);
+    cursor: pointer;
 }
 
 .intro-log-in .log-in .input-region button:hover {

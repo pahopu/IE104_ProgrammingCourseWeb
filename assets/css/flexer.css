@@ -79,6 +79,7 @@ body {
 
     background-color: var(--flexer-btn-cl);
     transition: 0.3s ease-in-out all;
+    cursor: pointer;
 }
 
 .flexer .button button:hover {
