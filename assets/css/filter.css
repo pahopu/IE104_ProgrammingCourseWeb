@@ -11,15 +11,15 @@ body {
 }
 
 .filter{
+    float: left;
     width: 30%;
     height: auto;
     border: 2px solid rgb(181, 181, 181);
     border-radius: 20px;
     box-shadow: 3px 3px 8px #e0e0e0;
     overflow: hidden;
-    margin-top: 1%;
-    margin-left: 2%;
-    padding-top: -0.5%;
+    margin: 1% 0% 1% 2%;
+    padding-top: -0.5% 1% 0% 1%;
     padding-left: 1%;
     padding-right: 1%;
     font-family: QuickSand;

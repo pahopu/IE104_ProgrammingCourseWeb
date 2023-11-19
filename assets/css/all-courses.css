@@ -1,17 +1,3 @@
-:root {
-    --header-color: #0D4659;
-    --hover-nav-tool: #176e8b;
-    --copyright: #1C1D31;
-    --fb: #37599E;
-    --ig: #BF1B8F;
-    --x: #00A2F9;
-    --yt: #B21010;
-    --fb-hover: #273f6f;
-    --ig-hover: #7a0f5a;
-    --x-hover: #003f61;
-    --yt-hover: #690a0a;
-}
-
 @font-face {
     font-family: QuickSand;
     src: url(../font/Quicksand-VariableFont_wght.ttf);
@@ -26,22 +12,29 @@ body {
 
 .all-courses {
     float: right;
-    width: 68%;
+    width: 63%;
     height: auto;
     padding: 1%;
     font-family: QuickSand;
 }
 
 .all-courses .header-title{
-    font-size: 5vb;;
+    font-size: 5vb;
+    margin-bottom: 1%;
 }
 
 .all-courses .arrange {
     float: right;
-    margin-top: 1%;
     margin-right: 2%;
+    text-align: center;
     font-size: 3vb;
-    font-weight: lighter;
+    font-weight: bold;
+}
+
+.all-courses .arrange .select-box{
+    text-align: center;
+    height: 30px;
+    font-size: 2.8vb;
 }
 
 .all-courses i {
@@ -52,7 +45,7 @@ body {
 }
 
 .all-courses i:hover {
-    color: black; /* Màu nền thay đổi khi di chuột qua */
+    color: black; 
 }
 
 .all-courses .grid-container {
@@ -61,34 +54,36 @@ body {
     grid-column-gap: 0% 
 }
 
-.grid-container .column {
+.all-courses .grid-container .column {
     padding: 3%;
 }
 
-.course {
-    border: 1.6px solid black;
+.all-courses .grid-container .column .course {
+    border: 0px;
+    box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.266);
     border-radius: 15px;
     width: 100%;
     height: fit-content;
-    margin-bottom: 6%;
+    margin-bottom: 5%;
     overflow: hidden;
+    transform: ;
 }
 
-.course:hover{
-    margin-top: -1%;
+.all-courses .grid-container .column .course:hover {
     margin-left: -1%;
-    margin-bottom: 7%;
-    box-shadow: 3px 3px 8px black;
+    margin-top: -1%;
+    margin-bottom: 6%;
+    box-shadow: 4px 4px 13px 0px black;
 }
 
-.course img {
+.all-courses .grid-container .column .course img {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     width: 100%;
     height: 50%;
 }
 
-.course a {
+.all-courses .grid-container .column .course a {
     margin-left: 5%;
     font-size: 3vb;
     font-weight: bolder;
@@ -97,67 +92,72 @@ body {
     transition: text-decoration 0.3s;
 }
 
-.course a:hover {
+.all-courses .grid-container .column .course a:hover {
     text-decoration: underline;
 }
 
-.course .info {
+.all-courses .grid-container .column .course .info {
     margin-left: 5%;
     font-size: 2vb;
     height: 200%;
 }
 
-.course .time {
+.all-courses .grid-container .column .course .time {
     float: left;
     margin-left: 5%;
     font-size: 2vb;
 }
 
-.course .student .num_student {
+.all-courses .grid-container .column .course .student .num_student {
     float: right;
     margin-right: 5%;
     font-size: 2vb;
 }
 
-.course .student i {
+.all-courses .grid-container .column .course .student i {
     float: right;
     margin-top: 5.5%;
     margin-right: 2%;
 }
 
-.change-page {
+.all-courses .change-page {
     list-style: none;
     display: flex;
     align-items: center;
     padding: 0;
-    margin-left: 35%;
+    margin-left: 36.7%;
 }
 
-.change-page li {
+.all-courses .change-page li {
     margin: 0 5px;
 }
 
-.change-page a {
+.all-courses .change-page a {
     border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
-    width: 10px;
-    height: 10px;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 10px 5px 10px;
     color: #000000;
     font-size: 3vb;
 }
 
-.change-page a:hover{
-    color: rgb(255, 0, 0);
+.all-courses .change-page a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #000000;
     font-weight: bolder;
 }
 
-.change-page i {
+.all-courses .change-page i {
+    border: 2px solid rgba(0, 0, 0, 0.272);
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    padding: 10px 10px 14px 10px;
     font-size: 18px; 
     cursor: pointer;
 }
 
 .change-page i:hover{
-    color: rgb(255, 0, 0)
+    color: rgb(255, 255, 255);
+    background-color: #000000;
 }
