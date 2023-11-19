@@ -40,9 +40,13 @@ loadJS("assets/js/homepage-feedback.js");
 const navs = document.getElementsByClassName("nav-button");
 const signup = document.getElementsByClassName("sign-up");
 const login_intro = document.getElementsByClassName("intro-log-in");
+const header = document.getElementsByClassName("header");
+const headerid = document.getElementById("header");
+
 window.addEventListener("load", () => {
     navs[0].style.backgroundColor = "#464bef";
     navs[0].style.color = "white";
+    headerid.style.marginTop = `${header[0].offsetHeight}px`;
 
     signup[0].addEventListener("click", () => {
         login_intro[0].scrollIntoView({ behavior: "smooth" });

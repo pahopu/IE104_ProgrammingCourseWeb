@@ -22,11 +22,14 @@ body {
 
 .header {
     width: 100%;
+    height: fit-content;
     background-color: white;
     padding-top: 4vb;
     font-family: QuickSand;
     box-shadow: 0 0.9vb 1vb var(--box-shadow);
     z-index: 100;
+    position: fixed;
+    top: 0;
 }
 
 .header .nav-bar {

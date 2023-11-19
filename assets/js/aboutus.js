@@ -33,7 +33,10 @@ loadCSS("assets/css/ourteam.css");
 loadCSS("assets/css/footer.css");
 
 const navs = document.getElementsByClassName("nav-button");
+const header = document.getElementsByClassName("header");
+const headerid = document.getElementById("header");
 window.addEventListener("load", () => {
     navs[4].style.backgroundColor = "#464bef";
     navs[4].style.color = "white";
+    headerid.style.marginTop = `${header[0].offsetHeight}px`;
 })
