@@ -9,11 +9,11 @@ Trang chủ{
 
 Khóa học{
     - header
-    - main-courses
     - filter
-    - footer
+    - main-courses
     - for-you-courses
     - all-courses
+    - footer
 }
 
 Bài giảng{
@@ -29,7 +29,11 @@ Cộng đồng{
 }
 
 Về chúng tôi{
-
+    - header
+    - intro-aboutus
+    - history
+    - ourteam
+    - footer
 }
 
 Đăng nhập{

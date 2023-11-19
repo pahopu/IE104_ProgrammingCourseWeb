@@ -20,17 +20,25 @@ function loadJS(url) {
     document.head.appendChild(script);
 }
 
-
 loadHTML("template/header.html", "header");
 loadHTML("template/intro-log-in.html", "intro-log-in");
 loadHTML("template/flexer.html", "flexer");
 loadHTML("template/recommend-courses.html", "recommend-courses");
+loadHTML("template/homepage-feedback.html", "homepage-feedback");
 loadHTML("template/footer.html", "footer");
 
 loadCSS("assets/css/header.css");
 loadCSS("assets/css/intro-log-in.css");
 loadCSS("assets/css/flexer.css");
-loadCSS("assets/css/recommend-courses.css")
+loadCSS("assets/css/recommend-courses.css");
+loadCSS("assets/css/homepage-feedback.css");
 loadCSS("assets/css/footer.css");
 
 loadJS("assets/js/recommend-courses.js");
+loadJS("assets/js/homepage-feedback.js");
+
+const navs = document.getElementsByClassName("nav-button");
+window.addEventListener("load", () => {
+    navs[0].style.backgroundColor = "#464bef";
+    navs[0].style.color = "white";
+})
