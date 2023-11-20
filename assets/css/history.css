@@ -22,40 +22,40 @@ body {
 .history {
     background-color: var(--h-background);
     font-family: QuickSand;
-    padding: 6vb 0;
+    padding: 6vmin 0;
 }
 
 .history h1 {
     color: var(--h-header);
     text-align: center;
-    font-size: 5vb;
+    font-size: 5vmin;
     margin: 0;
-    margin-bottom: 4vb;
+    margin-bottom: 4vmin;
 }
 
 .history .timeline {
     margin: 0 auto;
     max-width: 80%;
-    padding: 3.5vb;
+    padding: 3.5vmin;
     display: grid;
-    grid-template-columns: 1fr 0.25vb 1fr;
+    grid-template-columns: 1fr 0.25vmin 1fr;
     color: black;
 }
 
 .history .timeline__component {
-    margin: 4vb;
+    margin: 4vmin;
     margin-top: 0;
 }
 
 .history .timeline__component--bg {
-    padding: 4vb;
+    padding: 4vmin;
     background: var(--h-mini-bg);
-    box-shadow: 0.1vb 0.1vb 1vb 0.1vb var(--box-shadow);
-    border-radius: 1.5vb;
+    box-shadow: 0.1vmin 0.1vmin 1vmin 0.1vmin var(--box-shadow);
+    border-radius: 1.5vmin;
 }
 
 .history .timeline__component--bottom {
-    margin-bottom: 10vb;
+    margin-bottom: 10vmin;
 }
 
 .history .timeline__middle {
@@ -72,9 +72,9 @@ body {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 2.2vb;
-    height: 2.2vb;
-    box-shadow: 0.1vb 0.1vb 2.5vb 0.1vb var(--h-circle-shadow);
+    width: 2.2vmin;
+    height: 2.2vmin;
+    box-shadow: 0.1vmin 0.1vmin 2.5vmin 0.1vmin var(--h-circle-shadow);
     background: var(--h-header);
     border-radius: 50%;
 }
@@ -85,7 +85,7 @@ body {
 }
 
 .history .timeline__date {
-    font-size: 2.2vb;
+    font-size: 2.2vmin;
     color: gray;
     font-weight: bold;
 }
@@ -96,19 +96,19 @@ body {
 
 .history .timeline__title {
     margin: 0;
-    font-size: 4vb;
+    font-size: 4vmin;
     font-weight: bold;
     color: var(--h-header);
 }
 
 .history .timeline__paragraph {
-    font-size: 2.2vb;
+    font-size: 2.2vmin;
     line-height: 1.5;
 }
 
 .history .timeline__image {
     width: 50%;
-    border: 1vb solid white;
-    border-radius: 1vb;
-    box-shadow: 0 0 0.2vb 0 var(--box-shadow);
+    border: 1vmin solid white;
+    border-radius: 1vmin;
+    box-shadow: 0 0 0.2vmin 0 var(--box-shadow);
 }

@@ -29,16 +29,16 @@ a {
 .intro-aboutus #address {
     display: flex;
     align-items: center;
-    padding: 4vb 12vb;
+    padding: 4vmin 12vmin;
 }
 
 .intro-aboutus #address i {
-    margin: 0 2vb;
-    font-size: 1.5vb;
+    margin: 0 2vmin;
+    font-size: 1.5vmin;
 }
 
 .intro-aboutus #address a {
-    font-size: 2.2vb;
+    font-size: 2.2vmin;
     color: var(--ia-address);
 }
 
@@ -48,7 +48,7 @@ a {
 }
 
 .intro-aboutus #mission #background-mission {
-    height: 65vb;
+    height: 65vmin;
     overflow: hidden;
     background-image: url(../images/aboutus/aboutus-group.jpg);
     background-size: cover;
@@ -64,14 +64,14 @@ a {
 }
 
 .intro-aboutus #mission .flex-mission:not(:nth-child(2)) {
-    margin-bottom: 8vb;
+    margin-bottom: 8vmin;
 }
 
 .intro-aboutus #mission .flex-mission:nth-of-type(odd) .mission-item:first-child {
     width: 55%;
     display: flex;
     align-items: center;
-    padding: 7vb;
+    padding: 7vmin;
 }
 
 .intro-aboutus #mission .flex-mission:nth-of-type(odd) .mission-item:last-child {
@@ -86,31 +86,31 @@ a {
     width: 55%;
     display: flex;
     align-items: center;
-    padding: 7vb;
+    padding: 7vmin;
 }
 
 .intro-aboutus #mission .flex-mission:nth-child(2) {
     position: relative;
-    top: -7vb;
+    top: -7vmin;
 }
 
 .intro-aboutus #mission .mission-item img {
-    border: 1vb solid white;
-    border-radius: 1vb;
-    box-shadow: 0.1vb 0.1vb 1vb 0.1vb var(--box-shadow);
+    border: 1vmin solid white;
+    border-radius: 1vmin;
+    box-shadow: 0.1vmin 0.1vmin 1vmin 0.1vmin var(--box-shadow);
     width: 100%;
 }
 
 .intro-aboutus #mission .flex-mission h1 {
     color: var(--ia-header);
-    font-size: 5vb;
+    font-size: 5vmin;
     margin: 0;
 }
 
 .intro-aboutus #mission .flex-mission p {
     font-weight: 500;
-    font-size: 2.2vb;
-    line-height: 3.5vb;
+    font-size: 2.2vmin;
+    line-height: 3.5vmin;
     margin: 0;
-    margin-top: 1.5vb;
+    margin-top: 1.5vmin;
 }

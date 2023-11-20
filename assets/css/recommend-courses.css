@@ -23,7 +23,7 @@ a {
 }
 
 .recommend-courses {
-    padding: 8vb 15vb;
+    padding: 8vmin 15vmin;
     font-family: QuickSand;
     background-image: url(../images/re-courses-banner.jpg);
 }
@@ -36,7 +36,7 @@ a {
     margin: 0;
 
     color: var(--rc-header-color);
-    font-size: 5vb;
+    font-size: 5vmin;
     align-items: center;
 }
 
@@ -44,10 +44,10 @@ a {
     display: inline-block;
 
     width: 1.5em;
-    height: 0.5vb;
+    height: 0.5vmin;
 
     margin: 0 0.25em;
-    border-radius: 2vb;
+    border-radius: 2vmin;
 
     background-color: var(--rc-header-color);
 }
@@ -57,21 +57,21 @@ a {
 
     width: fit-content;
 
-    font-size: 2.5vb;
+    font-size: 2.5vmin;
 
-    margin: 6vb auto;
+    margin: 6vmin auto;
 
-    border-radius: 2vb;
+    border-radius: 2vmin;
 
     background-color: white;
 
-    box-shadow: 0.1vb 0.1vb 1vb 0.1vb var(--rc-box-shadow);
+    box-shadow: 0.1vmin 0.1vmin 1vmin 0.1vmin var(--rc-box-shadow);
 }
 
 .recommend-courses .option-section {
     font-weight: bold;
-    padding: 3vb 5vb;
-    border-radius: 2vb;
+    padding: 3vmin 5vmin;
+    border-radius: 2vmin;
     transition: 0.3s ease-in-out all;
     cursor: pointer;
 }
@@ -90,24 +90,24 @@ a {
 .recommend-courses .courses-choosing {
     display: flex;
     align-items: center;
-    gap: 3vb;
+    gap: 3vmin;
     margin: 0 auto;
     transition: opacity 0.3s;
-    margin-bottom: 4vb;
+    margin-bottom: 4vmin;
 }
 
 .recommend-courses .courses-choosing .fa-caret-left,
 .fa-caret-right {
     color: white;
-    font-size: 12vb;
-    text-shadow: 0.1vb 0.1vb 1vb var(--rc-box-shadow);
+    font-size: 12vmin;
+    text-shadow: 0.1vmin 0.1vmin 1vmin var(--rc-box-shadow);
     cursor: pointer;
     transition: 0.3s ease-in-out all;
 }
 
 .recommend-courses .course-frame {
     display: flex;
-    border-radius: 2vb;
+    border-radius: 2vmin;
     background-color: white;
 }
 
@@ -128,9 +128,9 @@ a {
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 3.5vb;
+    gap: 3.5vmin;
 
-    padding: 3.5vb;
+    padding: 3.5vmin;
 
     transition: transform 0.3s ease-in-out;
 }
@@ -143,7 +143,7 @@ a {
 
     overflow: hidden;
 
-    box-shadow: 0.2vb 0.2vb 1vb 0.2vb var(--rc-box-shadow);
+    box-shadow: 0.2vmin 0.2vmin 1vmin 0.2vmin var(--rc-box-shadow);
 }
 
 .recommend-courses .course img {
@@ -155,7 +155,7 @@ a {
 
 .recommend-courses .course a {
     margin-left: 5%;
-    font-size: 3vb;
+    font-size: 3vmin;
     font-weight: bolder;
     color: black;
     text-decoration: none;
@@ -168,7 +168,7 @@ a {
 
 .recommend-courses .course .info {
     margin-left: 5%;
-    font-size: 2vb;
+    font-size: 2vmin;
     height: 200%;
 }
 
@@ -180,7 +180,7 @@ a {
 }
 
 .recommend-courses .course .time {
-    font-size: 2vb;
+    font-size: 2vmin;
 }
 
 .recommend-courses .course .student {
@@ -189,31 +189,31 @@ a {
 }
 
 .recommend-courses .course .student .num_student {
-    font-size: 2vb;
+    font-size: 2vmin;
     margin-left: 10%;
 }
 
 .recommend-courses .course .student i {
-    font-size: 2.5vb;
+    font-size: 2.5vmin;
     color: #bababa;
     margin-top: 5.5%;
 }
 
 .recommend-courses .button-selection {
     display: flex;
-    gap: 3.5vb;
+    gap: 3.5vmin;
     width: fit-content;
     margin: auto;
 }
 
 .recommend-courses .circle {
-    width: 2.5vb;
-    height: 2.5vb;
+    width: 2.5vmin;
+    height: 2.5vmin;
 
     border-radius: 50%;
     background-color: white;
 
-    box-shadow: 0.1vb 0.1vb 1vb var(--rc-box-shadow);
+    box-shadow: 0 0 0.5vmin var(--rc-box-shadow);
     cursor: pointer;
     transition: 0.3s ease-in-out all;
 }

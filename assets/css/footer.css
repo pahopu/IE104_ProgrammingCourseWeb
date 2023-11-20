@@ -27,15 +27,15 @@ body {
 }
 
 .footer {
-    border-top: 0.1vb solid var(--f-bg);
-    padding-top: 6vb;
+    border-top: 0.1vmin solid var(--f-bg);
+    padding-top: 6vmin;
     font-family: QuickSand;
 }
 
 .footer .nav-tool {
     width: 80%;
     margin: auto;
-    margin-bottom: 6vb;
+    margin-bottom: 6vmin;
     display: flex;
     justify-content: space-between;
 }
@@ -47,8 +47,8 @@ body {
 }
 
 .footer .nav-tool a img {
-    width: 27.5vb;
-    height: 17.28vb;
+    width: 27.5vmin;
+    height: 17.28vmin;
 
     margin: auto;
 }
@@ -59,22 +59,22 @@ body {
 
 .footer .nav-tool .tool h3 {
     margin: 0;
-    margin-bottom: 3vb;
+    margin-bottom: 3vmin;
 
     color: var(--header-color);
     font-weight: bold;
-    font-size: 3vb;
+    font-size: 3vmin;
 }
 
 .footer .nav-tool .tool ul {
     list-style: none;
     padding: 0;
-    margin-top: 4vb;
+    margin-top: 4vmin;
 }
 
 .footer .nav-tool .tool li {
-    font-size: 2.3vb;
-    margin-bottom: 1.5vb;
+    font-size: 2.3vmin;
+    margin-bottom: 1.5vmin;
 }
 
 .footer .nav-tool .tool li a {
@@ -97,17 +97,17 @@ body {
 }
 
 .footer .nav-tool .tool .social .logo {
-    width: 5vb;
-    height: 5vb;
+    width: 5vmin;
+    height: 5vmin;
     display: flex;
     align-items: center;
-    border-radius: 0.5vb;
+    border-radius: 0.5vmin;
 }
 
 .footer .nav-tool .tool .social .logo .fa-brands {
     margin: auto;
     color: white;
-    font-size: 2.5vb;
+    font-size: 2.5vmin;
 }
 
 .footer .nav-tool .tool .social #fb {
@@ -151,9 +151,9 @@ body {
 }
 
 .footer .copyright {
-    padding: 2vb 0;
+    padding: 2vmin 0;
     text-align: center;
-    font-size: 2.5vb;
+    font-size: 2.5vmin;
 
     color: white;
     background-color: var(--copyright);
