@@ -1,13 +1,48 @@
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+}
+
 .course-general-info{
     position: relative;
     z-index: -1;
-    padding: 2%
+    padding: 1% 2% 2% 2%;
+    font-family: QuickSand;
+    margin-top: 10%;
+}
+
+.detail .course-general-info #address {
+    display: flex;
+    align-items: center;
+    padding: 4vb 12vb;
+}
+
+.detail .course-general-info #address i {
+    margin: 0 2vb;
+    font-size: 1.5vb;
+}
+
+.detail .course-general-info #address a {
+    font-size: 2.2vb;
+    color: var(--ia-address);
+}
+
+.detail .course-general-info #address a:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 .course-general-info .overlay {
     position: absolute;
     margin: 2%;
-    top: 0;
+    top: 10%;
     left: 0;
     width: 96%;
     height: 500px;
@@ -120,6 +155,7 @@
     margin-top: 2%;
     margin-left: 8%;
     margin-right: 8%;
+    font-family: QuickSand;
 }
 
 .course-detail .danhmuc{
@@ -159,8 +195,8 @@
     margin-top: 1%;
 }
 
-.course-detail .tongquan li {
-    margin-bottom: 10px; 
+.course-detail .tongquan li, .course-detail .tongquan progress {
+    margin-bottom: 1%; 
 }
 
 .course-detail .tongquan .container{
@@ -212,21 +248,24 @@
 }
 
 .course-detail .ds-baihoc .chitiet{
-    flex: 3;
+    flex: 2;
     margin-right: 1%;
 }
 
 .course-detail .ds-baihoc .giangvien{
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.196);
     flex: 1;
-    border: 1px solid black;
-    padding: 20px;
+    height: fit-content;
+    padding-top: 3%;
+    text-align: center;
 }
 
 .course-detail .ds-baihoc .chitiet .tieude{
     border: 2px solid rgba(0, 0, 0, 0.425);
     border-radius: 10px;
     height: 50px;
-    padding: 1.7% 1% 0% 1%;
+    padding: 2% 1% 0% 1%;
     margin-bottom: 1%;
     font-size: 3.2vb;
     font-weight: bold;
@@ -238,6 +277,11 @@
     float: right;
     cursor: pointer; 
     margin: 0.5% 1% 0% 10%;
+}
+
+.course-detail .ds-baihoc .chitiet .baihoc a{
+    text-decoration: none;
+    color: black;
 }
 
 .course-detail .ds-baihoc .chitiet .baihoc .tiet{
@@ -253,6 +297,7 @@
 .course-detail .ds-baihoc .chitiet .baihoc .tiet:hover{
     background-color: rgba(128, 128, 128, 0.078);
     font-size: 3.2vb;
+    font-weight: bold;
 }
 
 .course-detail .ds-baihoc .chitiet .baihoc .tiet i{
@@ -266,5 +311,46 @@
     margin-top: 0.8%;
 }
 
+.course-detail .ds-baihoc .giangvien img{
+    border-radius: 100%;
+    width: 26vb;
+    height: 26vb;
+    box-shadow: 0px 0px 4px 10px rgba(128, 128, 128, 0.098);
+}
+
+.course-detail .ds-baihoc .giangvien .tengiangvien{
+    font-size: 3.5vb;
+    font-weight: bold;
+}
+
+.course-detail .ds-baihoc .giangvien .chitietgiangvien{
+    display: flex;
+    text-align: left;
+}
+
+.course-detail .ds-baihoc .giangvien .chitietgiangvien .leftul{
+    flex: 1;
+    list-style: none;
+    text-align: right;
+    margin-right: 2px;
+}
+
+.course-detail .ds-baihoc .giangvien .chitietgiangvien .rightul{
+    flex: 2;
+    list-style: none;
+    margin-left: -4%;
+}
+
+.course-detail .ds-baihoc .giangvien .chitietgiangvien li{
+    margin-bottom: 1.5%;
+}
+
+.
 
 
+
+/////////////////////////////////////////////////////////////////////////////////////////
+.course-detail .result img{
+    width: 70%;
+    margin: 1% 15% 2% 15%;
+}
