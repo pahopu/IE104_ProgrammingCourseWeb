@@ -31,32 +31,32 @@ body {
     background-image: url(../images/banner-01.png);
     background-repeat: no-repeat;
     background-size: 50%;
-    background-position: bottom left 10vb;
+    background-position: bottom left 10vmin;
 }
 
 .intro-log-in .intro .slogan {
     width: fit-content;
 
-    padding: 4vb 5vb;
+    padding: 4vmin 5vmin;
 
     position: relative;
-    top: 50vb;
-    left: 53vb;
+    top: 50vmin;
+    left: 53vmin;
     background-color: white;
 }
 
 .intro-log-in .intro .slogan h1 {
-    font-size: 5.5vb;
+    font-size: 5.5vmin;
     margin: 0;
-    margin-bottom: 1vb;
+    margin-bottom: 1vmin;
     color: var(--header-color);
     font-weight: bolder;
 }
 
 .intro-log-in .intro .slogan p {
-    font-size: 3.2vb;
+    font-size: 3.2vmin;
     margin: 0;
-    margin-top: 1.5vb;
+    margin-top: 1.5vmin;
     color: var(--button-color);
     font-weight: 550;
 }
@@ -74,18 +74,18 @@ body {
 .intro-log-in .log-in .input-region {
     width: 70%;
 
-    margin: 10vb auto;
-    padding: 4.5vb 3vb;
+    margin: 10vmin auto;
+    padding: 4.5vmin 3vmin;
 
-    border-radius: 2vb;
-    box-shadow: 0.2vb 0.2vb 1vb 0.2vb gray;
+    border-radius: 2vmin;
+    box-shadow: 0.2vmin 0.2vmin 1vmin 0.2vmin gray;
     background-color: white;
 }
 
 .intro-log-in .log-in .input-region h3 {
-    font-size: 3vb;
+    font-size: 3vmin;
     font-weight: bolder;
-    margin-bottom: 3vb;
+    margin-bottom: 3vmin;
     color: var(--header-color);
 }
 
@@ -93,49 +93,49 @@ body {
     width: 100%;
     box-sizing: border-box;
 
-    margin-bottom: 3vb;
-    font-size: 2vb;
+    margin-bottom: 3vmin;
+    font-size: 2vmin;
     font-family: QuickSand;
 
-    border: 0.1vb solid var(--input-border);
-    border-radius: 0.5vb;
-    box-shadow: inset 0.01vb 0.01vb 0.5vb 0.01vb var(--inset-shadow);
+    border: 0.1vmin solid var(--input-border);
+    border-radius: 0.5vmin;
+    box-shadow: inset 0.01vmin 0.01vmin 0.5vmin 0.01vmin var(--inset-shadow);
 
-    padding: 1.5vb;
+    padding: 1.5vmin;
 }
 
 .intro-log-in .log-in .input-region input:not([type="checkbox"])::placeholder {
-    font-size: 2vb;
+    font-size: 2vmin;
     font-family: QuickSand;
 }
 
 .intro-log-in .log-in .input-region .accept-term {
     display: flex;
     align-items: center;
-    margin-bottom: 3vb;
+    margin-bottom: 3vmin;
 }
 
 .intro-log-in .log-in .input-region input[type="checkbox"] {
-    width: 2vb;
-    height: 2vb;
-    margin-right: 1vb;
+    width: 2vmin;
+    height: 2vmin;
+    margin-right: 1vmin;
 }
 
 .intro-log-in .log-in .input-region label {
-    font-size: 2.2vb;
+    font-size: 2.2vmin;
 }
 
 .intro-log-in .log-in .input-region button {
     width: 100%;
 
-    padding: 1.7vb;
+    padding: 1.7vmin;
 
     font-weight: bolder;
-    font-size: 2.2vb;
+    font-size: 2.2vmin;
     font-family: QuickSand;
 
     border: none;
-    border-radius: 1.2vb;
+    border-radius: 1.2vmin;
 
     color: white;
     background-color: var(--button-color);
@@ -147,31 +147,31 @@ body {
 }
 
 .intro-log-in .log-in .input-region p {
-    margin: 3vb 0;
+    margin: 3vmin 0;
     text-align: center;
-    font-size: 2.2vb;
+    font-size: 2.2vmin;
 }
 
 .intro-log-in .log-in .input-region .account {
     width: fit-content;
     display: flex;
-    gap: 3vb;
+    gap: 3vmin;
     margin: auto
 }
 
 .intro-log-in .log-in .input-region .account .account-logo {
-    width: 7vb;
-    height: 7vb;
+    width: 7vmin;
+    height: 7vmin;
 
     display: flex;
     align-items: center;
 
-    border: 0.1vb solid black;
+    border: 0.1vmin solid black;
     border-radius: 50%;
 }
 
 .intro-log-in .log-in .input-region .account i {
-    font-size: 4vb;
+    font-size: 4vmin;
     margin: auto;
 }
 

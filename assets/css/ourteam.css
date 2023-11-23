@@ -18,15 +18,15 @@ body {
 
 .ourteam {
     font-family: QuickSand;
-    padding: 6vb 0;
+    padding: 6vmin 0;
 }
 
 .ourteam h1 {
     text-align: center;
     color: var(--o-header);
-    font-size: 5vb;
+    font-size: 5vmin;
     margin: 0;
-    margin-bottom: 5vb;
+    margin-bottom: 5vmin;
 }
 
 .ourteam .avatars {
@@ -49,13 +49,13 @@ body {
 
 .ourteam .member .member-name {
     font-weight: bold;
-    font-size: 3vb;
-    margin-top: 2vb;
+    font-size: 3vmin;
+    margin-top: 2vmin;
 }
 
 .ourteam .member .member-id {
-    font-size: 2.5vb;
-    margin-top: 1vb;
+    font-size: 2.5vmin;
+    margin-top: 1vmin;
     color: gray;
     font-weight: bold;
 }

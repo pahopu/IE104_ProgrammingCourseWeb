@@ -18,7 +18,7 @@ body {
 }
 
 .flexer {
-    padding: 10vb 15vb;
+    padding: 10vmin 15vmin;
     font-family: QuickSand;
     color: white;
     background-color: var(--flexer-bg);
@@ -41,41 +41,41 @@ body {
 .flexer .flex-flexer .flexer-item .flexer-center h3 {
     margin: 0;
     width: fit-content;
-    font-size: 5.5vb;
+    font-size: 5.5vmin;
     font-weight: bolder;
 }
 
 .flexer .flex-flexer .flexer-item .flexer-center hr {
     width: 20%;
     margin: 0;
-    margin-top: 1vb;
-    margin-bottom: 3vb;
+    margin-top: 1vmin;
+    margin-bottom: 3vmin;
     padding: 0;
-    border-width: 0.5vb;
-    border-radius: 0.5vb;
+    border-width: 0.5vmin;
+    border-radius: 0.5vmin;
 }
 
 .flexer .flex-flexer .flexer-item .flexer-center span {
-    font-size: 3.2vb;
+    font-size: 3.2vmin;
     font-weight: bolder;
 }
 
 .flexer .button {
     width: fit-content;
     margin: auto;
-    margin-top: 7vb;
+    margin-top: 7vmin;
 }
 
 .flexer .button button {
-    padding: 2.5vb 5vb;
+    padding: 2.5vmin 5vmin;
 
     color: white;
-    font-size: 3vb;
+    font-size: 3vmin;
     font-weight: bolder;
     font-family: QuickSand;
 
     border: none;
-    border-radius: 0.7vb;
+    border-radius: 0.7vmin;
 
     background-color: var(--flexer-btn-cl);
     transition: 0.3s ease-in-out all;

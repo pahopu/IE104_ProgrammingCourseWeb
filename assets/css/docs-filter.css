@@ -6,25 +6,28 @@
 }
 
 body {
-    margin-top: 0;
+    margin: 0;
     padding: 0;
 }
 
-.filter {
-    float: left;
-    width: 30%;
+.docs-filter {
+    width: 100%;
     height: auto;
     border: 2px solid rgb(181, 181, 181);
     border-radius: 20px;
     box-shadow: 3px 3px 8px #e0e0e0;
     overflow: hidden;
-    margin: 1% 0% 1% 2%;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0.7%;
     font-family: QuickSand;
 }
 
-.switch-on-off {
+.docs-filter .header-title {
+    font-size: 4vmin;
+}
+
+.docs-filter .switch-on-off {
     position: relative;
     margin-top: 0%;
     float: right;
@@ -32,13 +35,13 @@ body {
     height: 34px;
 }
 
-.switch-on-off input {
+.docs-filter .switch-on-off input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-.slider {
+.docs-filter .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -51,7 +54,7 @@ body {
     border-radius: 34px;
 }
 
-.slider:before {
+.docs-filter .slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -64,68 +67,68 @@ body {
     border-radius: 50%;
 }
 
-input:checked+.slider {
+.docs-filter input:checked+.slider {
     background-color: #ccc;
 }
 
-input:checked+.slider:before {
+.docs-filter input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
 
-.filter .condition {
-    padding-left: 2%;
+.docs-filter .condition {
+    padding-left: 1%;
 }
 
-.filter .condition h2 {
+.docs-filter .condition h2 {
     display: inline;
+    font-size: 3vmin;
 }
 
-.filter .condition title {
+.docs-filter .condition title {
     float: left;
-    font-size: 1.5vb;
     cursor: pointer;
 }
 
-.filter .condition i {
+.docs-filter .condition i {
     float: left;
     margin-right: 4%;
     cursor: pointer;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s transform ease-in-out;
 }
 
-.filter .condition i:hover {
+.docs-filter .condition i:hover {
     color: gray;
 }
 
-.filter .condition h2:hover {
+.docs-filter .condition h2:hover {
     color: gray;
     cursor: pointer;
 }
 
-.filter .condition ul {
+.docs-filter .condition ul {
     text-decoration: none;
     list-style: none;
-    font-size: 3vb;
+    font-size: 3vmin;
     padding-left: 5%;
 }
 
-.filter .condition li {
+.docs-filter .condition li {
     position: relative;
     margin-bottom: 2%;
     cursor: pointer;
 }
 
-.filter .condition label,
-.filter .condition input {
+.docs-filter .condition label,
+.docs-filter .condition input {
     cursor: pointer;
 }
 
-.filter .condition li:hover {
+.docs-filter .condition li:hover {
     font-weight: bolder;
 }
 
-.filter .condition .select {
+.docs-filter .condition .select {
     font-weight: bolder;
 }

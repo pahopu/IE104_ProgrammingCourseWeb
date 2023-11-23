@@ -1,0 +1,266 @@
+:root {
+    --right-toggle: #464bef;
+    --left-toggle: #666bec;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    font-family: QuickSand;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.modern-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 3.5vmin;
+}
+
+.modern-login .container {
+    background-color: white;
+    border-radius: 3.5vmin;
+    box-shadow: 0 0.5vmin 1.5vmin rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 105.2vmin;
+    max-width: 100%;
+    min-height: 66vmin;
+}
+
+.modern-login .container h1 {
+    font-size: 4.4vmin;
+}
+
+.modern-login .container p {
+    font-size: 1.95vmin;
+    line-height: 2.75vmin;
+    letter-spacing: 0.04125vmin;
+    margin: 2.75vmin 0;
+}
+
+.modern-login .container span {
+    font-size: 1.65vmin;
+}
+
+.modern-login .container a {
+    color: #333;
+    font-size: 1.8vmin;
+    text-decoration: none;
+    margin: 2.0625vmin 0 1.375vmin;
+}
+
+.modern-login .container button {
+    background-color: var(--right-toggle);
+    color: #fff;
+    font-size: 1.95vmin;
+    padding: 1.375vmin 6.1875vmin;
+    border: 0.1375vmin solid transparent;
+    border-radius: 1.1vmin;
+    font-weight: 600;
+    letter-spacing: 0.06875vmin;
+    text-transform: uppercase;
+    margin-top: 1.375vmin;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.modern-login .form-container button:hover {
+    background-color: white;
+    border: 0.1375vmin solid var(--right-toggle);
+    color: var(--right-toggle);
+    transition: 0.5s all;
+}
+
+.modern-login .toggle #register:hover,
+#login:hover {
+    background-color: white;
+    color: var(--right-toggle);
+    transition: 0.5s all;
+}
+
+.modern-login .container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.modern-login .container form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5.5vmin;
+    height: 100%;
+}
+
+.modern-login .container input {
+    background-color: #eee;
+    border: none;
+    margin: 1.1vmin 0;
+    padding: 1.375vmin 2.0625vmin;
+    font-size: 1.7875vmin;
+    border-radius: 1.1vmin;
+    width: 100%;
+    outline: none;
+}
+
+.modern-login .form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.modern-login .sign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.modern-login .sign-in #forgot:hover {
+    text-decoration: underline;
+    color: var(--right-toggle);
+}
+
+.modern-login .container.active .sign-in {
+    transform: translateX(100%);
+}
+
+.modern-login .sign-up {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.modern-login .container.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move {
+
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.modern-login .social-icons {
+    margin: 2.75vmin 0;
+}
+
+.modern-login .social-icons a {
+    border: 0.1375vmin solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.4125vmin;
+    width: 5.5vmin;
+    height: 5.5vmin;
+    transition: 0.5s all;
+}
+
+.modern-login .social-icons a:hover {
+    border: 0.1375vmin solid gray;
+    background-color: gray;
+    color: white;
+    transition: 0.5s all;
+}
+
+.modern-login .toggle-container {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 20.625vmin 0 0 13.75vmin;
+    z-index: 1000;
+}
+
+.modern-login .container.active .toggle-container {
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    border-radius: 0 20.625vmin 13.75vmin 0;
+}
+
+.modern-login .toggle {
+    box-sizing: border-box;
+    background-color: var(--right-toggle);
+    height: 100%;
+    background: linear-gradient(to right, --left-toggle, --right-toggle);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.modern-login .container.active .toggle {
+    box-sizing: border-box;
+    transform: translateX(50%);
+}
+
+.modern-login .toggle-panel {
+    box-sizing: border-box;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 4.125vmin;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.modern-login .toggle-left {
+    box-sizing: border-box;
+    transform: translateX(-200%);
+}
+
+.modern-login .container.active .toggle-left {
+    box-sizing: border-box;
+    transform: translateX(0);
+}
+
+.modern-login .toggle-right {
+    box-sizing: border-box;
+    right: 0;
+    transform: translateX(0);
+}
+
+.modern-login .container.active .toggle-right {
+    box-sizing: border-box;
+    transform: translateX(200%);
+}

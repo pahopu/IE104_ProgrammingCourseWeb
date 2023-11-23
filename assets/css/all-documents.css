@@ -1,0 +1,93 @@
+:root {
+    --box-shadow: rgb(174, 174, 174);
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: QuickSand;
+}
+
+.all-documents {
+    width: 100%;
+}
+
+.all-documents .arrange-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4vmin;
+}
+
+.all-documents .num-of-res {
+    font-weight: bold;
+    font-size: 3.5vmin;
+}
+
+.all-documents .arrange span {
+    font-weight: bold;
+}
+
+.all-documents .arrange {
+    font-size: 3vmin;
+}
+
+.all-documents select {
+    margin-top: 1vmin;
+    font-size: 3vmin;
+    width: 100%;
+    font-family: QuickSand;
+    padding: 1vmin;
+    border-radius: 0.7vmin;
+    border: 0.2vmin solid black;
+}
+
+.all-documents .document {
+    display: flex;
+    background-color: white;
+    padding: 4vmin 6vmin;
+    margin-bottom: 4vmin;
+    border-radius: 3vmin;
+    box-shadow: 0.1vmin 0.1vmin 1vmin 0.1vmin var(--box-shadow);
+    justify-content: space-between;
+}
+
+.all-documents .document .document-content-left {
+    width: 32%;
+}
+
+.all-documents .document .document-content-right {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.all-documents .document .document-content-right h3 {
+    margin: 0;
+    font-size: 3vmin;
+}
+
+.all-documents .document .document-content-right span {
+    font-size: 2.5vmin;
+    color: gray;
+}
+
+.all-documents .document .document-content-right p {
+    margin:  0;
+    font-size: 2.2vmin;
+    color: gray;
+} 
+
+.all-documents .document .document-content-left img {
+    width: 100%;
+    border-radius: 1vmin;
+}

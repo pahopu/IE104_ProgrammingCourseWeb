@@ -1,0 +1,59 @@
+:root {
+    --box-shadow: rgb(174, 174, 174);
+    --ia-address: #464bef;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: QuickSand;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.content-documents #address {
+    display: flex;
+    align-items: center;
+    padding: 4vmin 12vmin;
+}
+
+.content-documents #address i {
+    margin: 0 2vmin;
+    font-size: 1.5vmin;
+}
+
+.content-documents #address a {
+    font-size: 2.2vmin;
+    color: var(--ia-address);
+}
+
+.content-documents #address a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.content-documents .flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10vmin;
+    padding-bottom: 5vmin;
+}
+
+.content-documents #docs-filter {
+    width: 26%;
+}
+
+.content-documents #all-documents {
+    width: 70%;
+}

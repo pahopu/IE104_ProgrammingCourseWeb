@@ -32,20 +32,29 @@ loadCSS("assets/css/for-you-courses.css");
 loadCSS("assets/css/all-courses.css");
 loadCSS("assets/css/footer.css");
 
+<<<<<<< HEAD
 /*----------------Button for page-----------------------------------*/
+=======
+const navs = document.getElementsByClassName("nav-button");
+window.addEventListener("load", () => {
+    navs[1].style.backgroundColor = "#464bef";
+    navs[1].style.color = "white";
+})
+
+>>>>>>> e54a648faf8f70ae45343f9e16518efe9bcd45aa
 function toggleElement() {
-    var element = document.getElementById("content"); 
-    var checkbox = document.getElementById("switch-on-off"); 
+    var element = document.getElementById("content");
+    var checkbox = document.getElementById("switch-on-off");
 
     if (checkbox.checked) {
-        element.style.display = "none"; 
+        element.style.display = "none";
     } else {
-        element.style.display = "block"; 
+        element.style.display = "block";
     }
 }
 
 function hideOtherCheckboxes(checkbox, listname) {
-    var checkboxes = document.getElementsByName(listname); 
+    var checkboxes = document.getElementsByName(listname);
     for (var i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i] != checkbox) {
             checkboxes[i].checked = false;
@@ -54,23 +63,23 @@ function hideOtherCheckboxes(checkbox, listname) {
 }
 
 function hideListofCondition(listname) {
-    var element = document.getElementById(listname); 
+    var element = document.getElementById(listname);
 
     if (element.style.display === "none" || element.style.display === "") {
-        element.style.display = "block"; 
+        element.style.display = "block";
     } else {
-        element.style.display = "none"; 
+        element.style.display = "none";
     }
 }
 
 function toggleCheckbox(checkboxId) {
     var checkbox = document.getElementById(checkboxId);
     if (checkbox) {
-      if (checkbox.style.display === 'none') {
-        checkbox.style.display = 'inline-block';
-      } else {
-        checkbox.style.display = 'none';
-      }
+        if (checkbox.style.display === 'none') {
+            checkbox.style.display = 'inline-block';
+        } else {
+            checkbox.style.display = 'none';
+        }
     }
 }
 /*----------------Margin header------------------------------------*/
