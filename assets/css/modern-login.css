@@ -73,6 +73,21 @@ body {
     text-transform: uppercase;
     margin-top: 1.375vmin;
     cursor: pointer;
+    transition: 0.5s all;
+}
+
+.modern-login .form-container button:hover {
+    background-color: white;
+    border: 0.1375vmin solid var(--right-toggle);
+    color: var(--right-toggle);
+    transition: 0.5s all;
+}
+
+.modern-login .toggle #register:hover,
+#login:hover {
+    background-color: white;
+    color: var(--right-toggle);
+    transition: 0.5s all;
 }
 
 .modern-login .container button.hidden {
@@ -112,6 +127,11 @@ body {
     left: 0;
     width: 50%;
     z-index: 2;
+}
+
+.modern-login .sign-in #forgot:hover {
+    text-decoration: underline;
+    color: var(--right-toggle);
 }
 
 .modern-login .container.active .sign-in {
@@ -160,6 +180,12 @@ body {
     margin: 0 0.4125vmin;
     width: 5.5vmin;
     height: 5.5vmin;
+}
+
+.modern-login .social-icons a:hover {
+    border: 0.1375vmin solid gray;
+    background-color: gray;
+    color: white;
 }
 
 .modern-login .toggle-container {
