@@ -28,19 +28,38 @@ loadCSS("assets/css/header.css");
 loadCSS("assets/css/course-detail.css");
 loadCSS("assets/css/footer.css");
 
+/*-------------------------Set margin for header----------------------- */
+
 const navs = document.getElementsByClassName("nav-button");
+const header = document.getElementsByClassName("header");
+const headerid = document.getElementById("header");
+
 window.addEventListener("load", () => {
     navs[4].style.backgroundColor = "#464bef";
     navs[4].style.color = "white";
+    headerid.style.marginTop = `${header[0].offsetHeight}px`;
 })
-function changeColor(cell) {
-    var cells = document.querySelectorAll('td');
-    cells.forEach(function(cell) {
-      cell.classList.remove('select');
-    });
 
-    cell.classList.add('select');
+/*------------------------Function for Courses Detail-------------------------------------------*/
+
+function changeColor(cell, section) {
+    // Cuộn trang
+    var section1 = document.getElementById(section);
+    section1.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'smooth' }); // 'smooth' tạo hiệu ứng mượt mà
 }
+
+document.addEventListener('scroll', function () {
+    // Lấy đối tượng header và kiểm tra vị trí cuộn
+    var header = document.querySelector('danhmuc');
+    var scrollPosition = window.scrollY;
+
+    // Nếu cuộn xuống đủ lớn, thêm lớp 'fixed' vào header để cố định nó
+    if (scrollPosition > 50) {
+        header.classList.add('fixed');
+    } else {
+        header.classList.remove('fixed');
+    }
+});
 
 function hideLesson(baihoc){
     var element = document.getElementById(baihoc)
@@ -49,6 +68,5 @@ function hideLesson(baihoc){
     } else {
         element.style.display = "none"; 
     }
-
-    var icon = document.qu
 }
+

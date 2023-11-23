@@ -32,12 +32,7 @@ loadCSS("assets/css/for-you-courses.css");
 loadCSS("assets/css/all-courses.css");
 loadCSS("assets/css/footer.css");
 
-const navs = document.getElementsByClassName("nav-button");
-window.addEventListener("load", () => {
-    navs[4].style.backgroundColor = "#464bef";
-    navs[4].style.color = "white";
-})
-
+/*----------------Button for page-----------------------------------*/
 function toggleElement() {
     var element = document.getElementById("content"); 
     var checkbox = document.getElementById("switch-on-off"); 
@@ -78,3 +73,13 @@ function toggleCheckbox(checkboxId) {
       }
     }
 }
+/*----------------Margin header------------------------------------*/
+
+const navs = document.getElementsByClassName("nav-button");
+const header = document.getElementsByClassName("header");
+const headerid = document.getElementById("header");
+window.addEventListener("load", () => {
+    navs[4].style.backgroundColor = "#464bef";
+    navs[4].style.color = "white";
+    headerid.style.marginTop = `${header[0].offsetHeight}px`;
+})

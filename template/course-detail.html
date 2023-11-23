@@ -6,65 +6,68 @@
     <title>Chi tiết khóa học</title>
     <link rel="stylesheet" href="../assets/css/course-detail.css">
     <script src="https://kit.fontawesome.com/c32c52563f.js" crossorigin="anonymous"></script>
-    <script type="text/JavaScript" src="assets/js/course-detail.js"></script>
+    <script type="text/JavaScript" src="../assets/js/course-detail.js"></script>
 </head>
 <body>
     <div class="detail">
-        <div class="course-general-info">
-            <div id="address">
-                <span><a href="../homepage.html">TRANG CHỦ</a></span>
-                <i class="fa-solid fa-chevron-right"></i>
-                <span><a href="../homepage.html">KHÓA HỌC</a></span>
-                <i class="fa-solid fa-chevron-right"></i>
-                <span><a href="../aboutus.html"><b>CHI TIẾT KHÓA HỌC</b></a></span>
-            </div>
-            <div class="overlay"></div>
-            <img src="../assets/images/courses/course-background.jpg" alt="">
+        <div class="address">
+            <a href="../homepage.html">TRANG CHỦ</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="../homepage.html">KHÓA HỌC</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="../aboutus.html"><b>CHI TIẾT KHÓA HỌC</b></a>
+        </div>
+        
+        <section class="course-general-info">
             <div class="logo">
                 <img src="../assets/images/favicon.png" alt="">
                 <img src="../assets/images/[LOGO]CS.png" alt="">
             </div>
             <p class="course-name">AI CHO NGƯỜI MỚI BẮT ĐẦU</p>
-            <div class="info">
-                <table>
-                    <tr>
-                        <td style="border-right: 2px solid black;">
-                            <i class="fa-solid fa-building-columns" style="color: #000000;"></i>
-                            Andrew Ng
-                        </td>
-                        <td style="border-right: 2px solid black;">
-                            <i class="fa-solid fa-layer-group" style="color: #000000;"></i>
-                            Cơ bản
-                        </td>
-                        <td style="border-right: 2px solid black;">
-                            <i class="fa-solid fa-language" style="color: #000000;"></i>
-                            Tiếng Việt
-                        </td>
-                        <td>
-                            <i class="fa-regular fa-hourglass-half" style="color: #000000;"></i>
-                            6 giờ học
-                        </td>
-                    </tr>
-                </table>
-            </div>
             <div class="register">
                 <p>Khóa học miễn phí được đăng tải <br>
                     độc quyền bởi CodePro</p>
-                <div class="dangky">Bắt đầu học</div>
+                <a href="" class="dangky">Bắt đầu học</a>
             </div>
-        </div>
+        </section>
+
+        <section class="info">
+            <table>
+                <tr>
+                    <td style="border-right: 2px solid black;">
+                        <i class="fa-solid fa-building-columns" style="color: #000000;"></i>
+                        Andrew Ng
+                    </td>
+                    <td style="border-right: 2px solid black;">
+                        <i class="fa-solid fa-layer-group" style="color: #000000;"></i>
+                        Cơ bản
+                    </td>
+                    <td style="border-right: 2px solid black;">
+                        <i class="fa-solid fa-language" style="color: #000000;"></i>
+                        Tiếng Việt
+                    </td>
+                    <td>
+                        <i class="fa-regular fa-hourglass-half" style="color: #000000;"></i>
+                        6 giờ học
+                    </td>
+                </tr>
+            </table>
+        </section>
+
         <div class="course-detail">
-            <div class="danhmuc">
+
+            <section class="danhmuc">
                 <table>
                     <tr>
-                        <td onclick="changeColor(this)">Tổng quan</td>
-                        <td id="danhmuc" onclick="changeColor(this)">Bài học</td>
-                        <td id="danhmuc" onclick="changeColor(this)">Đánh giá</td>
-                        <td id="danhmuc" onclick="changeColor(this)">Kết quả</td>
+                        <td id="danhmuc" onclick="changeColor(this, 'tongquan')" class="select">Tổng quan</td>
+                        <td id="danhmuc" onclick="changeColor(this, 'ds-baihoc')">Bài học</td>
+                        <td id="danhmuc" onclick="changeColor(this, 'comment')">Đánh giá</td>
+                        <td id="danhmuc" onclick="changeColor(this, 'result')">Kết quả</td>
                     </tr>
                 </table>
-            </div>
-            <div class="tongquan">
+            </section>
+
+            <section id="tongquan" class="tongquan">
                 <h1>Tổng quan</h1>
                 <div class="container">
                     <div class="mota">
@@ -107,209 +110,227 @@
                     </ul>
                     <p>Mặc dù khóa học này phần lớn là phi kỹ thuật, các kỹ sư cũng có thể tham gia khóa học này để tìm hiểu các khía cạnh kinh doanh của AI.</p>
                 </div>
-            </div>
-            <h1>Danh sách bài học</h1>
-            <div class="ds-baihoc">
-                <div class="chitiet">
-                    <div class="tieude" id="tieude1" onclick="hideLesson('baihoc1')">
-                        Tuần 1: AI là gì
-                        <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
-                    </div> 
-                    <div class="baihoc" id="baihoc1" style="display: none;">
-                        <a href="">
-                            <div class="tiet" id="tiet1">
-                                <i class="fa-solid fa-book-open" style="color: #000000;"></i>
-                                Giới thiệu
-                                <p>2 phút</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="tiet" id="tiet1">
-                                <i class="fa-solid fa-video" style="color: #000000;"></i>
-                                Máy học
-                                <p>15 phút</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="tiet" id="tiet1">
-                                <i class="fa-solid fa-video" style="color: #000000;"></i>
-                                Dữ liệu là gì
-                                <p>12 phút</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="tiet" id="tiet1">
-                                <i class="fa-solid fa-file-pen" style="color: #000000;"></i>
-                                Tổng kết tuần 1
-                                <p>20 phút</p>
-                            </div>
-                        </a>
+            </section>
+
+            <section id="ds-baihoc" class="container-dsbaihoc">
+                <h1>Danh sách bài học</h1>
+                <div class="ds-baihoc">
+                    <div class="chitiet">
+                        <div class="tieude" id="tieude1" onclick="hideLesson('baihoc1')">
+                            Tuần 1: AI là gì
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                            <p class="statistic">1 document, 2 videos, 1 quiz </p>
+                        </div> 
+                        <div class="baihoc" id="baihoc1" style="display: none;">
+                            <a href="">
+                                <div class="tiet" id="tiet1">
+                                    <i class="fa-solid fa-book-open" style="color: #000000;"></i>
+                                    Giới thiệu
+                                    <p>2 phút</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="tiet" id="tiet1">
+                                    <i class="fa-solid fa-video" style="color: #000000;"></i>
+                                    Máy học
+                                    <p>15 phút</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="tiet" id="tiet1">
+                                    <i class="fa-solid fa-video" style="color: #000000;"></i>
+                                    Dữ liệu là gì
+                                    <p>12 phút</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="tiet" id="tiet1">
+                                    <i class="fa-solid fa-file-pen" style="color: #000000;"></i>
+                                    Tổng kết tuần 1
+                                    <p>20 phút</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tieude" id="tieude2" onclick="hideLesson('baihoc2')">
+                            Tuần 2: Xây dựng dự án AI
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                            <p class="statistic">1 document, 2 videos, 1 quiz </p>
+                        </div> 
+                        <div class="baihoc" id="baihoc2" style="display: none;">
+                            <a href="">
+                                <div class="tiet" id="tiet2">
+                                    <i class="fa-solid fa-book-open" style="color: #000000;"></i>
+                                    Quy trình làm việc của dự án Machine Learning
+                                    <p>2 phút</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="tiet" id="tiet2">
+                                    <i class="fa-solid fa-video" style="color: #000000;"></i>
+                                    Quy trình làm việc của một dự án Khoa học dữ liệu
+                                    <p>10 phút</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="tiet" id="tiet2">
+                                    <i class="fa-solid fa-video" style="color: #000000;"></i>
+                                    Cách chọn dự án AI
+                                    <p>15 phút</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="tiet" id="tiet2">
+                                    <i class="fa-solid fa-file-pen" style="color: #000000;"></i>
+                                    Tổng kết tuần 2
+                                    <p>12 phút</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tieude" id="tieude3" onclick="hideLesson('baihoc3')"> 
+                            Tuần 3: AI trong công ty của bạn
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                            <p class="statistic">1 document, 2 videos, 1 quiz </p>
+                        </div> 
+                        <div class="baihoc" id="baihoc3" style="display: none;">
+                            <a href="">
+                                <div class="tiet" id="tiet3">
+                                    <i class="fa-solid fa-book-open" style="color: #000000;"></i>
+                                    Nghiên cứu điển hình: Loa thông minh
+                                    <p>20 phút</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="tiet" id="tiet3">
+                                    <i class="fa-solid fa-video" style="color: #000000;"></i>
+                                    Nghiên cứu điển hình: Xe tự lái
+                                    <p>20 phút</p>
+                                </div>
+                            </a>   
+                            <a href="">
+                                <div class="tiet" id="tiet3">
+                                    <i class="fa-solid fa-video" style="color: #000000;"></i>
+                                    Thực hiện bước đầu tiên của bạn trong AI
+                                    <p>12 phút</p>
+                                </div>
+                            </a> 
+                            <a href="">
+                                <div class="tiet" id="tiet3">
+                                    <i class="fa-solid fa-file-pen" style="color: #000000;"></i>
+                                    Tổng kết tuần 3
+                                    <p>15 phút</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tieude" id="tieude4" onclick="hideLesson('baihoc4')">
+                            Tuần 4: AI và Xã hội
+                            <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
+                            <p class="statistic">1 document, 2 videos, 1 quiz </p>
+                        </div>
+                        <div class="baihoc" id="baihoc4" style="display: none;">
+                            <a href="">
+                                <div class="tiet" id="tiet4">
+                                    <i class="fa-solid fa-book-open" style="color: #000000;"></i>
+                                    Một cái nhìn thực tế về AI
+                                    <p>10 phút</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="tiet" id="tiet4">
+                                    <i class="fa-solid fa-video" style="color: #000000;"></i>
+                                    Phân biệt đối xử / Thiên vị
+                                    <p>12 phút</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="tiet" id="tiet4">
+                                    <i class="fa-solid fa-video" style="color: #000000;"></i>
+                                    Tấn công đối thủ
+                                    <p>10 phút</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="tiet" id="tiet4">
+                                    <i class="fa-solid fa-file-pen" style="color: #000000;"></i>
+                                    Tổng kết tuần 4
+                                    <p>15 phút</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="tieude" id="tieude2" onclick="hideLesson('baihoc2')">
-                        Tuần 2: Xây dựng dự án AI
-                        <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
-                    </div> 
-                    <div class="baihoc" id="baihoc2" style="display: none;">
-                        <a href="">
-                            <div class="tiet" id="tiet2">
-                                <i class="fa-solid fa-book-open" style="color: #000000;"></i>
-                                Quy trình làm việc của dự án Machine Learning
-                                <p>2 phút</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="tiet" id="tiet2">
-                                <i class="fa-solid fa-video" style="color: #000000;"></i>
-                                Quy trình làm việc của một dự án Khoa học dữ liệu
-                                <p>10 phút</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="tiet" id="tiet2">
-                                <i class="fa-solid fa-video" style="color: #000000;"></i>
-                                Cách chọn dự án AI
-                                <p>15 phút</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="tiet" id="tiet2">
-                                <i class="fa-solid fa-file-pen" style="color: #000000;"></i>
-                                Tổng kết tuần 2
-                                <p>12 phút</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tieude" id="tieude3" onclick="hideLesson('baihoc3')"> 
-                        Tuần 3: AI trong công ty của bạn
-                        <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
-                    </div> 
-                    <div class="baihoc" id="baihoc3" style="display: none;">
-                        <a href="">
-                            <div class="tiet" id="tiet3">
-                                <i class="fa-solid fa-book-open" style="color: #000000;"></i>
-                                Nghiên cứu điển hình: Loa thông minh
-                                <p>20 phút</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="tiet" id="tiet3">
-                                <i class="fa-solid fa-video" style="color: #000000;"></i>
-                                Nghiên cứu điển hình: Xe tự lái
-                                <p>20 phút</p>
-                            </div>
-                        </a>   
-                        <a href="">
-                            <div class="tiet" id="tiet3">
-                                <i class="fa-solid fa-video" style="color: #000000;"></i>
-                                Thực hiện bước đầu tiên của bạn trong AI
-                                <p>12 phút</p>
-                            </div>
-                        </a> 
-                        <a href="">
-                            <div class="tiet" id="tiet3">
-                                <i class="fa-solid fa-file-pen" style="color: #000000;"></i>
-                                Tổng kết tuần 3
-                                <p>15 phút</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="tieude" id="tieude4" onclick="hideLesson('baihoc4')">
-                        Tuần 4: AI và Xã hội
-                        <i class="fa-solid fa-chevron-down" style="color: #000000;"></i>
-                    </div>
-                    <div class="baihoc" id="baihoc4" style="display: none;">
-                        <a href="">
-                            <div class="tiet" id="tiet4">
-                                <i class="fa-solid fa-book-open" style="color: #000000;"></i>
-                                Một cái nhìn thực tế về AI
-                                <p>10 phút</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="tiet" id="tiet4">
-                                <i class="fa-solid fa-video" style="color: #000000;"></i>
-                                Phân biệt đối xử / Thiên vị
-                                <p>12 phút</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="tiet" id="tiet4">
-                                <i class="fa-solid fa-video" style="color: #000000;"></i>
-                                Tấn công đối thủ
-                                <p>10 phút</p>
-                            </div>
-                        </a>
-                        <a href="">
-                            <div class="tiet" id="tiet4">
-                                <i class="fa-solid fa-file-pen" style="color: #000000;"></i>
-                                Tổng kết tuần 4
-                                <p>15 phút</p>
-                            </div>
-                        </a>
+                    <div class="giangvien">
+                        <img src="assets\images\courses\tacgia11.jpg" alt="">
+                        <p class="tengiangvien">Andrew Ng</p>
+                        <div class="chitietgiangvien">
+                            <ul class="leftul">
+                                <li><b>Institutions</b></li>
+                                <li><b>Role</b></li>
+                                <li><b>Spouse</b></li>
+                                <li><b>Known for</b></li>
+                            </ul>
+                            <ul class="rightul">
+                                <li> Stanford University</li>
+                                <li> Professor</li>
+                                <li> Carol Reiley (m. 2014)</li>
+                                <li> Deep Learning, MOOC</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="giangvien">
-                    <img src="assets\images\courses\tacgia11.jpg" alt="">
-                    <p class="tengiangvien">Andrew Ng</p>
-                    <div class="chitietgiangvien">
-                        <ul class="leftul">
-                            <li><b>Institutions</b></li>
-                            <li><b>Role</b></li>
-                            <li><b>Spouse</b></li>
-                            <li><b>Known for</b></li>
-                        </ul>
-                        <ul class="rightul">
-                            <li> Stanford University</li>
-                            <li> Professor</li>
-                            <li> Carol Reiley (m. 2014)</li>
-                            <li> Deep Learning, MOOC</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="comment">
+            </section>
+
+            <section id="comment" class="comment">
                 <h1>Đánh giá của học viên</h1>
-                <div class="hocvien">
-                    <i class="fa-solid fa-quote-left" style="color: #000000;"></i>
-                    <div class="quote">
-                        Các khóa học trên Coursera đóng một vai trò quan trọng trong quá trình chuyển đổi nghề nghiệp của tôi. Tôi đã học được những kỹ năng giúp tôi rất nhiều trong các cuộc phỏng vấn của mình.
+                <div class="container"></div>
+                    <div class="tonghopdanhgia">
+                        
                     </div>
-                    <div class="info">
-                        Ujjwal Jain <br>
-                        CodePro's student <br>
-                        Chicago, USA <br>
+                    <div class="chitietdanhgia">
+                        <div class="hocvien">
+                            <i class="fa-solid fa-quote-left" style="color: #000000;"></i>
+                            <div class="quote">
+                                Các khóa học trên Coursera đóng một vai trò quan trọng trong quá trình chuyển đổi nghề nghiệp của tôi. Tôi đã học được những kỹ năng giúp tôi rất nhiều trong các cuộc phỏng vấn của mình.
+                            </div>
+                            <div class="info">
+                                Ujjwal Jain <br>
+                                CodePro's student <br>
+                                Chicago, USA <br>
+                            </div>
+                            <i class="fa-solid fa-quote-left" style="color: #000000;"></i>
+                        </div>
+                        <div class="hocvien">
+                            <i class="fa-solid fa-quote-left" style="color: #000000;"></i>
+                            <div class="quote">
+                                Tôi trực tiếp áp dụng các khái niệm và kỹ năng tôi học được từ các khóa học của mình vào một dự án mới thú vị trong công việc.
+                            </div>
+                            <div class="info">
+                                Thu Trang <br>
+                                CodePro's student <br>
+                                Nha Trang, Viet Nam <br>
+                            </div>
+                            <i class="fa-solid fa-quote-left" style="color: #000000;"></i>
+                        </div>
+                        <div class="hocvien">
+                            <i class="fa-solid fa-quote-left" style="color: #000000;"></i>
+                            <div class="quote">
+                                Chuyên ngành tôi đã hoàn thành là một trải nghiệm học tập mở mang tầm mắt. Nó đã thay đổi quan điểm của tôi về những cách tôi có thể giúp thúc đẩy lĩnh vực của mình.
+                            </div>
+                            <div class="info">
+                                Fu Fan <br>
+                                CodePro's student <br>
+                                Beijing, China <br>
+                            </div>
+                            <i class="fa-solid fa-quote-left" style="color: #000000;"></i>
+                        </div>
+                    
                     </div>
-                    <i class="fa-solid fa-quote-left" style="color: #000000;"></i>
-                </div>
-                <div class="hocvien">
-                    <i class="fa-solid fa-quote-left" style="color: #000000;"></i>
-                    <div class="quote">
-                        Tôi trực tiếp áp dụng các khái niệm và kỹ năng tôi học được từ các khóa học của mình vào một dự án mới thú vị trong công việc.
-                    </div>
-                    <div class="info">
-                        Thu Trang <br>
-                        CodePro's student <br>
-                        Nha Trang, Viet Nam <br>
-                    </div>
-                    <i class="fa-solid fa-quote-left" style="color: #000000;"></i>
-                </div>
-                <div class="hocvien">
-                    <i class="fa-solid fa-quote-left" style="color: #000000;"></i>
-                    <div class="quote">
-                        Chuyên ngành tôi đã hoàn thành là một trải nghiệm học tập mở mang tầm mắt. Nó đã thay đổi quan điểm của tôi về những cách tôi có thể giúp thúc đẩy lĩnh vực của mình.
-                    </div>
-                    <div class="info">
-                        Fu Fan <br>
-                        CodePro's student <br>
-                        Beijing, China <br>
-                    </div>
-                    <i class="fa-solid fa-quote-left" style="color: #000000;"></i>
-                </div>
-            </div>
-            <div class="result">
+            </section>
+
+            <section id="result" class="result">
                 <h1>Chứng nhận sau khi hoàn thành khóa học</h1>
+                <p>Bạn sẽ nhận được chứng nhận từ <b>CodePro</b> sau khi hoàn thành 80% khóa học</p>
                 <img src="../assets/images/certificate.jpg" alt="">
-            </div>
+            </section>
+
         </div>
     </div>
 </body>

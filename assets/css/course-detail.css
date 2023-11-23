@@ -10,94 +10,99 @@
     padding: 0;
 }
 
-.course-general-info{
-    position: relative;
-    z-index: -1;
-    padding: 1% 2% 2% 2%;
+.detail{
+    margin-top: 11%;
     font-family: QuickSand;
-    margin-top: 10%;
 }
 
-.detail .course-general-info #address {
+.detail .address {
     display: flex;
     align-items: center;
     padding: 4vb 12vb;
 }
 
-.detail .course-general-info #address i {
+.detail .address i {
     margin: 0 2vb;
     font-size: 1.5vb;
 }
 
-.detail .course-general-info #address a {
+.detail .address a {
     font-size: 2.2vb;
-    color: var(--ia-address);
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.detail .course-general-info #address a:hover {
+.detail .address a:hover {
     color: black;
     text-decoration: underline;
 }
 
-.course-general-info .overlay {
+.detail .course-general-info{
+    position: relative;
+    z-index: 1;
+    padding: 1% 2% 2% 2%;
+    background: url(../images/courses/course-background.jpg)no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+}
+
+.detail .course-general-info::before{
     position: absolute;
-    margin: 2%;
-    top: 10%;
+    content: " ";
+    top: 0;
     left: 0;
-    width: 96%;
-    height: 500px;
-    background: linear-gradient(to right, #000000d4, #0000009a, #000000d4)
-}
-
-.course-general-info img{
     width: 100%;
-    height: 500px;
-    object-fit: cover;
-    object-position: center top;
+    height: 100%;
+    background: linear-gradient(to right, #000000d4, #0000009a, #000000d4);
+    z-index: -1;
 }
 
-.course-general-info .logo{
-    z-index: 0;
+.detail .course-general-info .logo{
     position: absolute;
     top: 25%;
     left: 10%;
 }
 
-.course-general-info .logo img{
+.detail .course-general-info .logo img{
     width: 12%;
     height: auto;
 }
 
-.course-general-info .course-name{
-    z-index: 0;
+.detail .course-general-info .course-name{
     position: absolute;
     top: 45%;
-    left: 10%;
+    left: 7%;
     color: white;
     font-weight: bolder;
     font-size: 7vh;
 }
 
-.course-general-info .register{
-    z-index: 0;
-    position: absolute;
+.detail .course-general-info .register{
+    position: relative;
     top: 30%;
-    right: 8%;
+    left: 63%;
     border: 1px solid black;
     background-color: white;
     width: 25%;
-    height: 30%;
+    height: 35%;
     padding: 0.5% 1% 1% 1%;
 }
 
-.course-general-info .register p{
+.detail .course-general-info .register p{
     text-align: center;
     font-size: 3vh;
     font-weight: bold;
 }
 
-.course-general-info .register .dangky{
+.detail .course-general-info .register a{
+    text-decoration: none;
+}
+
+.detail .course-general-info .register .dangky{
     position: absolute;
+    z-index: 999;
     top: 52%;
     left: 28%;
     width: 45%;
@@ -109,28 +114,28 @@
     text-align: center;
     padding: 4% 1% 0% 1%;
     font-size: 3vh;
-    font-weight: bolder;
+    font-weight: bold;
     cursor: pointer;
 }
 
-.course-general-info .register .dangky:hover{
-    font-size: 3.2vh;
-    margin-top: 1%;
+.detail .course-general-info .register .dangky:hover{
+    background-color: rgb(0, 0, 175);
+    font-weight: bolder;
 }
-.course-general-info .info{
-    position: absolute;
-    top: 94%;
-    left: 50%;
-    width: 85%;
-    height: 20%;
-    transform: translate(-50%, -50%);
+
+.detail .info{
+    position: relative;
+    top: -50px;
+    left: 7%;
+    z-index: 1;
+    width: 86%;
+    height: 100px;
     border-radius: 20px;
     box-shadow: 4px 4px 10px rgb(0, 0, 0);
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
 } 
 
-.course-general-info table{
+.detail .info table{
     position: absolute;
     top: 10%;
     border-collapse: collapse;
@@ -138,7 +143,7 @@
     height: 80%;
 }
 
-.course-general-info .info th, .course-general-info .info td {
+.detail .info td {
     width: 25%;
     height: 80%;
     text-align: center;
@@ -146,30 +151,21 @@
     font-weight: bolder;
 }
 
-.course-general-info .info i{
-    margin-right: 5%;
-}
+.detail .info i{ margin-right: 5%; }
 
-.course-detail{
+.detail .course-detail{
     z-index: 0;
-    margin-top: 2%;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin: 0% 8% 0% 8%;
     font-family: QuickSand;
 }
 
-.course-detail .danhmuc{
-    padding-top: 2%;
-    
-}
-
-.course-detail .danhmuc table{
+.detail .course-detail .danhmuc table{
     border-collapse: collapse;
     width: 60%;
     height: 50px;
 }
 
-.course-detail .danhmuc td {
+.detail .course-detail .danhmuc td {
     width: 25%;
     font-size: 3vb;
     font-weight: bolder;
@@ -180,177 +176,225 @@
     transition: background-color 0.1s, font-size 0.1s;
 }
 
-.course-detail .danhmuc td:hover{
+.detail .course-detail .danhmuc td:hover{
     font-size: 3.5vb;
+    border-bottom: 5px solid blue;
 }
 
-.course-detail .danhmuc .select{
+.detail .course-detail .danhmuc .select{
     font-size: 3.5vb;
-    background-color: #000000c0; 
-    color: #fff; 
-    border-bottom: 2px solid rgba(0, 0, 0, 0.284);
+    color: black; 
+    border-bottom: 5px solid blue;
 }
 
-.course-detail .tongquan{
+.section:first-child {
+    margin-top: 10%;
+}
+
+.detail .course-detail .tongquan{
     margin-top: 1%;
+    color: rgb(0, 0, 81);
 }
 
-.course-detail .tongquan li, .course-detail .tongquan progress {
+.detail .course-detail .tongquan h1{
+    color: black;
+    font-size: 5vb;
+}
+
+.detail .course-detail .tongquan li, .detail .course-detail .tongquan progress {
     margin-bottom: 1%; 
 }
 
-.course-detail .tongquan .container{
+.detail .course-detail .tongquan .container{
     display: flex;
 }
 
-.course-detail .tongquan .mota{
+.detail .course-detail .tongquan .mota{
     flex: 2;
     position: relative;
     border-radius: 15px;
-    background-color: rgba(128, 128, 128, 0.122);
-    padding: 0% 1% 1% 1%;
+    background-color: rgba(0, 0, 255, 0.055);
+    padding: 0% 2% 1% 2%;
+    text-align: justify;
     font-size: 2.8vb;
     font-weight: normal;
+    color: rgb(0, 0, 81);
 }
 
-.course-detail .tongquan .spacer{
+.detail .course-detail .tongquan .spacer{
     width: 20px;
 }
 
-.course-detail .tongquan .kynang{
+.detail .course-detail .tongquan .kynang{
     flex: 1;
     position: relative;
     border-radius: 15px;
-    background-color: rgba(128, 128, 128, 0.122);
-    padding: 0% 1% 1% 1%;
+    background-color: rgba(0, 0, 255, 0.055);
+    padding: 0% 2% 1% 2%;
     font-size: 2.8vb;
     font-weight: normal;
 }
 
-.course-detail .tongquan .kynang progress{
+.detail .course-detail .tongquan .kynang progress{
     width: 300px;
     height: 20px;
 }
 
-.course-detail .tongquan .noidung{
+.detail .course-detail .tongquan .noidung{
     margin-top: 20px;
     position: relative;
     border-radius: 15px;
-    background-color: rgba(214, 214, 214, 0.315);
-    padding: 0.5% 1% 1% 1%;
+    background-color: rgba(0, 0, 255, 0.055);
+    padding: 1% 2% 1% 2%;
+    text-align: justify;
     font-size: 2.8vb;
     font-weight: normal; 
 }
 
-.course-detail .ds-baihoc{
-    margin-bottom: 1%;
+/*--------------------------------------------------------------*/
+
+.detail .course-detail .container-dsbaihoc{
+    margin: 4% -10% 2% -10%;
+    border-top: 1px solid rgba(0, 0, 0, 0.301);
+    padding: 1% 10% 2% 10%;
+}
+
+.detail .course-detail .container-dsbaihoc h1{
+    color: black;
+    font-size: 5vb;
+}
+
+.detail .course-detail .ds-baihoc{
+    margin: 2% 0%;
     display: flex;
 }
 
-.course-detail .ds-baihoc .chitiet{
+.detail .course-detail .ds-baihoc .chitiet{
     flex: 2;
     margin-right: 1%;
 }
 
-.course-detail .ds-baihoc .giangvien{
+.detail .course-detail .ds-baihoc .giangvien{
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.196);
     flex: 1;
     height: fit-content;
     padding-top: 3%;
     text-align: center;
+    background-color: white;
 }
 
-.course-detail .ds-baihoc .chitiet .tieude{
-    border: 2px solid rgba(0, 0, 0, 0.425);
+.detail .course-detail .ds-baihoc .chitiet .tieude{
+    border: 1px solid rgba(0, 0, 0, 0.196);
     border-radius: 10px;
-    height: 50px;
-    padding: 2% 1% 0% 1%;
+    height: 60px;
+    padding: 2% 1% 0% 3%;
     margin-bottom: 1%;
-    font-size: 3.2vb;
+    font-size: 2.8vb;
     font-weight: bold;
     cursor: pointer;
+    background-color: white;
 }
 
-.course-detail .ds-baihoc .chitiet .tieude i{
+.detail .course-detail .ds-baihoc .chitiet .tieude .statistic{
+    font-size: 1.8vb;
+    color: rgba(128, 128, 128, 0.589);
+    margin-top: 1%;
+}
+
+.detail .course-detail .ds-baihoc .chitiet .tieude i{
     position: relative;
     float: right;
     cursor: pointer; 
-    margin: 0.5% 1% 0% 10%;
+    margin: 1.2% 1% 0% 10%;
 }
 
-.course-detail .ds-baihoc .chitiet .baihoc a{
+.detail .course-detail .ds-baihoc .chitiet .baihoc a{
     text-decoration: none;
     color: black;
 }
 
-.course-detail .ds-baihoc .chitiet .baihoc .tiet{
+.detail .course-detail .ds-baihoc .chitiet .baihoc .tiet{
     border-radius: 5px;
     margin-left: 3%;
     padding: 1% 1% 0% 1%;
     margin-bottom: 1%;
     height: 40px;
-    font-size: 3vb;
+    font-size: 2.8vb;
     cursor: pointer;
 }
 
-.course-detail .ds-baihoc .chitiet .baihoc .tiet:hover{
-    background-color: rgba(128, 128, 128, 0.078);
-    font-size: 3.2vb;
+.detail .course-detail .ds-baihoc .chitiet .baihoc .tiet:hover{
+    background: rgba(0, 0, 255, 0.082);
+    color: rgb(0, 0, 85);
+    font-size: 2.9vb;
     font-weight: bold;
 }
 
-.course-detail .ds-baihoc .chitiet .baihoc .tiet i{
+.detail .course-detail .ds-baihoc .chitiet .baihoc .tiet i{
     margin-right: 1%;
 }
 
-.course-detail .ds-baihoc .chitiet .baihoc .tiet p{
+.detail .course-detail .ds-baihoc .chitiet .baihoc .tiet p{
     position: relative;
     float: right;
     font-size: 2vb;
     margin-top: 0.8%;
 }
 
-.course-detail .ds-baihoc .giangvien img{
+.detail .course-detail .ds-baihoc .giangvien img{
     border-radius: 100%;
-    width: 26vb;
-    height: 26vb;
+    width: 30vb;
+    height: 30vb;
     box-shadow: 0px 0px 4px 10px rgba(128, 128, 128, 0.098);
 }
 
-.course-detail .ds-baihoc .giangvien .tengiangvien{
+.detail .course-detail .ds-baihoc .giangvien .tengiangvien{
     font-size: 3.5vb;
     font-weight: bold;
 }
 
-.course-detail .ds-baihoc .giangvien .chitietgiangvien{
+.detail .course-detail .ds-baihoc .giangvien .chitietgiangvien{
+    font-size: 2.6vb;
     display: flex;
     text-align: left;
 }
 
-.course-detail .ds-baihoc .giangvien .chitietgiangvien .leftul{
+.detail .course-detail .ds-baihoc .giangvien .chitietgiangvien .leftul{
     flex: 1;
     list-style: none;
     text-align: right;
     margin-right: 2px;
 }
 
-.course-detail .ds-baihoc .giangvien .chitietgiangvien .rightul{
+.detail .course-detail .ds-baihoc .giangvien .chitietgiangvien .rightul{
     flex: 2;
     list-style: none;
     margin-left: -4%;
 }
 
-.course-detail .ds-baihoc .giangvien .chitietgiangvien li{
+.detail .course-detail .ds-baihoc .giangvien .chitietgiangvien li{
     margin-bottom: 1.5%;
 }
 
-.
+/*---------------------------------------------*/
+.detail .course-detail .comment{
+    padding-top: 2%;
+}
 
 
 
-/////////////////////////////////////////////////////////////////////////////////////////
-.course-detail .result img{
+
+/*---------------------------------------------*/
+
+.detail .course-detail .result{
+    padding-top: 2%;
+}
+
+.detail .course-detail .result img{
     width: 70%;
     margin: 1% 15% 2% 15%;
+}
+
+.detail .course-detail .result p{
+    font-size: 3vb;
 }
