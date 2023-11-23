@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents Filter</title>
+    <link rel="stylesheet" href="../assets/css/docs-filter.css">
+    <script src="https://kit.fontawesome.com/c32c52563f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="docs-filter">
+        <h1>
+            <label class="switch-on-off">
+                <input type="checkbox" id="switch-on-off" onchange="toggleElement()">
+                <span class="slider"></span>
+            </label>
+            <p class="header-title">Bộ lọc</p>
+        </h1>
+        <div id="content">
+            <div class="condition">
+                <h2 onclick="hideListofCondition('lang-content')">
+                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;"></i>
+                    <p class="title">Ngôn ngữ</p>
+                </h2>
+                <ul id="lang-content" style="display: none">
+                    <li onclick="hideOtherCheckboxes(this, 'lang1')">
+                        <input type="checkbox" id="lang1" name="lang" onclick="hideOtherCheckboxes(this, 'lang')">
+                        <label for="lang1">Chọn tất cả</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'lang2')">
+                        <input type="checkbox" id="lang2" name="lang" onclick="hideOtherCheckboxes(this, 'lang')">
+                        <label for="lang2">C++</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'lang3')">
+                        <input type="checkbox" id="lang3" name="lang" onclick="hideOtherCheckboxes(this, 'lang')">
+                        <label for="lang3">SQL</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'lang4')">
+                        <input type="checkbox" id="lang4" name="lang" onclick="hideOtherCheckboxes(this, 'lang')">
+                        <label for="lang4">Python</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'lang5')">
+                        <input type="checkbox" id="lang5" name="lang" onclick="hideOtherCheckboxes(this, 'lang')">
+                        <label for="lang5">HTML và CSS</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'lang6')">
+                        <input type="checkbox" id="lang6" name="lang" onclick="hideOtherCheckboxes(this, 'lang')">
+                        <label for="lang6">JavaScript</label>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="condition">
+                <h2 onclick="hideListofCondition('lib-content')">
+                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;"></i>
+                    <p class="title">Thư viện</p>
+                </h2>
+                <ul id="lib-content" style="display: none">
+                    <li onclick="hideOtherCheckboxes(this, 'lib1')">
+                        <input type="checkbox" id="lib1" name="lib" onclick="hideOtherCheckboxes(this, 'lib')">
+                        <label for="lib1">Chọn tất cả</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'lib2')">
+                        <input type="checkbox" id="lib2" name="lib" onclick="hideOtherCheckboxes(this, 'lib')">
+                        <label for="lib2">OpenCV</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'lib3')">
+                        <input type="checkbox" id="lib3" name="lib" onclick="hideOtherCheckboxes(this, 'lib')">
+                        <label for="lib3">JQuery</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'lib4')">
+                        <input type="checkbox" id="lib4" name="lib" onclick="hideOtherCheckboxes(this, 'lib')">
+                        <label for="lib4">Numpy</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'lib5')">
+                        <input type="checkbox" id="lib5" name="lib" onclick="hideOtherCheckboxes(this, 'lib')">
+                        <label for="lib5">Keras</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'lib6')">
+                        <input type="checkbox" id="lib6" name="lib" onclick="hideOtherCheckboxes(this, 'lib')">
+                        <label for="lib6">PyTorch</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'lib7')">
+                        <input type="checkbox" id="lib7" name="lib" onclick="hideOtherCheckboxes(this, 'lib')">
+                        <label for="lib7">Scikit-learn</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="condition">
+                <h2 onclick="hideListofCondition('algorithm-content')">
+                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;"></i>
+                    <p class="title">Thuật toán</p>
+                </h2>
+                <ul id="algorithm-content" style="display: none">
+                    <li onclick="hideOtherCheckboxes(this, 'algorithm1')">
+                        <input type="checkbox" id="algorithm1" name="algorithm"
+                            onclick="hideOtherCheckboxes(this, 'algorithm')">
+                        <label for="algorithm1">Chọn tất cả</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'algorithm2')">
+                        <input type="checkbox" id="algorithm2" name="algorithm"
+                            onclick="hideOtherCheckboxes(this, 'algorithm')">
+                        <label for="algorithm2">Chia để trị</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'algorithm3')">
+                        <input type="checkbox" id="algorithm3" name="algorithm"
+                            onclick="hideOtherCheckboxes(this, 'algorithm')">
+                        <label for="algorithm3">Quy hoạch động</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'algorithm4')">
+                        <input type="checkbox" id="algorithm4" name="algorithm"
+                            onclick="hideOtherCheckboxes(this, 'algorithm')">
+                        <label for="algorithm4">Dijkstra</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'algorithm5')">
+                        <input type="checkbox" id="algorithm5" name="algorithm"
+                            onclick="hideOtherCheckboxes(this, 'algorithm')">
+                        <label for="algorithm5">K-Means</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'algorithm6')">
+                        <input type="checkbox" id="algorithm6" name="algorithm"
+                            onclick="hideOtherCheckboxes(this, 'algorithm')">
+                        <label for="algorithm6">Decision Tree</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'algorithm7')">
+                        <input type="checkbox" id="algorithm7" name="algorithm"
+                            onclick="hideOtherCheckboxes(this, 'algorithm')">
+                        <label for="algorithm7">KNN</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="condition">
+                <h2 onclick="hideListofCondition('paper-content')">
+                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;"></i>
+                    <p class="title">Bài báo khoa học</p>
+                </h2>
+                <ul id="paper-content" style="display: none">
+                    <li onclick="hideOtherCheckboxes(this, 'paper1')">
+                        <input type="checkbox" id="paper1" name="paper" onclick="hideOtherCheckboxes(this, 'paper')">
+                        <label for="paper1">Chọn tất cả</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'paper2')">
+                        <input type="checkbox" id="paper2" name="paper" onclick="hideOtherCheckboxes(this, 'paper')">
+                        <label for="paper2">Nghiên cứu</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'paper3')">
+                        <input type="checkbox" id="paper3" name="paper" onclick="hideOtherCheckboxes(this, 'paper')">
+                        <label for="paper3">Đánh giá</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'paper4')">
+                        <input type="checkbox" id="paper4" name="paper" onclick="hideOtherCheckboxes(this, 'paper')">
+                        <label for="paper4">Hướng dẫn</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'paper5')">
+                        <input type="checkbox" id="paper5" name="paper" onclick="hideOtherCheckboxes(this, 'paper')">
+                        <label for="paper5">Kỹ thuật</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="condition">
+                <h2 onclick="hideListofCondition('level-content')">
+                    <i class="fa-solid fa-caret-down" oustyle="color: #000000;"></i>
+                    <p class="title">Cấp độ</p>
+                </h2>
+                <ul id="level-content" style="display: none">
+                    <li onclick="hideOtherCheckboxes(this, 'level1')">
+                        <input type="checkbox" id="level1" name="level" onclick="hideOtherCheckboxes(this, 'level')">
+                        <label for="level1">Chọn tất cả</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'level2')">
+                        <input type="checkbox" id="level2" name="level" onclick="hideOtherCheckboxes(this, 'level')">
+                        <label for="level2">Cơ bản</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'level3')">
+                        <input type="checkbox" id="level3" name="level" onclick="hideOtherCheckboxes(this, 'level')">
+                        <label for="level3">Nâng cao</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'level4')">
+                        <input type="checkbox" id="level4" name="level" onclick="hideOtherCheckboxes(this, 'level')">
+                        <label for="level4">Cập nhật</label>
+                    </li>
+                    <li onclick="hideOtherCheckboxes(this, 'level5')">
+                        <input type="checkbox" id="level5" name="level" onclick="hideOtherCheckboxes(this, 'level')">
+                        <label for="level5">Kiến thức mới</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/JavaScript" src="../assets/js/docs-filter.js"></script>
+
+</html>

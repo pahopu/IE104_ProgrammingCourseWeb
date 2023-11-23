@@ -180,12 +180,14 @@ body {
     margin: 0 0.4125vmin;
     width: 5.5vmin;
     height: 5.5vmin;
+    transition: 0.5s all;
 }
 
 .modern-login .social-icons a:hover {
     border: 0.1375vmin solid gray;
     background-color: gray;
     color: white;
+    transition: 0.5s all;
 }
 
 .modern-login .toggle-container {
