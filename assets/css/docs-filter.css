@@ -17,9 +17,8 @@ body {
     border-radius: 20px;
     box-shadow: 3px 3px 8px #e0e0e0;
     overflow: hidden;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 0.7%;
+    padding: 0 4vmin;
+    padding-bottom: 1.3vmin;
     font-family: QuickSand;
 }
 

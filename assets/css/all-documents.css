@@ -40,12 +40,13 @@ body {
 }
 
 .all-documents select {
+    background-color: rgb(226, 243, 255);
     margin-top: 1vmin;
     font-size: 3vmin;
     width: 100%;
     font-family: QuickSand;
     padding: 1vmin;
-    border-radius: 0.7vmin;
+    border-radius: 1vmin;
     border: 0.2vmin solid black;
 }
 
