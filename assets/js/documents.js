@@ -21,18 +21,21 @@ function loadJS(url) {
 }
 
 loadHTML("template/header.html", "header");
+loadHTML("template/content-documents.html", "content-documents");
 loadHTML("template/footer.html", "footer");
 loadHTML("template/modern-login.html", "modern-login");
 
 loadCSS("assets/css/header.css");
+loadCSS("assets/css/content-documents.css")
 loadCSS("assets/css/footer.css");
 loadCSS("assets/css/modern-login.css");
 
 loadJS("assets/js/modern-login.js");
+loadJS("assets/js/content-documents.js");
 
 const navs = document.getElementsByClassName("nav-button");
 const header = document.getElementsByClassName("header");
-const intro_aboutus = document.getElementById("intro-aboutus");
+const content_documents = document.getElementById("content-documents");
 const login = document.getElementsByClassName("log-in");
 const signup = document.getElementsByClassName("sign-up");
 
@@ -43,7 +46,7 @@ window.addEventListener("load", () => {
 
     navs[2].style.backgroundColor = "#464bef";
     navs[2].style.color = "white";
-    // intro_aboutus.style.paddingTop = `${header[0].offsetHeight}px`;
+    content_documents.style.paddingTop = `${header[0].offsetHeight}px`;
 
 
     function blurBackground() {
@@ -81,5 +84,5 @@ window.addEventListener("load", () => {
 })
 
 window.addEventListener("resize", () => {
-    intro_aboutus.style.paddingTop = `${header[0].offsetHeight}px`;
+    content_documents.style.paddingTop = `${header[0].offsetHeight}px`;
 });

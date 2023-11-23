@@ -11,7 +11,7 @@ body {
 }
 
 .docs-filter {
-    width: 25%;
+    width: 100%;
     height: auto;
     border: 2px solid rgb(181, 181, 181);
     border-radius: 20px;

@@ -42,7 +42,7 @@ function toggleCheckbox(checkboxId) {
 }
 
 const conditions = document.querySelectorAll(".condition h2");
-const icons = document.querySelectorAll("i");
+const icons = document.querySelectorAll(".condition i");
 
 conditions.forEach((condition, i) => {
     condition.addEventListener("click", () => {
