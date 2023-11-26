@@ -42,7 +42,7 @@ loadJS("assets/js/modern-login.js")
 
 const navs = document.getElementsByClassName("nav-button");
 const signup = document.getElementsByClassName("sign-up");
-const login_intro = document.getElementsByClassName("intro-log-in");
+const login_intro = document.getElementsByClassName("scroll");
 const login_section = document.getElementById("intro-log-in");
 const header = document.getElementsByClassName("header");
 const login = document.getElementsByClassName("log-in");
