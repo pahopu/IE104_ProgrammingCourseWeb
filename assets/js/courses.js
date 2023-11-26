@@ -20,17 +20,17 @@ function loadJS(url) {
     document.head.appendChild(script);
 }
 
-loadHTML("template/header.html", "header");
-loadHTML("template/filter.html", "filter");
-loadHTML("template/for-you-courses.html", "for-you-courses");
-loadHTML("template/all-courses.html", "all-courses");
-loadHTML("template/footer.html", "footer");
+loadHTML("../template/header.html", "header");
+loadHTML("../template/filter.html", "filter");
+loadHTML("../template/for-you-courses.html", "for-you-courses");
+loadHTML("../template/all-courses.html", "all-courses");
+loadHTML("../template/footer.html", "footer");
 
-loadCSS("assets/css/header.css");
-loadCSS("assets/css/filter.css");
-loadCSS("assets/css/for-you-courses.css");
-loadCSS("assets/css/all-courses.css");
-loadCSS("assets/css/footer.css");
+loadCSS("../assets/css/header.css");
+loadCSS("../assets/css/filter.css");
+loadCSS("../assets/css/for-you-courses.css");
+loadCSS("../assets/css/all-courses.css");
+loadCSS("../assets/css/footer.css");
 
 /*----------------Button for page-----------------------------------*/
 function toggleElement() {

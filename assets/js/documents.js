@@ -20,18 +20,18 @@ function loadJS(url) {
     document.head.appendChild(script);
 }
 
-loadHTML("template/header.html", "header");
-loadHTML("template/content-documents.html", "content-documents");
-loadHTML("template/footer.html", "footer");
-loadHTML("template/modern-login.html", "modern-login");
+loadHTML("../template/header.html", "header");
+loadHTML("../template/content-documents.html", "content-documents");
+loadHTML("../template/footer.html", "footer");
+loadHTML("../template/modern-login.html", "modern-login");
 
-loadCSS("assets/css/header.css");
-loadCSS("assets/css/content-documents.css")
-loadCSS("assets/css/footer.css");
-loadCSS("assets/css/modern-login.css");
+loadCSS("../assets/css/header.css");
+loadCSS("../assets/css/content-documents.css")
+loadCSS("../assets/css/footer.css");
+loadCSS("../assets/css/modern-login.css");
 
-loadJS("assets/js/modern-login.js");
-loadJS("assets/js/content-documents.js");
+loadJS("../assets/js/modern-login.js");
+loadJS("../assets/js/content-documents.js");
 
 const navs = document.getElementsByClassName("nav-button");
 const header = document.getElementsByClassName("header");

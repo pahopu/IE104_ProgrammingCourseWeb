@@ -20,13 +20,13 @@ function loadJS(url) {
     document.head.appendChild(script);
 }
 
-loadHTML("template/header.html", "header");
-loadHTML("template/course-detail.html", "course-detail");
-loadHTML("template/footer.html", "footer");
+loadHTML("../template/header.html", "header");
+loadHTML("../template/course-detail.html", "course-detail");
+loadHTML("../template/footer.html", "footer");
 
-loadCSS("assets/css/header.css");
-loadCSS("assets/css/course-detail.css");
-loadCSS("assets/css/footer.css");
+loadCSS("../assets/css/header.css");
+loadCSS("../assets/css/course-detail.css");
+loadCSS("../assets/css/footer.css");
 
 /*-------------------------Set margin for header----------------------- */
 

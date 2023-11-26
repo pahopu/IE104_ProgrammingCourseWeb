@@ -21,7 +21,10 @@ Bài giảng{
 }
 
 Tài liệu{
-
+    - header
+    - docs-filter
+    - all-documents
+    - footer
 }
 
 Cộng đồng{
