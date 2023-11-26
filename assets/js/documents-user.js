@@ -27,9 +27,10 @@ loadHTML("../template/modern-login.html", "modern-login");
 
 loadCSS("../assets/css/header-user.css");
 loadCSS("../assets/css/content-documents.css")
-loadCSS("../assets/css/footer-user.css");
+loadCSS("../assets/css/footer.css");
 loadCSS("../assets/css/modern-login.css");
 
+loadJS("../assets/js/header-user.js")
 loadJS("../assets/js/modern-login.js");
 loadJS("../assets/js/content-documents.js");
 

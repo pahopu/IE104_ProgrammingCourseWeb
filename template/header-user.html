@@ -33,8 +33,23 @@
                         <div class="notification">
                             <i class="fa-regular fa-bell"></i>
                         </div>
-                        <div class="user">
-                            <i class="fa-regular fa-user"></i>
+                        <div class="user-icon">
+                            <div class="user" onclick="toggleDropdown()">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            <div class="user-dropdown" id="user-dropdown" style="display: none;">
+                                <ul>
+                                    <a href="">
+                                        <li>Thông tin tài khoản</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Khoá học của tôi</li>
+                                    </a>
+                                    <a href="">
+                                        <li>Đăng xuất</li>
+                                    </a>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -146,5 +161,7 @@
         </div>
     </div>
 </body>
+
+<script src="../assets/js/header-user.js"></script>
 
 </html>

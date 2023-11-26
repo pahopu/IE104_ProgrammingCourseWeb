@@ -33,9 +33,10 @@ loadCSS("../assets/css/intro-log-in.css");
 loadCSS("../assets/css/flexer.css");
 loadCSS("../assets/css/recommend-courses.css");
 loadCSS("../assets/css/homepage-feedback.css");
-loadCSS("../assets/css/footer-user.css");
+loadCSS("../assets/css/footer.css");
 loadCSS("../assets/css/modern-login.css");
 
+loadJS("../assets/js/header-user.js")
 loadJS("../assets/js/recommend-courses.js");
 loadJS("../assets/js/homepage-feedback.js");
 loadJS("../assets/js/modern-login.js")

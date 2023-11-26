@@ -31,9 +31,10 @@ loadCSS("../assets/css/header-user.css");
 loadCSS("../assets/css/intro-aboutus.css");
 loadCSS("../assets/css/history.css");
 loadCSS("../assets/css/ourteam.css");
-loadCSS("../assets/css/footer-user.css");
+loadCSS("../assets/css/footer.css");
 loadCSS("../assets/css/modern-login.css");
 
+loadJS("../assets/js/header-user.js")
 loadJS("../assets/js/modern-login.js")
 
 const navs = document.getElementsByClassName("nav-button");
