@@ -95,7 +95,7 @@ body {
     border-color: #fff;
 }
 
-.modern-login .container form {
+.modern-login .container .form {
     background-color: #fff;
     display: flex;
     align-items: center;

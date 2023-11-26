@@ -20,14 +20,14 @@ function loadJS(url) {
     document.head.appendChild(script);
 }
 
-loadHTML("../template/header.html", "header");
+loadHTML("../template/header-user.html", "header-user");
 loadHTML("../template/content-documents.html", "content-documents");
-loadHTML("../template/footer.html", "footer");
+loadHTML("../template/footer-user.html", "footer-user");
 loadHTML("../template/modern-login.html", "modern-login");
 
-loadCSS("../assets/css/header.css");
+loadCSS("../assets/css/header-user.css");
 loadCSS("../assets/css/content-documents.css")
-loadCSS("../assets/css/footer.css");
+loadCSS("../assets/css/footer-user.css");
 loadCSS("../assets/css/modern-login.css");
 
 loadJS("../assets/js/modern-login.js");
@@ -48,8 +48,6 @@ window.addEventListener("load", () => {
     navs[2].style.color = "white";
     content_documents.style.paddingTop = `${header[0].offsetHeight}px`;
 
-    const login_popup = document.querySelectorAll(".modern-login .sign-in #dn");
-    login_popup[0].href = "documents-user.html";
 
     function blurBackground() {
         const blur = document.getElementById("blur");

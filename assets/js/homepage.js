@@ -40,15 +40,18 @@ loadJS("assets/js/recommend-courses.js");
 loadJS("assets/js/homepage-feedback.js");
 loadJS("assets/js/modern-login.js")
 
-const navs = document.getElementsByClassName("nav-button");
-const signup = document.getElementsByClassName("sign-up");
-const login_intro = document.getElementsByClassName("scroll");
-const login_section = document.getElementById("intro-log-in");
-const header = document.getElementsByClassName("header");
-const login = document.getElementsByClassName("log-in");
-let checkVisibility = false
-
 window.addEventListener("load", () => {
+    const navs = document.getElementsByClassName("nav-button");
+    const signup = document.getElementsByClassName("sign-up");
+    const login_intro = document.getElementsByClassName("scroll");
+    const login_section = document.getElementById("intro-log-in");
+    const header = document.getElementsByClassName("header");
+    const login = document.getElementsByClassName("log-in");
+    let checkVisibility = false
+
+    const login_popup = document.querySelectorAll(".modern-login .sign-in #dn");
+    login_popup[0].href = "pages/homepage-user.html";
+
     navs[0].style.backgroundColor = "#464bef";
     navs[0].style.color = "white";
     login_section.style.paddingTop = `${header[0].offsetHeight}px`;

@@ -51,6 +51,9 @@ window.addEventListener("load", () => {
     navs[4].style.color = "white";
     intro_aboutus.style.paddingTop = `${header[0].offsetHeight}px`;
 
+    const login_popup = document.querySelectorAll(".modern-login .sign-in #dn");
+    login_popup[0].href = "aboutus-user.html";
+
 
     function blurBackground() {
         const blur = document.getElementById("blur");
