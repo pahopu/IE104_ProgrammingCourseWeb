@@ -1,5 +1,7 @@
 :root {
     --box-shadow: rgb(174, 174, 174);
+    --box-shadow-hover: rgb(182, 183, 255);
+    --page-hover: #464bef;
 }
 
 @font-face {
@@ -48,9 +50,17 @@ body {
     padding: 1vmin;
     border-radius: 1vmin;
     border: 0.2vmin solid black;
+    cursor: pointer;
+}
+
+.all-documents select:hover,
+select:focus {
+    background-color: rgb(191, 228, 255);
 }
 
 .all-documents .document {
+    position: relative;
+    height: 29.2vmin;
     display: flex;
     background-color: white;
     padding: 4vmin 6vmin;
@@ -58,6 +68,11 @@ body {
     border-radius: 3vmin;
     box-shadow: 0.1vmin 0.1vmin 1vmin 0.1vmin var(--box-shadow);
     justify-content: space-between;
+    cursor: pointer;
+}
+
+.all-documents .document:hover {
+    box-shadow: 0.1vmin 0.1vmin 2vmin 0.1vmin var(--box-shadow-hover);
 }
 
 .all-documents .document .document-content-left {
@@ -83,12 +98,74 @@ body {
 }
 
 .all-documents .document .document-content-right p {
-    margin:  0;
+    margin: 0;
     font-size: 2.2vmin;
     color: gray;
-} 
+}
 
 .all-documents .document .document-content-left img {
     width: 100%;
+    height: 100%;
     border-radius: 1vmin;
+}
+
+.all-documents .change-page {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.all-documents .change-page li {
+    margin: 0 0.8vmin;
+}
+
+.all-documents .change-page a {
+    border-radius: 0.8vmin;
+    text-decoration: none;
+    padding: 0.8vmin 1.6vmin 0.8vmin 1.6vmin;
+    color: #000000;
+    font-size: 3vb;
+}
+
+.all-documents .change-page a[href="#1"] {
+    background-color: var(--page-hover);
+    color: white;
+    font-weight: bold;
+}
+
+.all-documents .change-page a:hover {
+    color: rgb(255, 255, 255);
+    background-color: var(--page-hover);
+    font-weight: bolder;
+    font-weight: bold;
+}
+
+.all-documents .change-page .icon {
+    border: 0.3vmin solid rgba(0, 0, 0, 0.272);
+    border-radius: 0.8vmin;
+    width: 1vmin;
+    height: 3.3vmin;
+    cursor: pointer;
+    padding: 0.8vmin 1.6vmin 0.8vmin 1.6vmin;
+}
+
+.all-documents .change-page i {
+    font-size: 3vmin;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.change-page .icon:hover {
+    font-weight: bold;
+    border-color: var(--page-hover);
+    color: rgb(255, 255, 255);
+    background-color: var(--page-hover);
 }
