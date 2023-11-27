@@ -42,7 +42,7 @@
     position: relative;
     z-index: 1;
     padding: 1% 2% 2% 2%;
-    background: url(../images/courses/course-background.jpg)no-repeat;
+    background: url(../images/courses/background/course-background.jpg)no-repeat;
     background-size: cover;
     width: auto;
     height: 500px;
