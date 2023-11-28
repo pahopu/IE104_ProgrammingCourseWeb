@@ -34,15 +34,17 @@ loadJS("../assets/js/header-user.js")
 loadJS("../assets/js/modern-login.js");
 loadJS("../assets/js/content-documents.js");
 
-const navs = document.getElementsByClassName("nav-button");
-const header = document.getElementsByClassName("header");
-const content_documents = document.getElementById("content-documents");
-const login = document.getElementsByClassName("log-in");
-const signup = document.getElementsByClassName("sign-up");
-
-let checkVisibility = false;
-
 window.addEventListener("load", () => {
+    const navs = document.getElementsByClassName("nav-button");
+    const header = document.getElementsByClassName("header");
+    const content_documents = document.getElementById("content-documents");
+    const login = document.getElementsByClassName("log-in");
+    const signup = document.getElementsByClassName("sign-up");
+    const logout = document.getElementById("logout");
+
+    logout.href = "documents.html";
+
+    let checkVisibility = false;
     const popup_container = document.querySelectorAll("#modern-login .modern-login .container");
 
     navs[2].style.backgroundColor = "#464bef";

@@ -37,15 +37,17 @@ loadCSS("../assets/css/modern-login.css");
 loadJS("../assets/js/header-user.js")
 loadJS("../assets/js/modern-login.js")
 
-const navs = document.getElementsByClassName("nav-button");
-const header = document.getElementsByClassName("header");
-const intro_aboutus = document.getElementById("intro-aboutus")
-const login = document.getElementsByClassName("log-in");
-const signup = document.getElementsByClassName("sign-up");
-
-let checkVisibility = false;
-
 window.addEventListener("load", () => {
+    const navs = document.getElementsByClassName("nav-button");
+    const header = document.getElementsByClassName("header");
+    const intro_aboutus = document.getElementById("intro-aboutus")
+    const login = document.getElementsByClassName("log-in");
+    const signup = document.getElementsByClassName("sign-up");
+    const logout = document.getElementById("logout");
+
+    logout.href = "aboutus.html";
+
+    let checkVisibility = false;
     const popup_container = document.querySelectorAll("#modern-login .modern-login .container");
 
     navs[4].style.backgroundColor = "#464bef";

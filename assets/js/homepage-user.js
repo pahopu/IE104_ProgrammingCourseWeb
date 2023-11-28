@@ -41,11 +41,14 @@ loadJS("../assets/js/recommend-courses.js");
 loadJS("../assets/js/homepage-feedback.js");
 loadJS("../assets/js/modern-login.js")
 
-const navs = document.getElementsByClassName("nav-button");
-const login_section = document.getElementById("intro-log-in");
-const header = document.getElementsByClassName("header");
-
 window.addEventListener("load", () => {
+    const navs = document.getElementsByClassName("nav-button");
+    const login_section = document.getElementById("intro-log-in");
+    const header = document.getElementsByClassName("header");
+    const logout = document.getElementById("logout");
+
+    logout.href = "../homepage.html";
+    
     navs[0].style.backgroundColor = "#464bef";
     navs[0].style.color = "white";
     login_section.style.paddingTop = `${header[0].offsetHeight}px`;
