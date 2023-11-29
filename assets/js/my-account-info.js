@@ -21,36 +21,29 @@ function loadJS(url) {
 }
 
 loadHTML("../template/header-user.html", "header-user");
-loadHTML("../template/intro-aboutus.html", "intro-aboutus");
-loadHTML("../template/history.html", "history");
-loadHTML("../template/ourteam.html", "ourteam");
+loadHTML("../template/user-info.html", "user-info")
 loadHTML("../template/footer-user.html", "footer-user");
-loadHTML("../template/modern-login.html", "modern-login");
 
 loadCSS("../assets/css/header-user.css");
-loadCSS("../assets/css/intro-aboutus.css");
-loadCSS("../assets/css/history.css");
-loadCSS("../assets/css/ourteam.css");
+loadCSS("../assets/css/user-info.css");
 loadCSS("../assets/css/footer.css");
-loadCSS("../assets/css/modern-login.css");
 
 loadJS("../assets/js/header-user.js")
-loadJS("../assets/js/modern-login.js")
 
 window.addEventListener("load", () => {
     const navs = document.getElementsByClassName("nav-button");
+    const info = document.getElementById("user-info");
     const header = document.getElementsByClassName("header");
-    const intro_aboutus = document.getElementById("intro-aboutus")
     const logout = document.getElementById("logout");
 
-    logout.href = "aboutus.html";
-
-    navs[4].style.backgroundColor = "#464bef";
-    navs[4].style.color = "white";
-    intro_aboutus.style.paddingTop = `${header[0].offsetHeight}px`;
-})
+    logout.href = "../homepage.html";
+    
+    navs[0].style.backgroundColor = "#464bef";
+    navs[0].style.color = "white";
+    info.style.paddingTop = `${header[0].offsetHeight}px`;
+});
 
 window.addEventListener("resize", () => {
-    const intro_aboutus = document.getElementById("intro-aboutus")
-    intro_aboutus.style.paddingTop = `${header[0].offsetHeight}px`;
+    const info = document.getElementById("user-info");
+    info.style.paddingTop = `${header[0].offsetHeight}px`;
 });

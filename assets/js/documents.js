@@ -85,5 +85,6 @@ window.addEventListener("load", () => {
 })
 
 window.addEventListener("resize", () => {
+    const content_documents = document.getElementById("content-documents");
     content_documents.style.paddingTop = `${header[0].offsetHeight}px`;
 });

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" href="../assets/css/user-info.css">
+</head>
+
+<body>
+    <div class="user-info">
+        <div id="address">
+            <span><a href="../homepage.html">TRANG CHỦ</a></span>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span><a href="../pages/my-account-info.html"><b>THÔNG TIN TÀI KHOẢN</b></a></span>
+        </div>
+        <div class="ur-info">
+            <div class="selection">
+                <ul>
+                    <a href="../pages/my-account-info.html">
+                        <li>Thông tin và liên hệ</li>
+                    </a>
+                    <a href="">
+                        <li>Thay đổi tên người dùng</li>
+                    </a>
+                    <a href="">
+                        <li>Thay đổi mật khẩu</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="info-and-contact">
+                <div class="title">
+                    THÔNG TIN TÀI KHOẢN
+                </div>
+                <div class="info">
+                    <div class="avatar">
+                        <div class="s-a"></div>
+                        <span>Ảnh đại diện của bạn</span> <br>
+                        <button id="photo">Chọn ảnh</button>
+                    </div>
+                    <div class="input-info">
+                        <table>
+                            <tr>
+                                <td>Họ và tên <span>*</span></td>
+                                <td><input type="text" name="name" id="name" placeholder="Họ và tên" value="Code Pro"></td>
+                            </tr>
+                            <tr>
+                                <td>Ngày sinh</td>
+                                <td><input type="date" name="date" id="date"></td>
+                            </tr>
+                            <tr>
+                                <td>Số điện thoại <span>*</span></td>
+                                <td><input type="tel" name="tel" id="tel" placeholder="Số điện thoại" value="0902780816"></td>
+                            </tr>
+                            <tr>
+                                <td>Email <span>*</span></td>
+                                <td><input type="email" name="email" id="email" disabled="disabled" value="codepro@uit.edu.vn"></td>
+                            </tr>
+                            <tr>
+                                <td>Quốc gia <span>*</span></td>
+                                <td>
+                                    <select name="region" id="region">
+                                        <option value="default" selected disabled hidden >Chọn quốc gia</option>
+                                        <option value="1">Việt Nam</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tỉnh <span>*</span></td>
+                                <td>
+                                    <select name="province" id="province" disabled="disabled">
+                                        <option value="default" selected disabled hidden >Chọn tỉnh</option>
+                                        <option value="1">Việt Nam</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Địa chỉ</td>
+                                <td>
+                                    <textarea name="add" id="add" cols="30" rows="10" placeholder="Địa chỉ bạn đang sinh sống hiện tại"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Facebook</td>
+                                <td><input type="text" name="fb" id="fb" placeholder="Link Facebook của bạn"></td>
+                            </tr>
+                            <tr>
+                                <td>LinkedIn</td>
+                                <td><input type="text" name="lk" id="lk" placeholder="Link LinkedIn của bạn"></td>
+                            </tr>
+                            <tr>
+                                <td>Twitter</td>
+                                <td><input type="text" name="tw" id="tw" placeholder="Link Twitter của bạn"></td>
+                            </tr>
+                            <tr>
+                                <td>Tiểu sử</td>
+                                <td><textarea name="" id="" cols="30" rows="10" placeholder="Tóm tắt về bản thân bạn"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>Thành tích</td>
+                                <td>
+                                    <textarea name="achieve" id="achieve" cols="30" rows="10" placeholder="Các thành tích bạn đạt được"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button id="cancel">Hủy</button>
+                                    <button id="save">Lưu thay đổi</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://kit.fontawesome.com/c32c52563f.js" crossorigin="anonymous"></script>
+
+</html>

@@ -89,5 +89,6 @@ window.addEventListener("load", () => {
 })
 
 window.addEventListener("resize", () => {
+    const intro_aboutus = document.getElementById("intro-aboutus")
     intro_aboutus.style.paddingTop = `${header[0].offsetHeight}px`;
 });

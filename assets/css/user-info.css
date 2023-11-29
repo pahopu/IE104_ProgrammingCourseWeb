@@ -1,0 +1,222 @@
+:root {
+    --box-shadow: rgb(174, 174, 174);
+    --ui-address: #464bef;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: QuickSand;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.user-info {
+    padding-bottom: 10vmin;
+    background-color: #f1f1f1;
+}
+
+.user-info #address {
+    display: flex;
+    align-items: center;
+    padding: 4vmin 12vmin;
+}
+
+.user-info #address i {
+    margin: 0 2vmin;
+    font-size: 1.5vmin;
+}
+
+.user-info #address a {
+    font-size: 2.2vmin;
+    color: var(--ui-address);
+}
+
+.user-info #address a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.user-info .ur-info {
+    display: flex;
+    margin: 0 12vmin;
+    gap: 3%;
+}
+
+.user-info .selection {
+    background-color: white;
+    width: 20%;
+    padding: 5vmin 4vmin;
+}
+
+.user-info .selection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-info .selection a:nth-child(1),
+a:hover {
+    color: var(--ui-address);
+    font-weight: bold;
+}
+
+.user-info .selection a {
+    font-size: 2.2vmin;
+    cursor: pointer;
+}
+
+.user-info .selection li{
+    margin-bottom: 2vmin;
+}
+
+.user-info .info-and-contact {
+    background-color: white;
+    padding: 5vmin;
+    width: 77%;
+}
+
+.user-info .info {
+    display: flex;
+    gap: 5%;
+}
+
+.user-info .title {
+    color: var(--ui-address);
+    font-weight: bold;
+    font-size: 3.5vmin;
+    margin-bottom: 2.5vmin;
+}
+
+.user-info .avatar {
+    width: 30%;
+    text-align: center;
+    font-size: 2.2vmin;
+}
+
+.user-info .s-a {
+    width: 20vmin;
+    height: 20vmin;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #D8D8D8;
+    background-image: url(../images/user-info/img-preview-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    margin-bottom: 3vmin;
+}
+
+.user-info .avatar span {
+    font-weight: 500;
+}
+
+.user-info .avatar button {
+    background-color: #4D96FF;
+    border-radius: 1vmin;
+    border: 0.2vmin solid #4D96FF;
+    color: white;
+    font-size: 2.2vmin;
+    padding: 1.5vmin 3vmin;
+    margin-top: 1vmin;
+    transition: 0.3s ease-in-out all;
+    cursor: pointer;
+    font-family: QuickSand;
+}
+
+.user-info .avatar button:hover {
+    color: #4D96FF;
+    border: 0.2vmin solid #4D96FF;
+    background-color: white;
+    transition: 0.3s ease-in-out all;
+}
+
+.user-info .input-info {
+    width: 65%;
+}
+
+.user-info .input-info table {
+    width: 95%;
+    border-collapse: separate;
+    border-spacing: 0 4vmin;
+    color: gray;
+}
+
+.user-info .input-info span {
+    color: red;
+}
+
+.user-info .input-info input,
+select,
+textarea {
+    font-family: QuickSand;
+    box-sizing: border-box;
+    width: 100%;
+    height: 4.5vmin;
+    padding: 0 1.5vmin;
+    font-size: 2vmin;
+    border: 0.15vmin solid var(--box-shadow);
+    border-radius: 0.5vmin;
+    box-shadow: 0 0 0.3vmin inset var(--box-shadow);
+}
+
+.user-info .input-info select {
+    padding: 0 1vmin;
+}
+
+.user-info .input-info textarea {
+    height: 10vmin;
+    padding: 1vmin 1.5vmin;
+}
+
+.user-info .input-info tr {
+    padding-bottom: 5vmin;
+}
+
+.user-info .input-info td:nth-child(1) {
+    width: 30%;
+}
+
+.user-info .input-info tr:last-child td:last-child {
+    text-align: center;
+}
+
+.user-info .input-info button {
+    font-family: QuickSand;
+    background-color: white;
+    padding: 1.5vmin 3vmin;
+    cursor: pointer;
+    border-radius: 0.7vmin;
+    font-size: 2vmin;
+    transition: 0.3s ease-in-out all;
+}
+
+.user-info .input-info #cancel {
+    margin-right: 2vmin;
+    border: 0.2vmin solid var(--box-shadow);
+}
+
+.user-info .input-info button:last-child {
+    background-color: #4D96FF;
+    border: 0.2vmin solid #4D96FF;
+    color: white;
+}
+
+.user-info .input-info #cancel:hover, #save:hover {
+    box-shadow: 0 0.5vmin 0.7vmin #4D96FF;
+    border: 0.2vmin solid #4D96FF;
+    color: #4D96FF;
+    background-color: white;
+    transition: 0.3s ease-in-out all;
+}
