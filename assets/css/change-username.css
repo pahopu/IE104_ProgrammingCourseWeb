@@ -131,7 +131,8 @@ a:hover {
     cursor: pointer;
     border-radius: 5vmin;
     font-size: 2vmin;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: box-shadow, border, color, background-color;
     background-color: #4D96FF;
     border: 0.2vmin solid #4D96FF;
     color: white;
@@ -143,5 +144,6 @@ a:hover {
     border: 0.2vmin solid #4D96FF;
     color: #4D96FF;
     background-color: white;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: box-shadow, border, color, background-color;
 }

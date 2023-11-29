@@ -78,11 +78,11 @@ body {
     border-radius: 0.7vmin;
 
     background-color: var(--flexer-btn-cl);
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out background-color;
     cursor: pointer;
 }
 
 .flexer .button button:hover {
     background-color: var(--flexer-btn-cl-hv);
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out background-color;
 }

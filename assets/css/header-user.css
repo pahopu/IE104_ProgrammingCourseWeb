@@ -76,12 +76,12 @@ body {
     right: 3vmin;
     top: 50%;
     transform: translateY(-50%);
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out color;
 }
 
 .header .nav-bar .tool-bar .tool .search-bar .fa-magnifying-glass:hover {
     color: gray;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out color;
 }
 
 .header .nav-bar .tool-bar .tool .search-bar .fa-magnifying-glass:active {
@@ -103,7 +103,7 @@ body {
     border: 0.3vmin solid var(--box-shadow);
     box-shadow: 0 0.5vmin 0.3vmin var(--box-shadow);
 
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out border;
 }
 
 .header .nav-bar .tool-bar .tool .search-bar input::placeholder {
@@ -118,7 +118,7 @@ body {
 
 .header .nav-bar .tool-bar .tool .search-bar input:hover {
     border: 0.3vmin solid gray;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out border;
 }
 
 .header .nav-bar .tool-bar .tool .login-button {
@@ -200,7 +200,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4vmin;   
+    font-size: 4vmin;
 }
 
 .header .nav-bar .tool-bar .nav {
@@ -224,14 +224,16 @@ body {
     font-weight: bolder;
     text-align: center;
 
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .header .nav-bar .tool-bar .nav .nav-link a .nav-button:hover {
     color: white;
     background-color: var(--nav-button-hover);
 
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .header .nav-bar .tool-bar .nav .docs .dropdown-doc {
@@ -318,7 +320,7 @@ body {
     position: relative;
     left: 1vmin;
     transform: rotate(0deg);
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out transform;
 }
 
 .header .nav-bar .tool-bar .nav .docs .nav-button:hover .fa-caret-down {

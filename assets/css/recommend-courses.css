@@ -72,14 +72,16 @@ a {
     font-weight: bold;
     padding: 3vmin 5vmin;
     border-radius: 2vmin;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
     cursor: pointer;
 }
 
 .recommend-courses .option-section:hover {
     color: white;
     background-color: var(--rc-button-hover);
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .recommend-courses .selected {
@@ -102,7 +104,7 @@ a {
     font-size: 12vmin;
     text-shadow: 0.1vmin 0.1vmin 1vmin var(--rc-box-shadow);
     cursor: pointer;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out color;
 }
 
 .recommend-courses .course-frame {
@@ -215,16 +217,16 @@ a {
 
     box-shadow: 0 0 0.5vmin var(--rc-box-shadow);
     cursor: pointer;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out background-color;
 }
 
 .recommend-courses .circle:hover {
     background-color: var(--rc-circle-hover) !important;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out background-color;
 }
 
 .recommend-courses .fa-caret-left:hover,
 .fa-caret-right:hover {
     color: var(--rc-circle-hover);
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out color;
 }

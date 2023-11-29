@@ -178,49 +178,57 @@ body {
 .intro-log-in .log-in .input-region .account #microsoft {
     color: #00A4F5;
     border-color: #00A4F5;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .intro-log-in .log-in .input-region .account #facebook {
     color: #36589D;
     border-color: #36589D;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .intro-log-in .log-in .input-region .account #google {
     color: #EA230F;
     border-color: #EA230F;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .intro-log-in .log-in .input-region .account #github {
     color: #4c515f;
     border-color: #4c515f;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .intro-log-in .log-in .input-region .account #microsoft:hover {
     color: white;
     background-color: #00A4F5;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .intro-log-in .log-in .input-region .account #facebook:hover {
     color: white;
     background-color: #36589D;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .intro-log-in .log-in .input-region .account #google:hover {
     color: white;
     background-color: #EA230F;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .intro-log-in .log-in .input-region .account #github:hover {
     color: white;
     background-color: #4c515f;
-    transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .intro-log-in .log-in .input-region .account a {
