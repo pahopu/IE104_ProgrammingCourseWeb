@@ -45,5 +45,6 @@ window.addEventListener("load", () => {
 
 window.addEventListener("resize", () => {
     const info = document.getElementById("user-info");
+    const header = document.getElementsByClassName("header");
     info.style.paddingTop = `${header[0].offsetHeight}px`;
 });

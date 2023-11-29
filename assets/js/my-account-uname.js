@@ -21,29 +21,18 @@ function loadJS(url) {
 }
 
 loadHTML("../template/header-user.html", "header-user");
-loadHTML("../template/intro-log-in.html", "intro-log-in");
-loadHTML("../template/flexer.html", "flexer");
-loadHTML("../template/recommend-courses.html", "recommend-courses");
-loadHTML("../template/homepage-feedback.html", "homepage-feedback");
+loadHTML("../template/change-username.html", "change-username")
 loadHTML("../template/footer-user.html", "footer-user");
-loadHTML("../template/modern-login.html", "modern-login");
 
 loadCSS("../assets/css/header-user.css");
-loadCSS("../assets/css/intro-log-in.css");
-loadCSS("../assets/css/flexer.css");
-loadCSS("../assets/css/recommend-courses.css");
-loadCSS("../assets/css/homepage-feedback.css");
+loadCSS("../assets/css/change-username.css");
 loadCSS("../assets/css/footer.css");
-loadCSS("../assets/css/modern-login.css");
 
 loadJS("../assets/js/header-user.js")
-loadJS("../assets/js/recommend-courses.js");
-loadJS("../assets/js/homepage-feedback.js");
-loadJS("../assets/js/modern-login.js")
 
 window.addEventListener("load", () => {
     const navs = document.getElementsByClassName("nav-button");
-    const login_section = document.getElementById("intro-log-in");
+    const info = document.getElementById("change-username");
     const header = document.getElementsByClassName("header");
     const logout = document.getElementById("logout");
 
@@ -51,11 +40,11 @@ window.addEventListener("load", () => {
     
     navs[0].style.backgroundColor = "#464bef";
     navs[0].style.color = "white";
-    login_section.style.paddingTop = `${header[0].offsetHeight}px`;
+    info.style.paddingTop = `${header[0].offsetHeight}px`;
 });
 
 window.addEventListener("resize", () => {
-    const login_section = document.getElementById("intro-log-in");
+    const info = document.getElementById("change-username");
     const header = document.getElementsByClassName("header");
-    login_section.style.paddingTop = `${header[0].offsetHeight}px`;
+    info.style.paddingTop = `${header[0].offsetHeight}px`;
 });

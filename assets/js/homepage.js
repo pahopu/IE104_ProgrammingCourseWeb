@@ -87,5 +87,6 @@ window.addEventListener("load", () => {
 
 window.addEventListener("resize", () => {
     const login_section = document.getElementById("intro-log-in");
+    const header = document.getElementsByClassName("header");
     login_section.style.paddingTop = `${header[0].offsetHeight}px`;
 });

@@ -77,7 +77,7 @@ a:hover {
     cursor: pointer;
 }
 
-.user-info .selection li{
+.user-info .selection li {
     margin-bottom: 2vmin;
 }
 
@@ -213,7 +213,8 @@ textarea {
     color: white;
 }
 
-.user-info .input-info #cancel:hover, #save:hover {
+.user-info .input-info #cancel:hover,
+#save:hover {
     box-shadow: 0 0.5vmin 0.7vmin #4D96FF;
     border: 0.2vmin solid #4D96FF;
     color: #4D96FF;

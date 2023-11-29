@@ -1,0 +1,147 @@
+:root {
+    --box-shadow: rgb(174, 174, 174);
+    --ui-address: #464bef;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: QuickSand;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.change-username {
+    padding-bottom: 10vmin;
+    background-color: #f1f1f1;
+}
+
+.change-username #address {
+    display: flex;
+    align-items: center;
+    padding: 4vmin 12vmin;
+}
+
+.change-username #address i {
+    margin: 0 2vmin;
+    font-size: 1.5vmin;
+}
+
+.change-username #address a {
+    font-size: 2.2vmin;
+    color: var(--ui-address);
+}
+
+.change-username #address a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.change-username .ur-info {
+    display: flex;
+    margin: 0 12vmin;
+    gap: 3%;
+}
+
+.change-username .selection {
+    background-color: white;
+    width: 20%;
+    padding: 5vmin 4vmin;
+}
+
+.change-username .selection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.change-username .selection a:nth-child(2),
+a:hover {
+    color: var(--ui-address);
+    font-weight: bold;
+}
+
+.change-username .selection a {
+    font-size: 2.2vmin;
+    cursor: pointer;
+}
+
+.change-username .selection li {
+    margin-bottom: 2vmin;
+}
+
+.change-username .info-and-contact {
+    background-color: white;
+    padding: 5vmin;
+    width: 77%;
+}
+
+.change-username .info-and-contact h1 {
+    margin: 0;
+    color: var(--ui-address);
+    font-weight: bold;
+    font-size: 3.5vmin;
+    margin-bottom: 2.5vmin;
+}
+
+
+.change-username .info-and-contact p {
+    margin: 0;
+    font-size: 2.2vmin;
+    margin-bottom: 2vmin;
+}
+
+.change-username .info-and-contact #uname {
+    color: gray;
+    font-weight: 500;
+}
+
+.change-username .info-and-contact #sign {
+    color: red;
+}
+
+.change-username .info-and-contact #usname {
+    font-family: QuickSand;
+    box-sizing: border-box;
+    margin-top: 1vmin;
+    margin-bottom: 2vmin;
+    height: 4.5vmin;
+    font-size: 2vmin;
+    padding: 0 1.5vmin;
+    width: 50%;
+    border: 0.15vmin solid var(--box-shadow);
+    border-radius: 0.5vmin;
+    box-shadow: 0 0 0.3vmin inset var(--box-shadow);
+}
+
+.change-username .info-and-contact button {
+    font-family: QuickSand;
+    padding: 1.5vmin 5vmin;
+    cursor: pointer;
+    border-radius: 5vmin;
+    font-size: 2vmin;
+    transition: 0.3s ease-in-out all;
+    background-color: #4D96FF;
+    border: 0.2vmin solid #4D96FF;
+    color: white;
+    float: right;
+}
+
+.change-username .info-and-contact button:hover {
+    box-shadow: 0 0.5vmin 0.7vmin #4D96FF;
+    border: 0.2vmin solid #4D96FF;
+    color: #4D96FF;
+    background-color: white;
+    transition: 0.3s ease-in-out all;
+}
