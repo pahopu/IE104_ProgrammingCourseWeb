@@ -264,3 +264,8 @@ body {
     box-sizing: border-box;
     transform: translateX(200%);
 }
+
+.modern-login .sign-in .anounce {
+    color: red;
+    display: none;
+}

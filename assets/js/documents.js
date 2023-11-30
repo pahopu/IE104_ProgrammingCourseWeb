@@ -47,9 +47,6 @@ window.addEventListener("load", () => {
     navs[2].style.color = "white";
     content_documents.style.paddingTop = `${header[0].offsetHeight}px`;
 
-    const login_popup = document.querySelectorAll(".modern-login .sign-in #dn");
-    login_popup[0].href = "documents-user.html";
-
     function blurBackground() {
         const blur = document.getElementById("blur");
         blur.classList.toggle('active');
@@ -82,6 +79,50 @@ window.addEventListener("load", () => {
             checkVisibility = false;
         }
     });
+
+    const anounces = document.querySelectorAll(".modern-login .anounce");
+    const email = document.querySelectorAll(".modern-login .sign-in #email-si");
+    const password = document.querySelectorAll(".modern-login .sign-in #password-si");
+    const login_popup = document.querySelectorAll(".modern-login .sign-in #dn");
+
+    email[0].addEventListener("click", () => {
+        anounces[0].style.display = "none";
+        anounces[1].style.display = "none";
+    })
+
+    password[0].addEventListener("click", () => {
+        anounces[0].style.display = "none";
+        anounces[1].style.display = "none";
+    })
+
+    login_popup[0].addEventListener("click", (event) => {
+        if (email[0].value != "codepro@uit.edu.vn" || password[0].value != "123456789") {
+            if (email[0].value != "" && password[0].value == "") {
+                anounces[1].innerHTML = "Bạn chưa nhập mật khẩu!";
+                anounces[1].style.display = "block";
+            }
+            else if (email[0].value == "" && password[0].value != "") {
+                anounces[0].innerHTML = "Bạn chưa nhập email!";
+                anounces[0].style.display = "block";
+            } else if (email[0].value == "" && password[0].value == "") {
+                anounces[1].innerHTML = "Bạn chưa nhập mật khẩu!";
+                anounces[1].style.display = "block";
+                anounces[0].innerHTML = "Bạn chưa nhập email!";
+                anounces[0].style.display = "block";
+            } else {
+                if (email[0].value != "codepro@uit.edu.vn") {
+                    anounces[0].style.display = "block";
+                    anounces[0].innerHTML = "Bạn nhập sai email!";
+                }
+                if (password[0].value != "123456789") {
+                    anounces[1].style.display = "block";
+                    anounces[1].innerHTML = "Bạn nhập sai mật khẩu!";
+                }
+            }
+            event.preventDefault();
+        }
+        else login_popup[0].href = "./documents-user.html";
+    })
 })
 
 window.addEventListener("resize", () => {

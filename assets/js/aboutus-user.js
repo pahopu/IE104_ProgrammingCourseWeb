@@ -25,23 +25,23 @@ loadHTML("../template/intro-aboutus.html", "intro-aboutus");
 loadHTML("../template/history.html", "history");
 loadHTML("../template/ourteam.html", "ourteam");
 loadHTML("../template/footer-user.html", "footer-user");
-loadHTML("../template/modern-login.html", "modern-login");
 
 loadCSS("../assets/css/header-user.css");
 loadCSS("../assets/css/intro-aboutus.css");
 loadCSS("../assets/css/history.css");
 loadCSS("../assets/css/ourteam.css");
 loadCSS("../assets/css/footer.css");
-loadCSS("../assets/css/modern-login.css");
 
 loadJS("../assets/js/header-user.js")
-loadJS("../assets/js/modern-login.js")
 
 window.addEventListener("load", () => {
     const navs = document.getElementsByClassName("nav-button");
     const header = document.getElementsByClassName("header");
     const intro_aboutus = document.getElementById("intro-aboutus")
     const logout = document.getElementById("logout");
+    const a = document.querySelectorAll("#address a");
+    a[0].href = "./homepage-user.html";
+    a[1].href = "./aboutus-user.html";
 
     logout.href = "aboutus.html";
 
