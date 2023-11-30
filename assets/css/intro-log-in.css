@@ -234,3 +234,11 @@ body {
 .intro-log-in .log-in .input-region .account a {
     text-decoration: none;
 }
+
+.intro-log-in .log-in .input-region .accept-term a {
+    color: var(--button-color);
+}
+
+.intro-log-in .log-in .input-region .accept-term a:hover {
+    text-decoration: underline;
+}

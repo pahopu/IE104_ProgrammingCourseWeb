@@ -136,10 +136,12 @@ body {
 .header .user-section i {
     font-size: 3.5vmin;
     cursor: pointer;
+    transition: 0.3s ease-in-out color;
 }
 
 .header .user-section i:hover {
     color: var(--nav-button-hover);
+    transition: 0.3s ease-in-out color;
 }
 
 .header .user-section .user-icon {
@@ -157,12 +159,8 @@ body {
 }
 
 .header .user-section .user {
-    height: 6vmin;
-    width: 6vmin;
-    border-radius: 50%;
-    border: 0.4vmin solid var(--user-gray);
-    color: var(--user-gray);
-    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
 }
 
 .header .user-section .user-dropdown ul {
@@ -173,6 +171,8 @@ body {
 
 .header .user-section .user-dropdown li {
     padding: 2vmin 3vmin;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .header .user-section a {
@@ -183,24 +183,26 @@ body {
 .header .user-section .user-dropdown li:hover {
     background-color: var(--nav-button-hover);
     color: white;
-}
-
-.header .user-section .user:hover {
-    color: black;
-    border-color: black;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
 }
 
 .header .user-section .fa-user:hover {
     color: black;
+    border: 0.4vmin solid black;
+    transition: 0.3s ease-in-out;
+    transition-property: color, border;
 }
 
 .header .user-section .fa-user {
-    cursor: pointer;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 4vmin;
+    padding: 1.6vmin 1.8vmin;
+    border-radius: 50%;
+    border: 0.4vmin solid var(--user-gray);
+    color: var(--user-gray);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    transition-property: color, border;
 }
 
 .header .nav-bar .tool-bar .nav {

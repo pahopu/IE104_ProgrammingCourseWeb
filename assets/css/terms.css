@@ -1,0 +1,148 @@
+:root {
+    --box-shadow: rgb(174, 174, 174);
+    --ia-address: #464bef;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: QuickSand;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.terms {
+    padding: 0 12vmin;
+    padding-bottom: 6vmin;
+}
+
+.terms #address {
+    display: flex;
+    align-items: center;
+    padding: 4vmin 0;
+}
+
+.terms #address i {
+    margin: 0 2vmin;
+    font-size: 1.5vmin;
+}
+
+.terms #address a {
+    font-size: 2.2vmin;
+    color: var(--ia-address);
+}
+
+.terms #address a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.terms .content {
+    text-align: justify;
+}
+
+.terms .head {
+    text-align: center;
+}
+
+.terms .head h1 {
+    margin: 0;
+    font-size: 4.5vmin;
+    color: #333333;
+    margin-bottom: 2vmin;
+}
+
+.terms .head h2 {
+    margin: 0;
+    font-size: 3.2vmin;
+    margin-bottom: 6vmin;
+}
+
+.terms .head hr {
+    margin: 0;
+    border: 0;
+    border: 0.1vmin solid #D9D9D9;
+}
+
+.terms .content p {
+    margin: 0;
+    margin-bottom: 4vmin;
+    line-height: 1.5;
+}
+
+.terms .warn #notices {
+    margin: 5.5vmin 0;
+    font-weight: bolder;
+    font-style: italic;
+    color: #4B82B8;
+}
+
+.terms .warn p a {
+    color: #4B82B8;
+}
+
+.terms .warn p a:hover {
+    text-decoration: underline;
+    color: #33587d;
+}
+
+.terms .warn p {
+    margin-left: 0.7vmin;
+    font-size: 2.2vmin;
+}
+
+.terms .warn #warning {
+    color: red;
+    font-weight: bolder;
+}
+
+.terms .term-content .xxp .line-ver {
+    position: absolute;
+    border-left: 0.7vmin solid #337ab7;
+    height: 3vmin;
+    display: inline-block;
+    width: 5vmin;
+    margin-top: 1vmin;
+}
+
+.terms .term-content .xxp .xx-header {
+    font-size: 3.5vmin;
+    font-weight: 600;
+    color: #337ab7;
+    margin-left: 2.5vmin;
+    margin-bottom: 2vmin;
+}
+
+.terms .term-content {
+    line-height: 1.5;
+    font-size: 2.2vmin;
+}
+
+.terms .term-content p {
+    margin-left: 2.5vmin;
+}
+
+.terms .term-content li {
+    margin-left: 2vmin;
+    margin-bottom: 1.5vmin;
+}
+
+.terms .term-content p a {
+    color: #4B82B8;
+}
+
+.terms .term-content p a:hover {
+    text-decoration: underline;
+    color: #33587d;
+}
