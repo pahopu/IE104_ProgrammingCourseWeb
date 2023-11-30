@@ -152,10 +152,11 @@ body {
     position: absolute;
     background-color: white;
     right: 2%;
-    margin-top: 2vmin;
+    margin-top: 1vmin;
     box-shadow: 0 0 1vmin var(--box-shadow);
     border: 0.1vmin solid var(--box-shadow);
     box-sizing: border-box;
+    border-radius: 0.7vmin;
 }
 
 .header .user-section .user {
@@ -192,6 +193,15 @@ body {
     border: 0.4vmin solid black;
     transition: 0.3s ease-in-out;
     transition-property: color, border;
+}
+
+.header .uactive {
+    color: black !important;
+    border: 0.4vmin solid black !important;
+}
+
+.header .nactive {
+    color: var(--nav-button-hover) !important;
 }
 
 .header .user-section .fa-user {
@@ -327,4 +337,36 @@ body {
 
 .header .nav-bar .tool-bar .nav .docs .nav-button:hover .fa-caret-down {
     transform: rotate(180deg);
+}
+
+.header .noti-dropdown {
+    width: 40vmin;
+    position: absolute;
+    right: 8%;
+    background-color: white;
+    border: 0.1vmin solid rgb(207, 207, 207);
+    border-radius: 0.5vmin;
+    margin-top: 1.5vmin;
+    box-shadow: 0 0 0.3vmin rgb(207, 207, 207);
+}
+
+.header .noti-dropdown p {
+    margin: 1vmin;
+    font-size: 2vmin;
+}
+
+.header .noti-dropdown #all {
+    text-align: center;
+    color: rgb(35, 35, 35);
+    cursor: pointer;
+}
+
+.header .noti-dropdown #all:hover {
+    color: var(--nav-button-hover);
+}
+
+.header #dashnoti {
+    width: 100%;
+    height: 0.1vmin;
+    border-bottom: 0.1vmin solid rgb(207, 207, 207);
 }

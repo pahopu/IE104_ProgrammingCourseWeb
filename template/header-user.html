@@ -31,11 +31,18 @@
                             <i class="fa-regular fa-envelope"></i>
                         </div>
                         <div class="notification">
-                            <i class="fa-regular fa-bell"></i>
+                            <i onclick="toggleDropdown('fa-bell', 'noti-dropdown', 'nactive')"
+                                class="fa-regular fa-bell"></i>
+                            <div class="noti-dropdown" id="noti-dropdown" style="display: none;">
+                                <p>Không có thông báo mới!</p>
+                                <div id="dashnoti"></div>
+                                <p id="all">Xem tất cả</p>
+                            </div>
                         </div>
                         <div class="user-icon">
                             <div class="user">
-                                <i onclick="toggleDropdown()" class="fa-regular fa-user"></i>
+                                <i onclick="toggleDropdown('fa-user', 'user-dropdown', 'uactive')"
+                                    class="fa-regular fa-user"></i>
                             </div>
                             <div class="user-dropdown" id="user-dropdown" style="display: none;">
                                 <ul>
