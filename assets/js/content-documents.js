@@ -23,6 +23,7 @@ function loadJS(url) {
 loadHTML("../template/docs-filter.html", "docs-filter");
 loadHTML("../template/all-documents.html", "all-documents");
 loadHTML("../template/python-documents.html", "python-documents");
+loadHTML("../template/lang-documents.html", "lang-documents");
 
 loadCSS("../assets/css/docs-filter.css");
 loadCSS("../assets/css/all-documents.css");
@@ -51,16 +52,22 @@ window.addEventListener("load", () => {
         })
     })
 
-    // lang_content[0].addEventListener("click", () => {
-    //     if (lang_content[0].checked) {
-    //         documents.forEach((doc) => {
-    //             doc.style.display = "none";
-    //         })
-    //         documents[0].style.display = "block";
-    //         console.log("all");
-    //     }
-    // })
-    
+    lang_content[0].addEventListener("click", () => {
+        if (lang_content[0].checked) {
+            documents.forEach((doc) => {
+                doc.style.display = "none";
+            })
+            documents[2].style.display = "block";
+        }
+    })
+
+    if (lang_content[0].checked) {
+        documents.forEach((doc) => {
+            doc.style.display = "none";
+        })
+        documents[2].style.display = "block";
+    }
+
     lang_content[3].addEventListener("click", () => {
         if (lang_content[3].checked) {
             documents.forEach((doc) => {
@@ -69,4 +76,11 @@ window.addEventListener("load", () => {
             documents[1].style.display = "block";
         }
     })
+
+    if (lang_content[3].checked) {
+        documents.forEach((doc) => {
+            doc.style.display = "none";
+        })
+        documents[1].style.display = "block";
+    }
 })

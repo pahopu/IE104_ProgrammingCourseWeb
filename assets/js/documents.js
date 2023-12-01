@@ -34,6 +34,14 @@ loadJS("../assets/js/modern-login.js");
 loadJS("../assets/js/content-documents.js");
 
 window.addEventListener("load", () => {
+    const pypy = document.getElementsByClassName("pypy");
+    for (let i = 0; i < pypy.length; i++) {
+        pypy[i].href = "";
+        pypy[i].addEventListener("click", (event) => {
+            event.preventDefault();
+        })
+    }
+
     const navs = document.getElementsByClassName("nav-button");
     const header = document.getElementsByClassName("header");
     const content_documents = document.getElementById("content-documents");

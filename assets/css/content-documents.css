@@ -54,6 +54,6 @@ a {
     width: 22%;
 }
 
-.content-documents #all-documents, #python-documents {
+.content-documents #all-documents, #python-documents, #lang-documents {
     width: 70%;
 }
