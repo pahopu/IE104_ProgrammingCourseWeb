@@ -1,0 +1,180 @@
+:root {
+    --box-shadow: rgb(174, 174, 174);
+    --ia-address: #464bef;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: QuickSand;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.document-detail {
+    background-color: #f1f1f1;
+    padding-bottom: 10vmin;
+}
+
+.document-detail #address {
+    display: flex;
+    align-items: center;
+    padding: 4vmin 12vmin;
+}
+
+.document-detail #address i {
+    margin: 0 2vmin;
+    font-size: 1.5vmin;
+}
+
+.document-detail #address a {
+    font-size: 2.2vmin;
+    color: var(--ia-address);
+}
+
+.document-detail #address a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.document-detail .content {
+    display: flex;
+    padding: 0 12vmin;
+    gap: 3%;
+    text-align: justify;
+    font-size: 2.2vmin;
+    line-height: 1.5;
+}
+
+.document-detail .blog-content {
+    background-color: white;
+    padding: 5vmin;
+    border-radius: 1.5vmin;
+    box-sizing: border-box;
+    width: 62%;
+}
+
+.document-detail .blog-content h1 {
+    margin: 0;
+    font-size: 5vmin;
+    line-height: 1.3;
+}
+
+.document-detail .blog-content p {
+    margin: 3vmin 0;
+}
+
+.document-detail .blog-content ol {
+    padding: 0;
+    padding-left: 4vmin;
+}
+
+.document-detail .blog-content ol li {
+    font-weight: bold;
+    margin-bottom: 1vmin;
+}
+
+.document-detail .blog-content ul {
+    padding: 0;
+    padding-left: 3vmin;
+    list-style: disc;
+}
+
+.document-detail .blog-content ul li {
+    font-weight: normal;
+    margin: 0;
+}
+
+.document-detail .blog-content button {
+    color: white;
+    background-color: var(--ia-address);
+    padding: 2vmin 5vmin;
+    font-size: 2.2vmin;
+    border: 0.2vmin solid var(--ia-address);
+    cursor: pointer;
+    border-radius: 0.5vmin;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
+    font-family: QuickSand;
+}
+
+.document-detail .blog-content button:hover {
+    color: var(--ia-address);
+    background-color: white;
+    box-shadow: 0 0.5vmin 0.5vmin var(--ia-address);
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color, box-shadow;
+}
+
+.document-detail .selection {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    box-sizing: border-box;
+    width: 35%;
+}
+
+.document-detail .section {
+    background-color: white;
+    border-radius: 1.5vmin;
+    padding: 3.5vmin;
+}
+
+.document-detail .section h3 {
+    margin: 0;
+    margin-bottom: 2vmin;
+    font-size: 3.2vmin;
+}
+
+.document-detail .section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.document-detail .section ul li {
+    cursor: pointer;
+    font-size: 2.2vmin;
+}
+
+.document-detail .section ul li:hover {
+    color: var(--ia-address);
+    text-decoration: underline;
+}
+
+.document-detail .section ul li:not(:last-child) {
+    margin-bottom: 2vmin;
+}
+
+.document-detail .section .tag-container {
+    margin-left: 2vmin;
+}
+
+.document-detail .section .tag {
+    background-color: rgb(88, 205, 255);
+    border: 0.25vmin solid rgb(88, 205, 255);
+    color: white;
+    font-weight: 600;
+    float: left;
+    width: fit-content;
+    margin: 1vmin;
+    padding: 1.3vmin;
+    border-radius: 0.7vmin;
+    cursor: pointer;
+}
+
+.document-detail .section .tag:hover {
+    color: rgb(88, 205, 255);
+    background-color: white;
+}

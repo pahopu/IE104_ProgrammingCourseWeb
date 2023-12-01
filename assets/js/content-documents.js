@@ -22,8 +22,51 @@ function loadJS(url) {
 
 loadHTML("../template/docs-filter.html", "docs-filter");
 loadHTML("../template/all-documents.html", "all-documents");
+loadHTML("../template/python-documents.html", "python-documents");
 
 loadCSS("../assets/css/docs-filter.css");
 loadCSS("../assets/css/all-documents.css");
 
 loadJS("../assets/js/docs-filter.js");
+
+window.addEventListener("load", () => {
+    const lang_content = document.querySelectorAll("#lang-content input");
+    const documents = document.querySelectorAll(".ddisplay");
+
+    lang_content.forEach(lang => {
+        lang.addEventListener("click", () => {
+            let unChecked = true;
+            for (let i = 0; i < lang_content.length; i++)
+                if (lang_content[i].checked) {
+                    console.log("yes");
+                    break;
+                }
+
+            if (unChecked) {
+                documents.forEach((doc) => {
+                    doc.style.display = "none";
+                })
+                documents[0].style.display = "block";
+            }
+        })
+    })
+
+    // lang_content[0].addEventListener("click", () => {
+    //     if (lang_content[0].checked) {
+    //         documents.forEach((doc) => {
+    //             doc.style.display = "none";
+    //         })
+    //         documents[0].style.display = "block";
+    //         console.log("all");
+    //     }
+    // })
+    
+    lang_content[3].addEventListener("click", () => {
+        if (lang_content[3].checked) {
+            documents.forEach((doc) => {
+                doc.style.display = "none";
+            })
+            documents[1].style.display = "block";
+        }
+    })
+})

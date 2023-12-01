@@ -14,8 +14,6 @@ function hideOtherCheckboxes(checkbox, listname) {
     for (var i = 0; i < checkboxes.length; i++) {
         if (checkboxes[i] != checkbox) {
             checkboxes[i].checked = false;
-        } else if (checkboxes[i].getAttribute("name") == listname) {
-            checkboxes[i].checked = true;
         }
     }
 }
