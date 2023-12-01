@@ -129,9 +129,12 @@ body {
     z-index: 2;
 }
 
+.modern-login .sign-in #forgot {
+    color: var(--right-toggle);
+}
+
 .modern-login .sign-in #forgot:hover {
     text-decoration: underline;
-    color: var(--right-toggle);
 }
 
 .modern-login .container.active .sign-in {
@@ -268,4 +271,23 @@ body {
 .modern-login .sign-in .anounce {
     color: red;
     display: none;
+}
+
+.modern-login .accept-term {
+    display: flex;
+    align-items: center;
+    font-size: 1.8vmin;
+    gap: 0.5vmin;
+}
+
+.modern-login .accept-term input {
+    width: fit-content;
+}
+
+.modern-login .accept-term a {
+    color: var(--right-toggle);
+}
+
+.modern-login .accept-term a:hover {
+    text-decoration: underline;
 }

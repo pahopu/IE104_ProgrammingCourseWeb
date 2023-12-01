@@ -95,23 +95,23 @@ window.addEventListener("load", () => {
     })
 
     login_popup[0].addEventListener("click", (event) => {
-        if (email[0].value != "codepro@uit.edu.vn" || password[0].value != "123456789") {
+        if ((email[0].value != "codepro@uit.edu.vn" && email[0].value != "codepro104") || password[0].value != "123456789") {
             if (email[0].value != "" && password[0].value == "") {
                 anounces[1].innerHTML = "Bạn chưa nhập mật khẩu!";
                 anounces[1].style.display = "block";
             }
             else if (email[0].value == "" && password[0].value != "") {
-                anounces[0].innerHTML = "Bạn chưa nhập email!";
+                anounces[0].innerHTML = "Bạn chưa nhập email/tên người dùng!";
                 anounces[0].style.display = "block";
             } else if (email[0].value == "" && password[0].value == "") {
                 anounces[1].innerHTML = "Bạn chưa nhập mật khẩu!";
                 anounces[1].style.display = "block";
-                anounces[0].innerHTML = "Bạn chưa nhập email!";
+                anounces[0].innerHTML = "Bạn chưa nhập email/tên người dùng!";
                 anounces[0].style.display = "block";
             } else {
-                if (email[0].value != "codepro@uit.edu.vn") {
+                if (email[0].value != "codepro@uit.edu.vn" && email[0].value != "codepro104") {
                     anounces[0].style.display = "block";
-                    anounces[0].innerHTML = "Bạn nhập sai email!";
+                    anounces[0].innerHTML = "Bạn nhập sai email/tên người dùng!";
                 }
                 if (password[0].value != "123456789") {
                     anounces[1].style.display = "block";
