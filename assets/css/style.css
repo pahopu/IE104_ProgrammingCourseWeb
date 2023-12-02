@@ -11,32 +11,31 @@ body {
     font-family: QuickSand;
 }
 
-.Header-Title ul{
+.Header-Title ul {
     list-style: none;
     display: flex;
-    align-items: left; 
+    align-items: left;
     padding: 0;
     margin-left: 1%;
     margin-bottom: -1%;
 }
 
-.Header-Title li{
-    font-size: 3vb;
+.Header-Title li {
+    font-size: 3vmin;
     font-weight: bold;
     margin: 1%;
 }
 
-.Header-Title a{
+.Header-Title a {
     text-decoration: none;
     color: rgb(222, 222, 222);
 }
 
-.Header-Title a:hover{
+.Header-Title a:hover {
     color: black;
-    font-size: 3vb;
+    font-size: 3vmin;
 }
 
-.Header-Title i{
+.Header-Title i {
     color: rgb(222, 222, 222);
 }
-

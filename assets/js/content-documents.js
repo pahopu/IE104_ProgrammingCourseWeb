@@ -39,7 +39,7 @@ window.addEventListener("load", () => {
             let unChecked = true;
             for (let i = 0; i < lang_content.length; i++)
                 if (lang_content[i].checked) {
-                    console.log("yes");
+                    unChecked = false;
                     break;
                 }
 

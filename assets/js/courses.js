@@ -21,66 +21,120 @@ function loadJS(url) {
 }
 
 loadHTML("../template/header.html", "header");
-loadHTML("../template/filter.html", "filter");
-loadHTML("../template/for-you-courses.html", "for-you-courses");
-loadHTML("../template/all-courses.html", "all-courses");
+loadHTML("../template/content-courses.html", "content-courses");
 loadHTML("../template/footer.html", "footer");
+loadHTML("../template/modern-login.html", "modern-login");
 
 loadCSS("../assets/css/header.css");
-loadCSS("../assets/css/filter.css");
-loadCSS("../assets/css/for-you-courses.css");
-loadCSS("../assets/css/all-courses.css");
+loadCSS("../assets/css/content-courses.css")
 loadCSS("../assets/css/footer.css");
+loadCSS("../assets/css/modern-login.css");
 
-/*----------------Button for page-----------------------------------*/
-function toggleElement() {
-    var element = document.getElementById("content");
-    var checkbox = document.getElementById("switch-on-off");
+loadJS("../assets/js/modern-login.js");
+loadJS("../assets/js/content-courses.js");
 
-    if (checkbox.checked) {
-        element.style.display = "none";
-    } else {
-        element.style.display = "block";
-    }
-}
-
-function hideOtherCheckboxes(checkbox, listname) {
-    var checkboxes = document.getElementsByName(listname);
-    for (var i = 0; i < checkboxes.length; i++) {
-        if (checkboxes[i] != checkbox) {
-            checkboxes[i].checked = false;
-        }
-    }
-}
-
-function hideListofCondition(listname) {
-    var element = document.getElementById(listname);
-
-    if (element.style.display === "none" || element.style.display === "") {
-        element.style.display = "block";
-    } else {
-        element.style.display = "none";
-    }
-}
-
-function toggleCheckbox(checkboxId) {
-    var checkbox = document.getElementById(checkboxId);
-    if (checkbox) {
-        if (checkbox.style.display === 'none') {
-            checkbox.style.display = 'inline-block';
-        } else {
-            checkbox.style.display = 'none';
-        }
-    }
-}
-
-/*----------------Margin header------------------------------------*/
-
-const navs = document.getElementsByClassName("nav-button");
-const header = document.getElementsByClassName("header");
-const headerid = document.getElementById("header");
 window.addEventListener("load", () => {
+    const pypy = document.getElementsByClassName("pypy");
+    for (let i = 0; i < pypy.length; i++) {
+        pypy[i].href = "";
+        pypy[i].addEventListener("click", (event) => {
+            event.preventDefault();
+        })
+    }
+
+    const navs = document.getElementsByClassName("nav-button");
+    const header = document.getElementsByClassName("header");
+    const content_courses = document.getElementById("content-courses");
+    const login = document.getElementsByClassName("log-in");
+    const signup = document.getElementsByClassName("sign-up");
+
+    let checkVisibility = false;
+    const popup_container = document.querySelectorAll("#modern-login .modern-login .container");
+
     navs[1].style.backgroundColor = "#464bef";
     navs[1].style.color = "white";
-    headerid.style.marginTop = `${header[0].offsetHeight}px`;
+    content_courses.style.paddingTop = `${header[0].offsetHeight}px`;
+
+    function blurBackground() {
+        const blur = document.getElementById("blur");
+        blur.classList.toggle('active');
+        const popup = document.getElementById("popup");
+        popup.classList.toggle('active');
+    }
+
+    login[0].addEventListener("click", () => {
+        if (!checkVisibility) {
+            blurBackground();
+            checkVisibility = true;
+            popup_container[0].classList.remove("active");
+        }
+    });
+
+    signup[0].addEventListener("click", () => {
+        if (!checkVisibility) {
+            blurBackground();
+            checkVisibility = true;
+            popup_container[0].classList.add("active");
+        }
+    });
+
+    document.addEventListener("click", (event) => {
+        const isButton = event.target.tagName === "BUTTON"; // Kiểm tra nếu là button
+        const isPopup = event.target.closest("#popup"); // Kiểm tra nếu là phần tử con của pop up
+
+        if (!isPopup && !isButton && checkVisibility) {
+            blurBackground();
+            checkVisibility = false;
+        }
+    });
+
+    const anounces = document.querySelectorAll(".modern-login .anounce");
+    const email = document.querySelectorAll(".modern-login .sign-in #email-si");
+    const password = document.querySelectorAll(".modern-login .sign-in #password-si");
+    const login_popup = document.querySelectorAll(".modern-login .sign-in #dn");
+
+    email[0].addEventListener("click", () => {
+        anounces[0].style.display = "none";
+        anounces[1].style.display = "none";
+    })
+
+    password[0].addEventListener("click", () => {
+        anounces[0].style.display = "none";
+        anounces[1].style.display = "none";
+    })
+
+    login_popup[0].addEventListener("click", (event) => {
+        if ((email[0].value != "codepro@uit.edu.vn" && email[0].value != "codepro104") || password[0].value != "123456789") {
+            if (email[0].value != "" && password[0].value == "") {
+                anounces[1].innerHTML = "Bạn chưa nhập mật khẩu!";
+                anounces[1].style.display = "block";
+            }
+            else if (email[0].value == "" && password[0].value != "") {
+                anounces[0].innerHTML = "Bạn chưa nhập email/tên người dùng!";
+                anounces[0].style.display = "block";
+            } else if (email[0].value == "" && password[0].value == "") {
+                anounces[1].innerHTML = "Bạn chưa nhập mật khẩu!";
+                anounces[1].style.display = "block";
+                anounces[0].innerHTML = "Bạn chưa nhập email/tên người dùng!";
+                anounces[0].style.display = "block";
+            } else {
+                if (email[0].value != "codepro@uit.edu.vn" && email[0].value != "codepro104") {
+                    anounces[0].style.display = "block";
+                    anounces[0].innerHTML = "Bạn nhập sai email/tên người dùng!";
+                }
+                if (password[0].value != "123456789") {
+                    anounces[1].style.display = "block";
+                    anounces[1].innerHTML = "Bạn nhập sai mật khẩu!";
+                }
+            }
+            event.preventDefault();
+        }
+        else login_popup[0].href = "./courses-user.html";
+    })
 })
+
+window.addEventListener("resize", () => {
+    const content_courses = document.getElementById("content-courses");
+    const header = document.getElementsByClassName("header");
+    content_courses.style.paddingTop = `${header[0].offsetHeight}px`;
+});

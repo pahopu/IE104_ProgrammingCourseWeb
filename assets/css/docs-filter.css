@@ -87,6 +87,7 @@ body {
 
 .docs-filter .condition title {
     float: left;
+    font-size: 1.5vmin;
     cursor: pointer;
 }
 

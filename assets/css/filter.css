@@ -6,48 +6,24 @@
 }
 
 body {
-    margin-top: 0;
+    margin: 0;
     padding: 0;
 }
 
-.contain
-
-.address {
-    display: flex;
-    align-items: center;
-    padding: 4vb 12vb;
-    font-family: QuickSand;
-}
-
-.address i {
-    margin: 0 2vb;
-    font-size: 1.5vb;
-}
-
-.address a {
-    font-size: 2.2vb;
-    color: blue;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.address a:hover {
-    color: black;
-    text-decoration: underline;
-}
-
 .filter {
-    float: left;
-    width: 23%;
+    width: 100%;
     height: auto;
     border: 2px solid rgb(181, 181, 181);
     border-radius: 20px;
     box-shadow: 3px 3px 8px #e0e0e0;
     overflow: hidden;
-    margin: 1% 0% 1% 2%;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding: 0 4vmin;
+    padding-bottom: 1.3vmin;
     font-family: QuickSand;
+}
+
+.filter .header-title {
+    font-size: 4vmin;
 }
 
 .switch-on-off {
@@ -101,16 +77,17 @@ input:checked+.slider:before {
 }
 
 .filter .condition {
-    padding-left: 2%;
+    padding-left: 1%;
 }
 
 .filter .condition h2 {
     display: inline;
+    font-size: 3vmin;
 }
 
 .filter .condition title {
     float: left;
-    font-size: 1.5vb;
+    font-size: 1.5vmin;
     cursor: pointer;
 }
 
@@ -133,7 +110,7 @@ input:checked+.slider:before {
 .filter .condition ul {
     text-decoration: none;
     list-style: none;
-    font-size: 3vb;
+    font-size: 3vmin;
     padding-left: 5%;
 }
 

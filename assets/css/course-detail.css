@@ -5,12 +5,12 @@
     font-weight: normal;
 }
 
-.body{
+.body {
     margin: 0;
     padding: 0;
 }
 
-.detail{
+.detail {
     margin-top: 11%;
     font-family: QuickSand;
 }
@@ -18,16 +18,16 @@
 .detail .address {
     display: flex;
     align-items: center;
-    padding: 4vb 12vb;
+    padding: 4vmin 12vmin;
 }
 
 .detail .address i {
-    margin: 0 2vb;
-    font-size: 1.5vb;
+    margin: 0 2vmin;
+    font-size: 1.5vmin;
 }
 
 .detail .address a {
-    font-size: 2.2vb;
+    font-size: 2.2vmin;
     color: blue;
     cursor: pointer;
     text-decoration: none;
@@ -38,7 +38,7 @@
     text-decoration: underline;
 }
 
-.detail .course-general-info{
+.detail .course-general-info {
     position: relative;
     z-index: 1;
     padding: 1% 2% 2% 2%;
@@ -48,7 +48,7 @@
     height: 500px;
 }
 
-.detail .course-general-info::before{
+.detail .course-general-info::before {
     position: absolute;
     content: " ";
     top: 0;
@@ -59,18 +59,18 @@
     z-index: -1;
 }
 
-.detail .course-general-info .logo{
+.detail .course-general-info .logo {
     position: absolute;
     top: 25%;
     left: 10%;
 }
 
-.detail .course-general-info .logo img{
+.detail .course-general-info .logo img {
     width: 12%;
     height: auto;
 }
 
-.detail .course-general-info .course-name{
+.detail .course-general-info .course-name {
     position: absolute;
     top: 45%;
     left: 7%;
@@ -79,7 +79,7 @@
     font-size: 7vh;
 }
 
-.detail .course-general-info .register{
+.detail .course-general-info .register {
     position: relative;
     top: 30%;
     left: 63%;
@@ -90,17 +90,17 @@
     padding: 0.5% 1% 1% 1%;
 }
 
-.detail .course-general-info .register p{
+.detail .course-general-info .register p {
     text-align: center;
     font-size: 3vh;
     font-weight: bold;
 }
 
-.detail .course-general-info .register a{
+.detail .course-general-info .register a {
     text-decoration: none;
 }
 
-.detail .course-general-info .register .dangky{
+.detail .course-general-info .register .dangky {
     position: absolute;
     z-index: 999;
     top: 52%;
@@ -118,12 +118,12 @@
     cursor: pointer;
 }
 
-.detail .course-general-info .register .dangky:hover{
+.detail .course-general-info .register .dangky:hover {
     background-color: rgb(0, 0, 175);
     font-weight: bolder;
 }
 
-.detail .info{
+.detail .info {
     position: relative;
     top: -50px;
     left: 7%;
@@ -133,9 +133,9 @@
     border-radius: 20px;
     box-shadow: 4px 4px 10px rgb(0, 0, 0);
     background-color: #ffffff;
-} 
+}
 
-.detail .info table{
+.detail .info table {
     position: absolute;
     top: 10%;
     border-collapse: collapse;
@@ -151,18 +151,20 @@
     font-weight: bolder;
 }
 
-.detail .info i{ margin-right: 5%; }
+.detail .info i {
+    margin-right: 5%;
+}
 
-.detail .course-detail{
+.detail .course-detail {
     z-index: 0;
     font-family: QuickSand;
 }
 
-.detail .course-detail .danhmuc{
+.detail .course-detail .danhmuc {
     margin: 0% 8% 0% 8%;
 }
 
-.detail .course-detail .danhmuc table{
+.detail .course-detail .danhmuc table {
     border-collapse: collapse;
     width: 60%;
     height: 50px;
@@ -170,7 +172,7 @@
 
 .detail .course-detail .danhmuc td {
     width: 25%;
-    font-size: 3vb;
+    font-size: 3vmin;
     font-weight: bolder;
     text-align: center;
     margin-bottom: 100%;
@@ -179,14 +181,14 @@
     transition: background-color 0.1s, font-size 0.1s;
 }
 
-.detail .course-detail .danhmuc td:hover{
-    font-size: 3.5vb;
+.detail .course-detail .danhmuc td:hover {
+    font-size: 3.5vmin;
     border-bottom: 5px solid blue;
 }
 
-.detail .course-detail .danhmuc .select{
-    font-size: 3.5vb;
-    color: black; 
+.detail .course-detail .danhmuc .select {
+    font-size: 3.5vmin;
+    color: black;
     border-bottom: 5px solid blue;
 }
 
@@ -194,88 +196,89 @@
     margin-top: 10%;
 }
 
-.detail .course-detail .tongquan{
+.detail .course-detail .tongquan {
     margin: 1% 8% 0% 8%;
     color: rgb(0, 0, 81);
 }
 
-.detail .course-detail .tongquan h1{
+.detail .course-detail .tongquan h1 {
     color: black;
-    font-size: 5vb;
+    font-size: 5vmin;
 }
 
-.detail .course-detail .tongquan li, .detail .course-detail .tongquan progress {
-    margin-bottom: 1%; 
+.detail .course-detail .tongquan li,
+.detail .course-detail .tongquan progress {
+    margin-bottom: 1%;
 }
 
-.detail .course-detail .tongquan .container{
+.detail .course-detail .tongquan .container {
     display: flex;
 }
 
-.detail .course-detail .tongquan .mota{
+.detail .course-detail .tongquan .mota {
     flex: 2;
     position: relative;
     border-radius: 15px;
     background-color: rgba(0, 0, 255, 0.055);
     padding: 0% 2% 1% 2%;
     text-align: justify;
-    font-size: 2.8vb;
+    font-size: 2.8vmin;
     font-weight: normal;
     color: rgb(0, 0, 81);
 }
 
-.detail .course-detail .tongquan .spacer{
+.detail .course-detail .tongquan .spacer {
     width: 20px;
 }
 
-.detail .course-detail .tongquan .kynang{
+.detail .course-detail .tongquan .kynang {
     flex: 1;
     position: relative;
     border-radius: 15px;
     background-color: rgba(0, 0, 255, 0.055);
     padding: 0% 2% 1% 2%;
-    font-size: 2.8vb;
+    font-size: 2.8vmin;
     font-weight: normal;
 }
 
-.detail .course-detail .tongquan .kynang progress{
+.detail .course-detail .tongquan .kynang progress {
     width: 300px;
     height: 20px;
 }
 
-.detail .course-detail .tongquan .noidung{
+.detail .course-detail .tongquan .noidung {
     margin-top: 20px;
     position: relative;
     border-radius: 15px;
     background-color: rgba(0, 0, 255, 0.055);
     padding: 1% 2% 1% 2%;
     text-align: justify;
-    font-size: 2.8vb;
-    font-weight: normal; 
+    font-size: 2.8vmin;
+    font-weight: normal;
 }
 
 /*--------------------------------------------------------------*/
 
-.detail .course-detail .container-dsbaihoc{
+.detail .course-detail .container-dsbaihoc {
     margin: 0% 8% 0% 8%;
 }
 
-.detail .course-detail .container-dsbaihoc h1{
+.detail .course-detail .container-dsbaihoc h1 {
     color: black;
-    font-size: 5vb;
+    font-size: 5vmin;
 }
 
-.detail .course-detail .ds-baihoc{
+.detail .course-detail .ds-baihoc {
     margin: 2% 0%;
     display: flex;
 }
 
-.detail .course-detail .ds-baihoc .chitiet{
+.detail .course-detail .ds-baihoc .chitiet {
     flex: 2;
     margin-right: 1%;
 }
 
-.detail .course-detail .ds-baihoc .giangvien{
+.detail .course-detail .ds-baihoc .giangvien {
     border-radius: 10px;
     flex: 1;
     height: fit-content;
@@ -284,239 +287,239 @@
     background-color: white;
 }
 
-.detail .course-detail .ds-baihoc .chitiet .tieude{
+.detail .course-detail .ds-baihoc .chitiet .tieude {
     border: 1px solid rgba(0, 0, 0, 0.196);
     border-radius: 10px;
     height: 60px;
     padding: 2% 1% 0% 3%;
     margin-bottom: 1%;
-    font-size: 2.8vb;
+    font-size: 2.8vmin;
     font-weight: bold;
     cursor: pointer;
     background-color: white;
 }
 
-.detail .course-detail .ds-baihoc .chitiet .tieude .statistic{
-    font-size: 1.8vb;
+.detail .course-detail .ds-baihoc .chitiet .tieude .statistic {
+    font-size: 1.8vmin;
     color: rgba(128, 128, 128, 0.589);
     margin-top: 1%;
 }
 
-.detail .course-detail .ds-baihoc .chitiet .tieude i{
+.detail .course-detail .ds-baihoc .chitiet .tieude i {
     position: relative;
     float: right;
-    cursor: pointer; 
+    cursor: pointer;
     margin: 1.2% 1% 0% 10%;
 }
 
-.detail .course-detail .ds-baihoc .chitiet .baihoc a{
+.detail .course-detail .ds-baihoc .chitiet .baihoc a {
     text-decoration: none;
     color: black;
 }
 
-.detail .course-detail .ds-baihoc .chitiet .baihoc .tiet{
+.detail .course-detail .ds-baihoc .chitiet .baihoc .tiet {
     border-radius: 5px;
     margin-left: 3%;
     padding: 1% 1% 0% 1%;
     margin-bottom: 1%;
     height: 40px;
-    font-size: 2.8vb;
+    font-size: 2.8vmin;
     cursor: pointer;
 }
 
-.detail .course-detail .ds-baihoc .chitiet .baihoc .tiet:hover{
+.detail .course-detail .ds-baihoc .chitiet .baihoc .tiet:hover {
     background: rgba(0, 0, 255, 0.082);
     color: rgb(0, 0, 85);
-    font-size: 2.9vb;
+    font-size: 2.9vmin;
     font-weight: bold;
 }
 
-.detail .course-detail .ds-baihoc .chitiet .baihoc .tiet i{
+.detail .course-detail .ds-baihoc .chitiet .baihoc .tiet i {
     margin-right: 1%;
 }
 
-.detail .course-detail .ds-baihoc .chitiet .baihoc .tiet p{
+.detail .course-detail .ds-baihoc .chitiet .baihoc .tiet p {
     position: relative;
     float: right;
-    font-size: 2vb;
+    font-size: 2vmin;
     margin-top: 0.8%;
 }
 
-.detail .course-detail .ds-baihoc .giangvien img{
+.detail .course-detail .ds-baihoc .giangvien img {
     border-radius: 100%;
-    width: 30vb;
-    height: 30vb;
+    width: 30vmin;
+    height: 30vmin;
     box-shadow: 0px 0px 4px 10px rgba(128, 128, 128, 0.098);
 }
 
-.detail .course-detail .ds-baihoc .giangvien .tengiangvien{
-    font-size: 3.5vb;
+.detail .course-detail .ds-baihoc .giangvien .tengiangvien {
+    font-size: 3.5vmin;
     font-weight: bold;
 }
 
-.detail .course-detail .ds-baihoc .giangvien .chitietgiangvien{
-    font-size: 2.6vb;
+.detail .course-detail .ds-baihoc .giangvien .chitietgiangvien {
+    font-size: 2.6vmin;
     display: flex;
     text-align: left;
 }
 
-.detail .course-detail .ds-baihoc .giangvien .chitietgiangvien .leftul{
+.detail .course-detail .ds-baihoc .giangvien .chitietgiangvien .leftul {
     flex: 1;
     list-style: none;
     text-align: right;
     margin-right: 2px;
 }
 
-.detail .course-detail .ds-baihoc .giangvien .chitietgiangvien .rightul{
+.detail .course-detail .ds-baihoc .giangvien .chitietgiangvien .rightul {
     flex: 2;
     list-style: none;
     margin-left: -4%;
 }
 
-.detail .course-detail .ds-baihoc .giangvien .chitietgiangvien li{
+.detail .course-detail .ds-baihoc .giangvien .chitietgiangvien li {
     margin-bottom: 1.5%;
 }
 
 /*---------------------------------------------*/
-.detail .course-detail .comment{
+.detail .course-detail .comment {
     padding: 2% 8% 2% 8%;
     background-color: rgba(0, 0, 255, 0.055);
 }
 
-.detail .course-detail .comment h1{
+.detail .course-detail .comment h1 {
     color: black;
-    font-size: 5vb;
+    font-size: 5vmin;
 }
 
-.detail .course-detail .comment .container{
+.detail .course-detail .comment .container {
     display: flex;
 }
 
-.detail .course-detail .comment .container .tonghopdanhgia{
+.detail .course-detail .comment .container .tonghopdanhgia {
     flex: 2;
     text-align: center;
 }
 
-.detail .course-detail .comment .container .tonghopdanhgia .tonghop{
+.detail .course-detail .comment .container .tonghopdanhgia .tonghop {
     margin: 10% 0% 0% -10%;
 }
 
-.detail .course-detail .comment .container .tonghopdanhgia .tonghop .soluong{
-    font-size: 20vb;
+.detail .course-detail .comment .container .tonghopdanhgia .tonghop .soluong {
+    font-size: 20vmin;
     margin: 0% 0% 0% 0%;
     color: rgb(0, 0, 0);
 }
 
-.detail .course-detail .comment .container .tonghopdanhgia .tonghop .star{
-    font-size: 5vb;
+.detail .course-detail .comment .container .tonghopdanhgia .tonghop .star {
+    font-size: 5vmin;
     color: blue;
 }
 
-.detail .course-detail .comment .container .tonghopdanhgia .tonghop .more-info{
-    font-size: 4vb;
+.detail .course-detail .comment .container .tonghopdanhgia .tonghop .more-info {
+    font-size: 4vmin;
 }
 
-.detail .course-detail .comment .container .tonghopdanhgia .chitietsao{
+.detail .course-detail .comment .container .tonghopdanhgia .chitietsao {
     text-align: left;
     text-decoration: none;
     list-style: none;
-    font-size: 4vb;
+    font-size: 4vmin;
     margin: 0% -10% 0% -10%;
 }
 
-.detail .course-detail .comment .container .tonghopdanhgia .chitietsao ul{
+.detail .course-detail .comment .container .tonghopdanhgia .chitietsao ul {
     line-height: 150%;
     list-style: none;
 }
 
-.detail .course-detail .comment .container .tonghopdanhgia .chitietsao ul progress{
+.detail .course-detail .comment .container .tonghopdanhgia .chitietsao ul progress {
     width: 75%;
 }
 
 .detail .course-detail .comment .container .tonghopdanhgia .chitietsao ul progress::-webkit-progress-value {
-    background-color: gold; 
+    background-color: gold;
 }
 
-.detail .course-detail .comment .container .chitietdanhgia{
+.detail .course-detail .comment .container .chitietdanhgia {
     flex: 3;
 }
 
-.detail .course-detail .comment .container .chitietdanhgia .hocvien{
+.detail .course-detail .comment .container .chitietdanhgia .hocvien {
     border-radius: 10px;
     background-color: white;
     padding: 2% 3% 2%;
     margin-bottom: 3%;
 }
 
-.detail .course-detail .comment .container .chitietdanhgia .hocvien .hv-info{
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .hv-info {
     margin-bottom: 2%;
 }
 
-.detail .course-detail .comment .container .chitietdanhgia .hocvien .hv-info img{
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .hv-info img {
     display: inline-block;
     border-radius: 100%;
-    width: 14vb;
-    height: 14vb;
-    margin: 0% 0% -2% 1% ;
+    width: 14vmin;
+    height: 14vmin;
+    margin: 0% 0% -2% 1%;
 }
 
-.detail .course-detail .comment .container .chitietdanhgia .hocvien .hv-info p{
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .hv-info p {
     display: inline-block;
     margin-left: 3%;
     line-height: 160%;
 }
 
-.detail .course-detail .comment .container .chitietdanhgia .hocvien .react .star{
-    font-size: 2vb;
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .react .star {
+    font-size: 2vmin;
     color: yellow;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
-.detail .course-detail .comment .container .chitietdanhgia .hocvien .react .star i{
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .react .star i {
     margin-left: 7%;
 }
 
-.detail .course-detail .comment .container .chitietdanhgia .hocvien .hv-info .react{
-    font-size: 3vb;
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .hv-info .react {
+    font-size: 3vmin;
     float: right;
     width: 15%;
 }
 
-.detail .course-detail .comment .container .chitietdanhgia .hocvien .react .icon{
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .react .icon {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     margin: 0% 0% 10% 2%;
 }
 
 
-.detail .course-detail .comment .container .chitietdanhgia .hocvien .react .icon i{
-    font-size: 3.5vb;
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .react .icon i {
+    font-size: 3.5vmin;
     margin: 15% 0% 0% 10%;
     cursor: pointer;
 }
 
-.detail .course-detail .comment .container .chitietdanhgia .hocvien .quote{
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .quote {
     font-size: larger;
     text-align: justify;
 }
 
 /*---------------------------------------------*/
 
-.detail .course-detail .result{
+.detail .course-detail .result {
     margin: 0% 8% 0% 8%;
     padding-top: 2%;
 }
 
-.detail .course-detail .result h1{
-    font-size: 5vb;
+.detail .course-detail .result h1 {
+    font-size: 5vmin;
 }
 
-.detail .course-detail .result img{
+.detail .course-detail .result img {
     width: 70%;
     margin: 1% 15% 2% 15%;
 }
 
-.detail .course-detail .result p{
-    font-size: 3vb;
+.detail .course-detail .result p {
+    font-size: 3vmin;
 }

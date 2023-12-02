@@ -11,30 +11,33 @@ body {
 }
 
 .for-you-courses {
-    float: right;
-    width: 70%;
+    width: 100%;
     height: auto;
-    padding: 1%;
     font-family: QuickSand;
 }
 
-.for-you-courses h1{
+.for-you-courses h1 {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-column-gap: 0%;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
-.for-you-courses .header-title{
-    font-size: 5vb;
+.for-you-courses .header-title {
+    font-size: 5vmin;
+    margin-top: 0;
 }
 
 .for-you-courses .changepage {
     position: relative;
     text-align: right;
-    font-size: 5vb;
-    margin-top: 7%;
+    font-size: 5vmin;
     color: rgb(194, 194, 194);
+}
+
+.for-you-courses .changepage i {
+    cursor: pointer;
 }
 
 .for-you-courses i:hover {
@@ -72,7 +75,7 @@ body {
 
 .for-you-courses .grid-container .column .course a {
     position: relative;
-    font-size: 3.2vb;
+    font-size: 2.8vmin;
     font-weight: bolder;
     color: black;
     text-decoration: none;
@@ -95,20 +98,20 @@ body {
 
 .for-you-courses .grid-container .column .course .info {
     margin: 5% 5% 5% 5%;
-    line-height: 4.3vb;
-    font-size: 2.5vb;
+    line-height: 4.3vmin;
+    font-size: 2.2vmin;
     height: 20%;
     margin-bottom: 15%;
 }
 
-.for-you-courses .grid-container .column .course .info i{
+.for-you-courses .grid-container .column .course .info i {
     position: relative;
     float: left;
-    margin: 2% 3% 0% 0% ;
-    font-size: 2.5vb;
+    margin: 2% 3% 0% 0%;
+    font-size: 2.5vmin;
 }
 
-.for-you-courses .grid-container .column .course .time-student{
+.for-you-courses .grid-container .column .course .time-student {
     position: absolute;
     top: 92%;
     width: 100%;
@@ -120,16 +123,17 @@ body {
 .for-you-courses .grid-container .column .course .time-student .time {
     text-align: left;
     margin-left: 10%;
-    font-size: 2.5vb;
+    font-size: 2.2vmin;
 }
 
 .for-you-courses .grid-container .column .course .time-student .star {
     text-align: center;
-    font-size: 2.7vb;
+    font-size: 2.2vmin;
     margin-left: -2%;
 }
 
-.for-you-courses .grid-container .column .course .time-student .time i, .for-you-courses .grid-container .column .course .time-student .star i{
+.for-you-courses .grid-container .column .course .time-student .time i,
+.for-you-courses .grid-container .column .course .time-student .star i {
     margin: 1% 5% 1% 1%;
     float: left;
     color: gold;
@@ -138,12 +142,11 @@ body {
 .for-you-courses .grid-container .column .course .time-student .student {
     text-align: right;
     margin: 0% 10% 0% 0%;
-    font-size: 2.5vb;
+    font-size: 2.2vmin;
 }
 
-.for-you-courses .grid-container .column .course .time-student .student i{
+.for-you-courses .grid-container .column .course .time-student .student i {
     float: left;
     margin: 1% 0% 1% 31%;
     color: black;
 }
-

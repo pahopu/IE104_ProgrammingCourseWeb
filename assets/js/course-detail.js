@@ -20,23 +20,25 @@ function loadJS(url) {
     document.head.appendChild(script);
 }
 
-loadHTML("../template/header.html", "header");
+loadHTML("../template/header-user.html", "header-user");
 loadHTML("../template/course-detail.html", "course-detail");
-loadHTML("../template/footer.html", "footer");
+loadHTML("../template/footer-user.html", "footer-user");
 
-loadCSS("../assets/css/header.css");
+loadCSS("../assets/css/header-user.css");
 loadCSS("../assets/css/course-detail.css");
 loadCSS("../assets/css/footer.css");
 
+loadJS("../assets/js/header-user.js")
+
 /*-------------------------Set margin for header----------------------- */
 
-const navs = document.getElementsByClassName("nav-button");
-const header = document.getElementsByClassName("header");
-const headerid = document.getElementById("header");
-
 window.addEventListener("load", () => {
-    navs[4].style.backgroundColor = "#464bef";
-    navs[4].style.color = "white";
+    const navs = document.getElementsByClassName("nav-button");
+    const header = document.getElementsByClassName("header");
+    const headerid = document.getElementById("header");
+
+    navs[1].style.backgroundColor = "#464bef";
+    navs[1].style.color = "white";
     headerid.style.marginTop = `${header[0].offsetHeight}px`;
 })
 
@@ -61,12 +63,12 @@ document.addEventListener('scroll', function () {
     }
 });
 
-function hideLesson(baihoc){
+function hideLesson(baihoc) {
     var element = document.getElementById(baihoc)
     if (element.style.display === "none" || element.style.display === "") {
-        element.style.display = "block"; 
+        element.style.display = "block";
     } else {
-        element.style.display = "none"; 
+        element.style.display = "none";
     }
 }
 

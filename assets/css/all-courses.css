@@ -1,3 +1,9 @@
+:root {
+    --box-shadow: rgb(174, 174, 174);
+    --box-shadow-hover: rgb(182, 183, 255);
+    --page-hover: #464bef;
+}
+
 @font-face {
     font-family: QuickSand;
     src: url(../font/Quicksand-VariableFont_wght.ttf);
@@ -11,44 +17,54 @@ body {
 }
 
 .all-courses {
-    position: relative;
-    float: right;
-    width: 70%;
+    width: 100%;
     height: auto;
-    padding: 1%;
     font-family: QuickSand;
 }
 
-.all-courses h1{
+.all-courses h1 {
     display: grid;
     grid-template-columns: 80% 20%;
     grid-column-gap: 0%;
     margin: 0%;
 }
 
-.all-courses .header-title{
-    font-size: 5vb;
+.all-courses .header-title {
+    font-size: 5vmin;
 }
 
 .all-courses .arrange {
     text-align: right;
     margin: 15% 0% 0% 0%;
     text-align: center;
-    font-size: 2.4vb;
+    font-size: 2.4vmin;
     font-weight: bold;
+    font-family: QuickSand;
 }
 
-.all-courses .arrange label i{
+.all-courses .arrange select {
+    font-family: QuickSand;
+    font-size: 2.6vmin;
+    background-color: rgb(226, 243, 255);
+    cursor: pointer;
+}
+
+.all-courses .arrange select:hover,
+select:focus {
+    background-color: rgb(191, 228, 255);
+}
+
+.all-courses .arrange label i {
     position: relative;
     float: left;
     text-align: left;
     margin: 0% -25% 0% 30%;
 }
 
-.all-courses .arrange .select-box{
+.all-courses .arrange .select-box {
     text-align: center;
     height: 30px;
-    font-size: 2vb;
+    font-size: 2vmin;
 }
 
 .all-courses i {
@@ -56,10 +72,6 @@ body {
     margin-top: -1%;
     margin-right: 1.5%;
     color: rgb(194, 194, 194);
-}
-
-.all-courses i:hover {
-    color: black; 
 }
 
 .all-courses .grid-container {
@@ -91,11 +103,9 @@ body {
     box-shadow: 4px 4px 13px 0px black;
 }
 
-
-
 .all-courses .grid-container .column .course a {
     position: relative;
-    font-size: 3.2vb;
+    font-size: 2.8vmin;
     font-weight: bolder;
     color: black;
     text-decoration: none;
@@ -118,19 +128,19 @@ body {
 
 .all-courses .grid-container .column .course .info {
     margin: 5% 5% 5% 5%;
-    line-height: 4.3vb;
-    font-size: 2.5vb;
+    line-height: 4.3vmin;
+    font-size: 2.2vmin;
     height: 20%;
     margin-bottom: 15%;
 }
 
-.all-courses .grid-container .column .course .info i{
+.all-courses .grid-container .column .course .info i {
     position: relative;
     float: left;
-    margin: 2% 3% 0% 0% ;
+    margin: 2% 3% 0% 0%;
 }
 
-.all-courses .grid-container .column .course .time-student{
+.all-courses .grid-container .column .course .time-student {
     position: absolute;
     top: 92%;
     width: 100%;
@@ -142,16 +152,17 @@ body {
 .all-courses .grid-container .column .course .time-student .time {
     text-align: left;
     margin-left: 10%;
-    font-size: 2.5vb;
+    font-size: 2.2vmin;
 }
 
 .all-courses .grid-container .column .course .time-student .star {
     text-align: center;
-    font-size: 2.7vb;
+    font-size: 2.2vmin;
     margin-left: -2%;
 }
 
-.all-courses .grid-container .column .course .time-student .time i, .all-courses .grid-container .column .course .time-student .star i{
+.all-courses .grid-container .column .course .time-student .time i,
+.all-courses .grid-container .column .course .time-student .star i {
     margin: 1% 5% 1% 1%;
     float: left;
     color: gold;
@@ -160,10 +171,10 @@ body {
 .all-courses .grid-container .column .course .time-student .student {
     text-align: right;
     margin: 0% 10% 0% 0%;
-    font-size: 2.5vb;
+    font-size: 2.2vmin;
 }
 
-.all-courses .grid-container .column .course .time-student .student i{
+.all-courses .grid-container .column .course .time-student .student i {
     float: left;
     margin: 1% 0% 1% 31%;
     color: black;
@@ -171,43 +182,63 @@ body {
 
 
 .all-courses .change-page {
+    position: relative;
     list-style: none;
     display: flex;
     align-items: center;
     padding: 0;
-    margin-left: 36.7%;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .all-courses .change-page li {
-    margin: 0 5px;
+    margin: 0 0.8vmin;
 }
 
 .all-courses .change-page a {
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 5px;
+    border-radius: 0.8vmin;
     text-decoration: none;
-    padding: 5px 10px 5px 10px;
+    padding: 0.8vmin 1.6vmin 0.8vmin 1.6vmin;
     color: #000000;
-    font-size: 3vb;
+    font-size: 3vmin;
 }
 
-.all-courses .change-page a:hover{
+.all-courses .change-page a[href="#1"] {
+    background-color: var(--page-hover);
+    color: white;
+    font-weight: bold;
+}
+
+.all-courses .change-page a:hover {
     color: rgb(255, 255, 255);
-    background-color: #000000;
+    background-color: var(--page-hover);
     font-weight: bolder;
+    font-weight: bold;
+}
+
+.all-courses .change-page .icon {
+    border: 0.3vmin solid rgba(0, 0, 0, 0.272);
+    border-radius: 0.8vmin;
+    width: 1vmin;
+    height: 3.3vmin;
+    cursor: pointer;
+    padding: 0.8vmin 1.6vmin 0.8vmin 1.6vmin;
 }
 
 .all-courses .change-page i {
-    border: 2px solid rgba(0, 0, 0, 0.272);
-    border-radius: 5px;
-    width: 10px;
-    height: 10px;
-    padding: 10px 10px 14px 10px;
-    font-size: 18px; 
+    font-size: 3vmin;
     cursor: pointer;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    color: black;
 }
 
-.change-page i:hover{
+.all-courses .change-page .icon:hover {
+    font-weight: bold;
+    border-color: var(--page-hover);
     color: rgb(255, 255, 255);
-    background-color: #000000;
+    background-color: var(--page-hover);
 }
