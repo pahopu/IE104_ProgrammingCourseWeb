@@ -116,6 +116,12 @@ a:hover {
     background-position: center;
     background-size: 40%;
     margin-bottom: 3vmin;
+    overflow: hidden;
+}
+
+.user-info .s-a img {
+    width: 100%;
+    height: 100%;
 }
 
 .user-info .avatar span {

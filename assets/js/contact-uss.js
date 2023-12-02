@@ -21,31 +21,27 @@ function loadJS(url) {
 }
 
 loadHTML("../template/header-user.html", "header-user");
-loadHTML("../template/user-info.html", "user-info")
+loadHTML("../template/contact-us.html", "contact-us")
 loadHTML("../template/footer-user.html", "footer-user");
 
 loadCSS("../assets/css/header-user.css");
-loadCSS("../assets/css/user-info.css");
+loadCSS("../assets/css/contact-us.css");
 loadCSS("../assets/css/footer.css");
 
 loadJS("../assets/js/header-user.js")
-loadJS("../assets/js/user-info.js");
 
 window.addEventListener("load", () => {
-    const navs = document.getElementsByClassName("nav-button");
-    const info = document.getElementById("user-info");
     const header = document.getElementsByClassName("header");
+    const contact_us = document.getElementById("contact-us");
     const logout = document.getElementById("logout");
 
     logout.href = "../homepage.html";
-    
-    navs[0].style.backgroundColor = "#464bef";
-    navs[0].style.color = "white";
-    info.style.paddingTop = `${header[0].offsetHeight}px`;
-});
+
+    contact_us.style.paddingTop = `${header[0].offsetHeight}px`;
+})
 
 window.addEventListener("resize", () => {
-    const info = document.getElementById("user-info");
+    const contact_us = document.getElementById("contact-us");
     const header = document.getElementsByClassName("header");
-    info.style.paddingTop = `${header[0].offsetHeight}px`;
+    contact_us.style.paddingTop = `${header[0].offsetHeight}px`;
 });

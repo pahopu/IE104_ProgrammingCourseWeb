@@ -291,3 +291,10 @@ body {
 .modern-login .accept-term a:hover {
     text-decoration: underline;
 }
+
+.modern-login .mini-a {
+    color: red;
+    font-size: 1.5vmin !important;
+    font-style: italic;
+    display: none;
+}

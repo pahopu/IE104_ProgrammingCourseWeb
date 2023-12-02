@@ -124,6 +124,47 @@ window.addEventListener("load", () => {
         }
         else login_popup[0].href = "pages/homepage-user.html";
     })
+
+    const inputs = document.querySelectorAll(".intro-log-in input");
+    const anouncess = document.querySelectorAll(".intro-log-in .su-anou");
+    for (let i = 0; i < 3; i++) {
+        inputs[i].addEventListener("click", () => {
+            anouncess[i].style.display = "none";
+        })
+        inputs[i].addEventListener("blur", () => {
+            if (!inputs[i].value) {
+                anouncess[i].style.display = "flex";
+            }
+        })
+    }
+
+    inputs[3].addEventListener("click", () => {
+        if (!inputs[3].checked)
+            anouncess[3].style.display = "flex";
+        else anouncess[3].style.display = "none";
+    })
+
+    const btn_flex = document.querySelectorAll(".flexer button");
+    btn_flex[0].addEventListener("click", () => {
+        if (!checkVisibility) {
+            blurBackground();
+            checkVisibility = true;
+        }
+    })
+
+    const joinnow = document.querySelectorAll(".intro-log-in button");
+    joinnow[0].addEventListener("click", () => {
+        if (inputs[0].value == "codepro104" && inputs[1].value == "codepro@uit.edu.vn" && inputs[2].value == "123456789" && inputs[3].checked)
+            window.location.href = "./pages/homepage-user.html"
+        else {
+            for (let i = 0; i < 3; i++)
+                if (!inputs[i].value) {
+                    anouncess[i].style.display = "flex";
+                }
+            if (!inputs[3].checked)
+                anouncess[3].style.display = "flex";
+        }
+    })
 });
 
 window.addEventListener("resize", () => {
