@@ -242,3 +242,13 @@ body {
 .intro-log-in .log-in .input-region .accept-term a:hover {
     text-decoration: underline;
 }
+
+.intro-log-in .su-anou {
+    margin: 0 !important;
+    color: red;
+    margin-bottom: 0.5vmin !important;
+    text-align: left !important;
+    font-style: italic !important;
+    font-size: 1.8vmin !important;
+    display: none;
+}

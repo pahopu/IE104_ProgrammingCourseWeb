@@ -1,0 +1,114 @@
+:root {
+    --box-shadow: rgb(174, 174, 174);
+    --bluee: #464bef;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: QuickSand;
+}
+
+.contact-us {
+    background-color: #F1F1F1;
+    padding: 12vmin;
+}
+
+.contact-us .ct-form {
+    width: 45%;
+    margin: 0 auto;
+    border-radius: 2vmin;
+    box-shadow: 0.1vmin 0.1vmin 1vmin 0.1vmin var(--box-shadow);
+}
+
+.contact-us .ct-form .input-region {
+    background-color: white;
+    padding: 4vmin;
+    border-top-left-radius: 2vmin;
+    border-top-right-radius: 2vmin;
+}
+
+.contact-us .ct-form .input-region h3 {
+    font-size: 3vmin;
+    margin: 0;
+    margin-bottom: 2vmin;
+}
+
+.contact-us .ct-form .input-region .sect {
+    font-weight: bold;
+    font-size: 2.2vmin;
+}
+
+.contact-us .ct-form .input-region .ss {
+    color: red;
+}
+
+.contact-us .ct-form .input-region input, textarea, select {
+    margin-top: 0.5vmin;
+    margin-bottom: 2vmin;
+    box-sizing: border-box;
+    border: 0.1vmin solid var(--box-shadow);
+    border-radius: 0.7vmin;
+    width: 100%;
+    font-family: QuickSand;
+    font-size: 2vmin;
+    padding: 1.3vmin 1.5vmin;
+    box-shadow: 0 0vmin 0.3vmin inset var(--box-shadow);
+}
+
+.contact-us .ct-form .input-region textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 10vmin;
+}
+
+.contact-us .ct-form .input-region select {
+    margin-bottom: 3vmin;
+}
+
+.contact-us .ct-form .input-region #sentc {
+    color: white;
+    border: none;
+    background-color: var(--bluee);
+    border: 0.1vmin solid var(--bluee);
+    padding: 1.5vmin 5vmin;
+    font-family: QuickSand;
+    font-size: 2.2vmin;
+    border-radius: 1vmin;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color, box-shadow;
+    cursor: pointer;
+}
+
+.contact-us .ct-form .input-region #sentc:hover {
+    color: var(--bluee);
+    background-color: white;
+    box-shadow: 0 0.5vmin 0.5vmin var(--bluee);
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color, box-shadow;
+}
+
+.contact-us .ct-form .urgent {
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 2vmin;
+    border-bottom-right-radius: 2vmin;
+    padding: 2.5vmin;
+    text-align: center;
+    font-size: 2.2vmin;
+}
+
+.contact-us .ct-form .urgent a {
+    text-decoration: none;
+}
+
+.contact-us .ct-form .urgent a:hover {
+    text-decoration: underline;
+}
