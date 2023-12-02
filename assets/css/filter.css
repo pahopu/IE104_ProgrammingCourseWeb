@@ -10,6 +10,32 @@ body {
     padding: 0;
 }
 
+.contain
+
+.address {
+    display: flex;
+    align-items: center;
+    padding: 4vb 12vb;
+    font-family: QuickSand;
+}
+
+.address i {
+    margin: 0 2vb;
+    font-size: 1.5vb;
+}
+
+.address a {
+    font-size: 2.2vb;
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.address a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 .filter {
     float: left;
     width: 23%;

@@ -3,129 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Rating Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+        .rating input {
+            display: none;
         }
 
-        th, td {
-            border: 1px solid #dddddd;
-            text-align: center;
-            padding: 10px;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        .stars {
-            display: flex;
-            justify-content: center;
-        }
-
-        .star {
+        .rating label {
             cursor: pointer;
-            font-size: 24px;
-            color: #ddd;
+            font-size: 24px; /* Kích thước của icon sao */
+            color: #ccc; /* Màu của icon sao không được đánh giá */
         }
 
-        .star:hover,
-        .star.active {
-            color: #ffcc00;
+        .rating input:checked + label {
+            color: gold; /* Màu của icon sao đã được đánh giá */
         }
 
-        .rating-text {
-            font-size: 18px;
-            font-weight: bold;
+        #result {
             margin-top: 10px;
         }
     </style>
+    <title>Star Rating with Count</title>
 </head>
 <body>
-
-    <h2>Star Rating Table</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Rating</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Product A</td>
-                <td>
-                    <div class="stars" data-rating="0">
-                        <span class="star" onclick="rateProduct(this, 1)">★</span>
-                        <span class="star" onclick="rateProduct(this, 2)">★</span>
-                        <span class="star" o
-                        <!DOCTYPE html>
-                        <html lang="en">
-                        <head>
-                            <meta charset="UTF-8">
-                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                            <title>Star Rating Table</title>
-                            <style>
-                                table {
-                                    width: 100%;
-                                    border-collapse: collapse;
-                                    margin-top: 20px;
-                                }
-                        
-                                th, td {
-                                    border: 1px solid #dddddd;
-                                    text-align: center;
-                                    padding: 10px;
-                                }
-                        
-                                th {
-                                    background-color: #f2f2f2;
-                                }
-                        
-                                .stars {
-                                    display: flex;
-                                    justify-content: center;
-                                }
-                        
-                                .star {
-                                    cursor: pointer;
-                                    font-size: 24px;
-                                    color: #ddd;
-                                }
-                        
-                                .star:hover,
-                                .star.active {
-                                    color: #ffcc00;
-                                }
-                        
-                                .rating-text {
-                                    font-size: 18px;
-                                    font-weight: bold;
-                                    margin-top: 10px;
-                                }
-                            </style>
-                        </head>
-                        <body>
-                        
-                            <h2>Star Rating Table</h2>
-                        
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Product</th>
-                                        <th>Rating</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Product A</td>
-                                        <td>
-                                            <div class="stars" data-rating="0">
-                                                <span class="star" onclick="rateProduct(this, 1)">★</span>
-                                                <span class="star" onclick="rateProduct(this, 2)">★</span>
-                                                <span class="star" o
-                        
+    <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1"></label>
+    </div>
+    <div id="result">
+        <h3>Tổng hợp số lượng theo mốc sao:</h3>
+        <p><i class="fas fa-star"></i> 5 sao: 0</p>
+        <p><i class="fas fa-star"></i> 4 sao: 0</p>
+        <p><i class="fas fa-star"></i> 3 sao: 0</p>
+        <p><i class="fas fa-star"></i> 2 sao: 0</p>
+        <p><i class="fas fa-star"></i> 1 sao: 0</p>
+    </div>
+</body>
+</html>

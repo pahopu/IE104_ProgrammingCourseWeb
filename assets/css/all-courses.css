@@ -11,30 +11,44 @@ body {
 }
 
 .all-courses {
+    position: relative;
     float: right;
-    width: 63%;
+    width: 70%;
     height: auto;
     padding: 1%;
     font-family: QuickSand;
 }
 
+.all-courses h1{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-column-gap: 0%;
+    margin: 0%;
+}
+
 .all-courses .header-title{
     font-size: 5vb;
-    margin-bottom: 1%;
 }
 
 .all-courses .arrange {
-    float: right;
-    margin-right: 2%;
+    text-align: right;
+    margin: 15% 0% 0% 0%;
     text-align: center;
-    font-size: 3vb;
+    font-size: 2.4vb;
     font-weight: bold;
+}
+
+.all-courses .arrange label i{
+    position: relative;
+    float: left;
+    text-align: left;
+    margin: 0% -25% 0% 30%;
 }
 
 .all-courses .arrange .select-box{
     text-align: center;
     height: 30px;
-    font-size: 2.8vb;
+    font-size: 2vb;
 }
 
 .all-courses i {
@@ -51,7 +65,8 @@ body {
 .all-courses .grid-container {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-column-gap: 0% 
+    grid-column-gap: 0%;
+    height: max-content;
 }
 
 .all-courses .grid-container .column {
@@ -59,11 +74,12 @@ body {
 }
 
 .all-courses .grid-container .column .course {
+    position: relative;
     border: 0px;
     box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.266);
     border-radius: 15px;
     width: 100%;
-    height: fit-content;
+    height: auto;
     margin-bottom: 5%;
     overflow: hidden;
 }
@@ -75,19 +91,16 @@ body {
     box-shadow: 4px 4px 13px 0px black;
 }
 
-.all-courses .grid-container .column .course img {
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    width: 100%;
-    height: 50%;
-}
+
 
 .all-courses .grid-container .column .course a {
-    margin-left: 5%;
-    font-size: 3vb;
+    position: relative;
+    font-size: 3.2vb;
     font-weight: bolder;
     color: black;
     text-decoration: none;
+    padding: 0% 0% 0% 5%;
+    height: 30%;
     transition: text-decoration 0.3s;
 }
 
@@ -95,29 +108,67 @@ body {
     text-decoration: underline;
 }
 
+.all-courses .grid-container .column .course img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin: 0% 0% 3% -5%;
+    width: 100%;
+    height: 200px;
+}
+
 .all-courses .grid-container .column .course .info {
-    margin-left: 5%;
-    font-size: 2vb;
-    height: 200%;
+    margin: 5% 5% 5% 5%;
+    line-height: 4.3vb;
+    font-size: 2.5vb;
+    height: 20%;
+    margin-bottom: 15%;
 }
 
-.all-courses .grid-container .column .course .time {
+.all-courses .grid-container .column .course .info i{
+    position: relative;
     float: left;
-    margin-left: 5%;
-    font-size: 2vb;
+    margin: 2% 3% 0% 0% ;
 }
 
-.all-courses .grid-container .column .course .student .num_student {
-    float: right;
-    margin-right: 5%;
-    font-size: 2vb;
+.all-courses .grid-container .column .course .time-student{
+    position: absolute;
+    top: 92%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-column-gap: 0%;
 }
 
-.all-courses .grid-container .column .course .student i {
-    float: right;
-    margin-top: 5.5%;
-    margin-right: 2%;
+.all-courses .grid-container .column .course .time-student .time {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 2.5vb;
 }
+
+.all-courses .grid-container .column .course .time-student .star {
+    text-align: center;
+    font-size: 2.7vb;
+    margin-left: -2%;
+}
+
+.all-courses .grid-container .column .course .time-student .time i, .all-courses .grid-container .column .course .time-student .star i{
+    margin: 1% 5% 1% 1%;
+    float: left;
+    color: gold;
+}
+
+.all-courses .grid-container .column .course .time-student .student {
+    text-align: right;
+    margin: 0% 10% 0% 0%;
+    font-size: 2.5vb;
+}
+
+.all-courses .grid-container .column .course .time-student .student i{
+    float: left;
+    margin: 1% 0% 1% 31%;
+    color: black;
+}
+
 
 .all-courses .change-page {
     list-style: none;

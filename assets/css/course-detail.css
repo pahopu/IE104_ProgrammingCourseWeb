@@ -155,8 +155,11 @@
 
 .detail .course-detail{
     z-index: 0;
-    margin: 0% 8% 0% 8%;
     font-family: QuickSand;
+}
+
+.detail .course-detail .danhmuc{
+    margin: 0% 8% 0% 8%;
 }
 
 .detail .course-detail .danhmuc table{
@@ -192,7 +195,7 @@
 }
 
 .detail .course-detail .tongquan{
-    margin-top: 1%;
+    margin: 1% 8% 0% 8%;
     color: rgb(0, 0, 81);
 }
 
@@ -254,9 +257,7 @@
 /*--------------------------------------------------------------*/
 
 .detail .course-detail .container-dsbaihoc{
-    margin: 4% -10% 2% -10%;
-    border-top: 1px solid rgba(0, 0, 0, 0.301);
-    padding: 1% 10% 2% 10%;
+    margin: 0% 8% 0% 8%;
 }
 
 .detail .course-detail .container-dsbaihoc h1{
@@ -378,16 +379,137 @@
 
 /*---------------------------------------------*/
 .detail .course-detail .comment{
-    padding-top: 2%;
+    padding: 2% 8% 2% 8%;
+    background-color: rgba(0, 0, 255, 0.055);
+}
+
+.detail .course-detail .comment h1{
+    color: black;
+    font-size: 5vb;
+}
+
+.detail .course-detail .comment .container{
+    display: flex;
+}
+
+.detail .course-detail .comment .container .tonghopdanhgia{
+    flex: 2;
+    text-align: center;
+}
+
+.detail .course-detail .comment .container .tonghopdanhgia .tonghop{
+    margin: 10% 0% 0% -10%;
+}
+
+.detail .course-detail .comment .container .tonghopdanhgia .tonghop .soluong{
+    font-size: 20vb;
+    margin: 0% 0% 0% 0%;
+    color: rgb(0, 0, 0);
+}
+
+.detail .course-detail .comment .container .tonghopdanhgia .tonghop .star{
+    font-size: 5vb;
+    color: blue;
+}
+
+.detail .course-detail .comment .container .tonghopdanhgia .tonghop .more-info{
+    font-size: 4vb;
+}
+
+.detail .course-detail .comment .container .tonghopdanhgia .chitietsao{
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+    font-size: 4vb;
+    margin: 0% -10% 0% -10%;
+}
+
+.detail .course-detail .comment .container .tonghopdanhgia .chitietsao ul{
+    line-height: 150%;
+    list-style: none;
+}
+
+.detail .course-detail .comment .container .tonghopdanhgia .chitietsao ul progress{
+    width: 75%;
+}
+
+.detail .course-detail .comment .container .tonghopdanhgia .chitietsao ul progress::-webkit-progress-value {
+    background-color: gold; 
+}
+
+.detail .course-detail .comment .container .chitietdanhgia{
+    flex: 3;
+}
+
+.detail .course-detail .comment .container .chitietdanhgia .hocvien{
+    border-radius: 10px;
+    background-color: white;
+    padding: 2% 3% 2%;
+    margin-bottom: 3%;
+}
+
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .hv-info{
+    margin-bottom: 2%;
+}
+
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .hv-info img{
+    display: inline-block;
+    border-radius: 100%;
+    width: 14vb;
+    height: 14vb;
+    margin: 0% 0% -2% 1% ;
+}
+
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .hv-info p{
+    display: inline-block;
+    margin-left: 3%;
+    line-height: 160%;
+}
+
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .react .star{
+    font-size: 2vb;
+    color: yellow;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .react .star i{
+    margin-left: 7%;
+}
+
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .hv-info .react{
+    font-size: 3vb;
+    float: right;
+    width: 15%;
+}
+
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .react .icon{
+    display: flex;
+    justify-content: flex-end; 
+    margin: 0% 0% 10% 2%;
 }
 
 
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .react .icon i{
+    font-size: 3.5vb;
+    margin: 15% 0% 0% 10%;
+    cursor: pointer;
+}
 
+.detail .course-detail .comment .container .chitietdanhgia .hocvien .quote{
+    font-size: larger;
+    text-align: justify;
+}
 
 /*---------------------------------------------*/
 
 .detail .course-detail .result{
+    margin: 0% 8% 0% 8%;
     padding-top: 2%;
+}
+
+.detail .course-detail .result h1{
+    font-size: 5vb;
 }
 
 .detail .course-detail .result img{
