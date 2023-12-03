@@ -1,50 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .rating input {
-            display: none;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuyển Trang Bên Trái</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden; /* Ngăn cuộn ngang khi section hiện ra */
+    }
 
-        .rating label {
-            cursor: pointer;
-            font-size: 24px; /* Kích thước của icon sao */
-            color: #ccc; /* Màu của icon sao không được đánh giá */
-        }
+    nav {
+      background-color: #333;
+      padding: 15px;
+      text-align: center;
+    }
 
-        .rating input:checked + label {
-            color: gold; /* Màu của icon sao đã được đánh giá */
-        }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
 
-        #result {
-            margin-top: 10px;
-        }
-    </style>
-    <title>Star Rating with Count</title>
+    section {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #f0f0f0;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .visible {
+      display: block;
+    }
+
+    /* Hiệu ứng chuyển trang */
+    .slide-left-enter, .slide-left-leave-to {
+      transform: translateX(100%);
+    }
+
+    .slide-left-enter-to, .slide-left-leave {
+      transform: translateX(0);
+    }
+  </style>
 </head>
 <body>
-    <div class="rating">
-        <input type="radio" id="star5" name="rating" value="5">
-        <label for="star5"></label>
-        <input type="radio" id="star4" name="rating" value="4">
-        <label for="star4"></label>
-        <input type="radio" id="star3" name="rating" value="3">
-        <label for="star3"></label>
-        <input type="radio" id="star2" name="rating" value="2">
-        <label for="star2"></label>
-        <input type="radio" id="star1" name="rating" value="1">
-        <label for="star1"></label>
-    </div>
-    <div id="result">
-        <h3>Tổng hợp số lượng theo mốc sao:</h3>
-        <p><i class="fas fa-star"></i> 5 sao: 0</p>
-        <p><i class="fas fa-star"></i> 4 sao: 0</p>
-        <p><i class="fas fa-star"></i> 3 sao: 0</p>
-        <p><i class="fas fa-star"></i> 2 sao: 0</p>
-        <p><i class="fas fa-star"></i> 1 sao: 0</p>
-    </div>
+
+  <nav>
+    <a onclick="showSection('section1')">Section 1</a>
+    <a onclick="showSection('section2')">Section 2</a>
+    <a onclick="showSection('section3')">Section 3</a>
+  </nav>
+
+  <section id="section1" class="visible">
+    <h1>Section 1</h1>
+    <p>Content of Section 1...</p>
+  </section>
+
+  <section id="section2">
+    <h1>Section 2</h1>
+    <p>Content of Section 2...</p>
+  </section>
+
+  <section id="section3">
+    <h1>Section 3</h1>
+    <p>Content of Section 3...</p>
+  </section>
+
+  <script>
+    function showSection(sectionId) {
+      // Ẩn tất cả các section
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('visible');
+      });
+
+      // Hiển thị section được chọn
+      document.getElementById(sectionId).classList.add('visible');
+
+      // Thêm class để thực hiện hiệu ứng chuyển trang
+      document.getElementById(sectionId).classList.add('slide-left-enter');
+      // Đợi một chút để kích hoạt transition
+      setTimeout(() => {
+        document.getElementById(sectionId).classList.remove('slide-left-enter');
+        document.getElementById(sectionId).classList.add('slide-left-enter-to');
+      }, 10);
+    }
+  </script>
+
 </body>
 </html>

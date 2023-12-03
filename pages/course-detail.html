@@ -5,17 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Khóa học: AI cho người mới bắt đầu</title>
+    <title>Tất cả các khóa học dành cho việc học lập trình</title>
 
     <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
 
     <script src="https://kit.fontawesome.com/c32c52563f.js" crossorigin="anonymous"></script>
+    <style>
+        #blur.active {
+            filter: blur(20px);
+            margin: 0;
+            padding: 0;
+            pointer-events: none;
+        }
+
+        #popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 150;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        #popup.active {
+            visibility: visible;
+            opacity: 1;
+            transition: 0.5s;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="header-user"></div>
-    <div id="course-detail"></div>
-    <div id="footer-user"></div>
+    <div id="blur">
+        <div id="header"></div>
+        <div id="course-detail"></div>
+        <div id="footer"></div>
+    </div>
+    <div id="popup">
+        <div id="modern-login"></div> 
+    </div>
 </body>
 
 <script src="../assets/js/course-detail.js"></script>
