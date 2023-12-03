@@ -35,9 +35,6 @@ window.addEventListener("load", () => {
     const header = document.getElementsByClassName("header");
     const detail = document.getElementById("document-detail");
     const logout = document.getElementById("logout");
-    const a = document.querySelectorAll("#address a");
-    a[0].href = "./homepage-user.html";
-    a[1].href = "./documents-user.html";
 
     logout.href = "./documents.html";
 
