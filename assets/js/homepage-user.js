@@ -45,12 +45,17 @@ window.addEventListener("load", () => {
     const logout = document.getElementById("logout");
 
     logout.href = "../homepage.html";
-    
+
     navs[0].style.backgroundColor = "#464bef";
     navs[0].style.color = "white";
     login_section.getElementsByClassName("input-region")[0].style.opacity = "0";
     login_section.getElementsByClassName("input-region")[0].style.pointerEvents = "none";
     login_section.style.paddingTop = `${header[0].offsetHeight}px`;
+
+    const flexer_btn = document.querySelectorAll(".flexer button");
+    flexer_btn[0].addEventListener("click", () => {
+        window.location.href = "./my-courses.html";
+    })
 });
 
 window.addEventListener("resize", () => {
