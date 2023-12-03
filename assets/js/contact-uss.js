@@ -35,7 +35,7 @@ window.addEventListener("load", () => {
     const contact_us = document.getElementById("contact-us");
     const logout = document.getElementById("logout");
 
-    logout.href = "../homepage.html";
+    logout.href = "./homepage.html";
 
     contact_us.style.paddingTop = `${header[0].offsetHeight}px`;
 })

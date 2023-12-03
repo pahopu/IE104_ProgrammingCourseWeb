@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
             text.style.color = "green";
             text.innerText = "Kiểm tra email để thực hiện khôi phục tài khoản!"
             setTimeout(() => {
-                window.location.href = "../homepage.html";
+                window.location.href = "./homepage.html";
             }, 5000);
         }
     })

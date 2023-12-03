@@ -36,7 +36,7 @@ window.addEventListener("load", () => {
     const header = document.getElementsByClassName("header");
     const logout = document.getElementById("logout");
 
-    logout.href = "../homepage.html";
+    logout.href = "./homepage.html";
 
     navs[0].style.backgroundColor = "#464bef";
     navs[0].style.color = "white";
