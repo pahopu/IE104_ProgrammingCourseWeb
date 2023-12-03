@@ -34,7 +34,7 @@ window.addEventListener("load", () => {
     const joinnow = document.querySelectorAll(".modern-login .sign-up button");
     joinnow[0].addEventListener("click", () => {
         if (inputs[0].value == "codepro104" && inputs[1].value == "codepro@uit.edu.vn" && inputs[2].value == "123456789" && inputs[3].checked)
-            window.location.href = "./pages/homepage-user.html"
+            window.location.href = "./homepage-user.html"
         else {
             for (let i = 0; i < 3; i++)
                 if (!inputs[i].value) {

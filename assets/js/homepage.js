@@ -122,7 +122,7 @@ window.addEventListener("load", () => {
             }
             event.preventDefault();
         }
-        else login_popup[0].href = "pages/homepage-user.html";
+        else login_popup[0].href = "./homepage-user.html";
     })
 
     const inputs = document.querySelectorAll(".intro-log-in input");
@@ -155,7 +155,7 @@ window.addEventListener("load", () => {
     const joinnow = document.querySelectorAll(".intro-log-in button");
     joinnow[0].addEventListener("click", () => {
         if (inputs[0].value == "codepro104" && inputs[1].value == "codepro@uit.edu.vn" && inputs[2].value == "123456789" && inputs[3].checked)
-            window.location.href = "./pages/homepage-user.html"
+            window.location.href = "./homepage-user.html"
         else {
             for (let i = 0; i < 3; i++)
                 if (!inputs[i].value) {
