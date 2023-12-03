@@ -20,25 +20,25 @@ function loadJS(url) {
     document.head.appendChild(script);
 }
 
-loadHTML("template/header.html", "header");
-loadHTML("template/intro-log-in.html", "intro-log-in");
-loadHTML("template/flexer.html", "flexer");
-loadHTML("template/recommend-courses.html", "recommend-courses");
-loadHTML("template/homepage-feedback.html", "homepage-feedback");
-loadHTML("template/footer.html", "footer");
-loadHTML("template/modern-login.html", "modern-login");
+loadHTML("../template/header.html", "header");
+loadHTML("../template/intro-log-in.html", "intro-log-in");
+loadHTML("../template/flexer.html", "flexer");
+loadHTML("../template/recommend-courses.html", "recommend-courses");
+loadHTML("../template/homepage-feedback.html", "homepage-feedback");
+loadHTML("../template/footer.html", "footer");
+loadHTML("../template/modern-login.html", "modern-login");
 
-loadCSS("assets/css/header.css");
-loadCSS("assets/css/intro-log-in.css");
-loadCSS("assets/css/flexer.css");
-loadCSS("assets/css/recommend-courses.css");
-loadCSS("assets/css/homepage-feedback.css");
-loadCSS("assets/css/footer.css");
-loadCSS("assets/css/modern-login.css");
+loadCSS("../assets/css/header.css");
+loadCSS("../assets/css/intro-log-in.css");
+loadCSS("../assets/css/flexer.css");
+loadCSS("../assets/css/recommend-courses.css");
+loadCSS("../assets/css/homepage-feedback.css");
+loadCSS("../assets/css/footer.css");
+loadCSS("../assets/css/modern-login.css");
 
-loadJS("assets/js/recommend-courses.js");
-loadJS("assets/js/homepage-feedback.js");
-loadJS("assets/js/modern-login.js")
+loadJS("../assets/js/recommend-courses.js");
+loadJS("../assets/js/homepage-feedback.js");
+loadJS("../assets/js/modern-login.js")
 
 window.addEventListener("load", () => {
     const navs = document.getElementsByClassName("nav-button");
