@@ -33,9 +33,12 @@ loadJS("../assets/js/header-user.js")
 /*-------------------------Set margin for header----------------------- */
 
 window.addEventListener("load", () => {
+    const logout = document.getElementById("logout");
+    logout.href = "./course-detail.html";
+    
     const navs = document.getElementsByClassName("nav-button");
     const header = document.getElementsByClassName("header");
-    const headerid = document.getElementById("header");
+    const headerid = document.getElementById("header-user");
 
     navs[1].style.backgroundColor = "#464bef";
     navs[1].style.color = "white";

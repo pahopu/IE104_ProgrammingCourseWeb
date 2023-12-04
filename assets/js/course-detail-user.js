@@ -49,6 +49,9 @@ window.addEventListener("load", () => {
     button[0].addEventListener("click", () => {
         button[0].href = "./course-lesson.html";
     })
+
+    const logout = document.getElementById("logout");
+    logout.href = "./course-detail.html";
 })
 
 window.addEventListener("resize", () => {
