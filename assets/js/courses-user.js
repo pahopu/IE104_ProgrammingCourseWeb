@@ -32,6 +32,11 @@ loadJS("../assets/js/header-user.js")
 loadJS("../assets/js/content-courses.js");
 
 window.addEventListener("load", () => {
+    const pypy = document.getElementsByClassName("pypy");
+    for (let i = 0; i < pypy.length; i++) {
+        pypy[i].href = "./course-detail-user.html";
+    }
+
     const navs = document.getElementsByClassName("nav-button");
     const header = document.getElementsByClassName("header");
     const content_courses = document.getElementById("content-courses");
@@ -44,7 +49,7 @@ window.addEventListener("load", () => {
 
     navs[1].style.backgroundColor = "#464bef";
     navs[1].style.color = "white";
-    content_courses.style.paddingTop = `${header[0].offsetHeight}px`;
+    content_courses.style.paddingTop = `${header[0].offsetHeight}px`;zz
 })
 
 window.addEventListener("resize", () => {

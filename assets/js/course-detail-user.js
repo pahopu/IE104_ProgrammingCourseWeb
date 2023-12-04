@@ -34,8 +34,39 @@ loadJS("../assets/js/header-user.js")
 
 window.addEventListener("load", () => {
     const navs = document.getElementsByClassName("nav-button");
+    const detail = document.getElementById("course-detail");
+
+    navs[1].style.backgroundColor = "#464bef";
+    navs[1].style.color = "white";
+    detail.style.paddingTop = `${150}px`;
+
+    const a = document.querySelectorAll(".address a");
+    a[0].href = "./homepage-user.html";
+    a[1].href = "./courses-user.html";
+    a[2].href = "./course-detail-user.html";
+
+    const button = document.querySelectorAll(".register .dangky");
+    button[0].addEventListener("click", () => {
+        button[0].href = "./course-lesson.html";
+    })
+})
+
+window.addEventListener("resize", () => {
+    const navs = document.getElementsByClassName("nav-button");
     const header = document.getElementsByClassName("header");
-    const headerid = document.getElementById("header");
+    const headerid = document.getElementById("header-user");
+
+    navs[1].style.backgroundColor = "#464bef";
+    navs[1].style.color = "white";
+    headerid.style.marginTop = `${header[0].offsetHeight}px`;
+});
+
+/*-------------------------Set margin for header----------------------- */
+
+window.addEventListener("load", () => {
+    const navs = document.getElementsByClassName("nav-button");
+    const header = document.getElementsByClassName("header");
+    const headerid = document.getElementById("header-user");
 
     navs[1].style.backgroundColor = "#464bef";
     navs[1].style.color = "white";

@@ -36,12 +36,9 @@ loadJS("../assets/js/content-courses.js");
 window.addEventListener("load", () => {
     const pypy = document.getElementsByClassName("pypy");
     for (let i = 0; i < pypy.length; i++) {
-        pypy[i].href = "";
-        pypy[i].addEventListener("click", (event) => {
-            event.preventDefault();
-        })
+        pypy[i].href = "./course-detail.html";
     }
-
+    
     const navs = document.getElementsByClassName("nav-button");
     const header = document.getElementsByClassName("header");
     const content_courses = document.getElementById("content-courses");

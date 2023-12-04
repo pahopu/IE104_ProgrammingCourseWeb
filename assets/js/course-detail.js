@@ -33,14 +33,6 @@ loadCSS("../assets/css/modern-login.css");
 loadJS("../assets/js/modern-login.js");
 
 window.addEventListener("load", () => {
-    const pypy = document.getElementsByClassName("pypy");
-    for (let i = 0; i < pypy.length; i++) {
-        pypy[i].href = "";
-        pypy[i].addEventListener("click", (event) => {
-            event.preventDefault();
-        })
-    }
-
     const navs = document.getElementsByClassName("nav-button");
     const header = document.getElementsByClassName("header");
     const content_courses = document.getElementById("course-detail");
@@ -52,7 +44,7 @@ window.addEventListener("load", () => {
 
     navs[1].style.backgroundColor = "#464bef";
     navs[1].style.color = "white";
-    content_courses.style.paddingTop = `${header[0].offsetHeight}px`;
+    content_courses.style.paddingTop = `${150}px`;
 
     function blurBackground() {
         const blur = document.getElementById("blur");
@@ -128,14 +120,18 @@ window.addEventListener("load", () => {
             }
             event.preventDefault();
         }
-        else login_popup[0].href = "./courses-user.html";
+        else login_popup[0].href = "./course-detail-user.html";
     })
 })
 
 window.addEventListener("resize", () => {
-    const content_courses = document.getElementById("course-detail");
+    const navs = document.getElementsByClassName("nav-button");
     const header = document.getElementsByClassName("header");
-    content_courses.style.paddingTop = `${header[0].offsetHeight}px`;
+    const headerid = document.getElementById("header");
+
+    navs[1].style.backgroundColor = "#464bef";
+    navs[1].style.color = "white";
+    headerid.style.marginTop = `${header[0].offsetHeight}px`;
 });
 
 /*-------------------------Set margin for header----------------------- */
