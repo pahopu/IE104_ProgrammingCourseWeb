@@ -45,25 +45,18 @@ window.addEventListener("load", () => {
 
 /*------------------------Function for Courses Lesson-------------------------------------------*/
 
-function changeColor(cell, danhmuc, section) {
-    var section1 = document.getElementById(section);
-    var danhmuc1 = document.getElementById(danhmuc);
+function changeColor(cell, sectionId) {
+    document.querySelectorAll('.dang').forEach(item => {
+        item.classList.remove('select');
+    });
+    cell.classList.add('select');
 
-    document.querySelectorAll('section').forEach(section => {
-        section.classList.add('no-visible');
+    document.querySelectorAll('.section').forEach(section => {
+        section.style.display = 'none';
     });
 
     // Hiển thị section được chọn
-    section1.add('visible');
-    danhmuc1.add('select');
-
-    // Thêm class để thực hiện hiệu ứng chuyển trang
-    document.getElementById(section).classList.add('slide-left-enter');
-    // Đợi một chút để kích hoạt transition
-    setTimeout(() => {
-    document.getElementById(section).classList.remove('slide-left-enter');
-    document.getElementById(section).classList.add('slide-left-enter-to');
-    }, 10);
+    document.getElementById(sectionId).style.display = 'block';
 }
 
 document.addEventListener('scroll', function () {

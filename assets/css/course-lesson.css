@@ -146,12 +146,13 @@
 
 .course-lesson .ghichu{
     margin: 1% 8% 0% 3%;
-    display: grid;
-    grid-template-columns: 60% 40%;
+    display: flex;
+    grid-template-columns: 30% 40%;
     height: auto;
 }
 
 .course-lesson .ghichu .ghichu-moi{
+    flex: 1;
     height: auto;
 }
 
@@ -160,9 +161,9 @@
     border-radius: 10px;
     text-align: left;
     padding: 1%;
-    width: 90%;
+    width: 96%;
     font-size: 2.5vmin;
-    margin-bottom: 2%;
+    margin: 0% 2% 2% 2%;
 }
 
 .course-lesson .ghichu .ghichu-moi textarea{
@@ -170,9 +171,9 @@
     border-radius: 10px;
     text-align: left;
     padding: 1%;
-    width: 90%;
+    width: 96%;
     font-size: 2.5vmin;
-    margin-bottom: 1%;
+    margin: 0% 2% 2% 2%;
 }
 
 .course-lesson .ghichu .ghichu-moi button{
@@ -181,7 +182,7 @@
     border-radius: 10px;
     font-size: 2.5vmin;
     padding: 1% 1% 1% 1%;
-    margin: 1% 8% 0.5% 0%;  
+    margin: 1% 0% 0.5% 0%;  
     color: white;
     background-color: blue;
     cursor: pointer;
@@ -192,6 +193,8 @@
 }
 
 .course-lesson .ghichu .ds-ghichu{
+    margin: 5% 2% 2% 2%;
+    width: 98%;
     height: auto;
     font-weight: 2.6vmin;
 }
@@ -204,17 +207,19 @@
 .course-lesson .ghichu .ds-ghichu .ghichu-cu{
     background-color: rgba(204, 204, 255, 0.391);
     border-radius: 10px;
+    height: 15px;
     display: flex;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    padding: 2% 5% 2% 5%;
 }
 
 .course-lesson .ghichu .ds-ghichu .ghichu-cu .noidung{
-    flex: 3;
+    flex: 1;
     font-weight: bolder;
     text-align: left;
-    padding: 0% 2% 2% 1%;
     font-size: 2.8vmin;
     cursor: pointer;
+    margin-top: -2%;
 }
 
 
@@ -227,7 +232,6 @@
 .course-lesson .ghichu .ds-ghichu .ghichu-cu .thoigian{
     flex: 2;
     text-align: right;
-    padding: 5% 3% 2% 1%;
     font-weight: lighter;
 }
 
@@ -312,7 +316,7 @@
 
 .course-lesson .taixuong table thead th, .course-lesson .taixuong table td{
     border-bottom: 1px solid gray;
-    padding: 1% 2% 2%;
+    padding: 2% 2% 2% 1%;
 }
 
 .course-lesson .taixuong table td:first-child{
@@ -326,20 +330,4 @@
 
 .course-lesson .taixuong table td a:hover{
     font-weight: bolder;
-}
-
-.no-visible{
-    display: none;
-}
-
-.visible {
-    display: block;
-}
-  
-.slide-left-enter, .slide-left-leave-to {
-    transform: translateX(100%);
-}
-
-.slide-left-enter-to, .slide-left-leave {
-    transform: translateX(0);
 }

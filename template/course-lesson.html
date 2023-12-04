@@ -139,14 +139,14 @@
         <section class="danhmuc">
             <table>
                 <tr>
-                    <td id="danhmuc1" onclick="changeColor(this, 'danhmuc1' ,'section1')" class="select">Nội dung</td>
-                    <td id="danhmuc2" onclick="changeColor(this, 'danhmuc2' ,'section2')">Ghi chú</td>
-                    <td id="danhmuc3" onclick="changeColor(this, 'danhmuc3' ,'section3')">Thảo luận</td>
-                    <td id="danhmuc4" onclick="changeColor(this, 'danhmuc4' ,'section4')">Tải xuống</td>
+                    <td class="dang select" onclick="changeColor(this,'section1')">Nội dung</td>
+                    <td class="dang" onclick="changeColor(this,'section2')">Ghi chú</td>
+                    <td class="dang" onclick="changeColor(this,'section3')">Thảo luận</td>
+                    <td class="dang" onclick="changeColor(this,'section4')">Tải xuống</td>
                 </tr>
             </table>
         </section>
-        <section id="section1" class="noidung" class="visible">
+        <section id="section1" class="noidung section">
             <table>
                 <colgroup>
                     <col style="width: 10%;">
@@ -190,7 +190,7 @@
                 </tbody>
             </table>
         </section>
-        <section id="section2" class="ghichu" class="no-visible">
+        <section id="section2" class="ghichu section" style="display: none;">
             <div class="ghichu-moi">
                 <h1>Tạo ghi chú mới</h1>
                 <input type="text" placeholder="Tiêu đề ghi chú"> <br>
@@ -240,7 +240,7 @@
                 </a>  
             </div>
         </section>
-        <section id="section3" class="thaoluan" class="no-visible">
+        <section id="section3" class="thaoluan section" style="display: none;">
             <article>
                 <div class="ask">
                     <img src="../assets/images/aboutus/hoangphuc.jpg" alt="">
@@ -306,7 +306,7 @@
                 </div>
             </article>
         </section>
-        <section id="section4" class="taixuong" class="no-visible">
+        <section id="section4" class="taixuong section" style="display: none;">
             <table>
                 <colgroup>
                     <col style="width: 15%;">
@@ -332,9 +332,9 @@
                         <td><a href="">Video.mp4</a></td>
                     </tr>
                     <tr>
-                        <td>Dữ liệu là gì</td>
-                        <td>Dữ liệu là phần không thể thiếu trong 1 mô hình AI, nó là tiêu chuẩn của việc đúng...</td>
-                        <td><a href="">Video.mp4</a></td>
+                        <td style="border: none;">Dữ liệu là gì</td>
+                        <td style="border: none;">Dữ liệu là phần không thể thiếu trong 1 mô hình AI, nó là tiêu chuẩn của việc đúng...</td>
+                        <td style="border: none;"><a href="">Video.mp4</a></td>
                     </tr>
                 </tbody>
             </table>
