@@ -43,7 +43,7 @@ window.addEventListener("load", () => {
     a[0].href = "./homepage-user.html";
     a[1].href = "./aboutus-user.html";
 
-    logout.href = "aboutus.html";
+    logout.href = "./aboutus.html";
 
     navs[4].style.backgroundColor = "#464bef";
     navs[4].style.color = "white";

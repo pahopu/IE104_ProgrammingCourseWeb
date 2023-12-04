@@ -42,9 +42,9 @@ window.addEventListener("load", () => {
     let checkVisibility = false;
     const popup_container = document.querySelectorAll("#modern-login .modern-login .container");
 
-    navs[1].style.backgroundColor = "#464bef";
-    navs[1].style.color = "white";
-    content_courses.style.paddingTop = `${header[0].offsetHeight}px`;
+    navs[3].style.backgroundColor = "#464bef";
+    navs[3].style.color = "white";
+    content_courses.style.paddingTop = `${135}px`;
 
     function blurBackground() {
         const blur = document.getElementById("blur");
@@ -120,14 +120,14 @@ window.addEventListener("load", () => {
             }
             event.preventDefault();
         }
-        else login_popup[0].href = "./comunity.html";
+        else login_popup[0].href = "./comunity-user.html";
     })
 })
 
 window.addEventListener("resize", () => {
     const content_courses = document.getElementById("comunity");
     const header = document.getElementsByClassName("header");
-    content_courses.style.paddingTop = `${header[0].offsetHeight}px`;
+    content_courses.style.marginTop = `${header[0].offsetHeight}px`;
 });
 
 /*-------------------------Set margin for header----------------------- */
@@ -137,7 +137,7 @@ window.addEventListener("load", () => {
     const header = document.getElementsByClassName("header");
     const headerid = document.getElementById("header");
 
-    navs[1].style.backgroundColor = "#464bef";
-    navs[1].style.color = "white";
+    navs[3].style.backgroundColor = "#464bef";
+    navs[3].style.color = "white";
     headerid.style.marginTop = `${header[0].offsetHeight}px`;
 })

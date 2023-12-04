@@ -27,7 +27,6 @@ body {
     display: flex;
     align-items: center;
     padding: 4vmin 12vmin;
-    padding: 105px;
 }
 
 .comunity .address i {
@@ -49,7 +48,7 @@ body {
 
 .comunity .slidebar {
     position: absolute;
-    top: 33%;
+    top: 33.5%;
     left: 13%;
     z-index: 1;
     padding: 1% 2% 2% 2%;
@@ -94,6 +93,7 @@ body {
     border: none;
     width: 90%;
     height: 80%;
+    font-family: QuickSand;
 }
 
 .comunity .grid-container{
@@ -149,6 +149,7 @@ body {
     background-color: blue;
     color: rgb(255, 255, 255);
     font-weight: bolder;
+    font-family: QuickSand;
 }
 
 .comunity .grid-container .toanbocauhoi .container button:hover{
@@ -174,8 +175,10 @@ body {
 }
 
 .comunity .grid-container .toanbocauhoi .more-info select{
+    font-family: QuickSand;
     font-size: 2.5vmin;
     height: 80%;
+    padding: 0 1.5vmin;
 }
 
 .comunity .grid-container .toanbocauhoi .ds-cauhoi{
