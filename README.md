@@ -9,8 +9,8 @@
 
 <h1 align="center"><b>INTERNET VÀ CÔNG NGHỆ WEB<br>(INTERNET AND WEB TECHNOLOGIES)</b></h>
 
-[![Status](https://img.shields.io/badge/status-done-blue?style=flat-square)](https://github.com/pahopu/IE104_ProgrammingCourseWeb)
-[![GitHub contributors](https://github.com/pahopu/IE104_ProgrammingCourseWeb?style=flat-square)](https://github.com/pahopu/IE104_ProgrammingCourseWeb/graphs/contributors)
+[![Status](https://img.shields.io/badge/status-working-green?style=flat-square)](https://github.com/pahopu/IE104_ProgrammingCourseWeb)
+[![GitHub contributors](https://img.shields.io/github/contributors/pahopu/IE104_ProgrammingCourseWeb?style=flat-square)](https://github.com/pahopu/IE104_ProgrammingCourseWeb/graphs/contributors)
 [![Status](https://img.shields.io/badge/language1-html-orange?style=flat-square)](https://github.com/pahopu/IE104_ProgrammingCourseWeb)
 [![Status](https://img.shields.io/badge/language2-css-blue?style=flat-square)](https://github.com/pahopu/IE104_ProgrammingCourseWeb)
 [![Status](https://img.shields.io/badge/language3-javascript-yellow?style=flat-square)](https://github.com/pahopu/IE104_ProgrammingCourseWeb)
