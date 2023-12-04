@@ -1,0 +1,295 @@
+:root {
+    --box-shadow: rgb(174, 174, 174);
+    --box-shadow-hover: rgb(182, 183, 255);
+    --page-hover: #464bef;
+}
+
+@font-face {
+    font-family: QuickSand;
+    src: url(../font/Quicksand-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.comunity {
+    margin-top: -9%;
+    font-family: QuickSand;
+    background-color: rgba(0, 0, 255, 0.132);
+    padding-bottom: 5%;
+}
+
+.comunity .address {
+    display: flex;
+    align-items: center;
+    padding: 4vmin 12vmin;
+    padding: 105px;
+}
+
+.comunity .address i {
+    margin: 0 2vmin;
+    font-size: 1.5vmin;
+}
+
+.comunity .address a {
+    font-size: 2.2vmin;
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.comunity .address a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.comunity .slidebar {
+    position: absolute;
+    top: 33%;
+    left: 13%;
+    z-index: 1;
+    padding: 1% 2% 2% 2%;
+    background-color: rgba(0, 0, 255, 0.334);
+    background-size: cover;
+    width: 70%;
+    height: 40%;
+    border-radius: 20px;
+}
+
+.comunity .slidebar img {
+    position: relative;
+    float: left;
+    margin: 5% 2% 2% 7%;
+    width: 30%;
+    height: auto;
+}
+
+.comunity .slidebar p{
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    float: right;
+    text-align: center;
+    font-size: 4vmin;
+    font-weight: bold;
+}
+
+.comunity .slidebar .question{
+    position: absolute;
+    top:55%;
+    left: 53%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    width: 30%;
+    height: 10%;
+    padding: 1% 1% 0.5%;
+}
+
+.comunity .slidebar .question input{
+    border: none;
+    width: 90%;
+    height: 80%;
+}
+
+.comunity .grid-container{
+    position: relative;
+    margin: 28% 5% 0% 5%;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 25% 73%;
+    grid-gap: 2%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+.comunity .grid-container .danhmuc {
+    text-align: center;
+    padding: 0% 1% 0% 10%;
+    border-right: 1px solid rgba(0, 0, 255, 0.42);
+}
+
+.comunity .grid-container h1{
+    width: 88%;
+    font-size: 5vmin;
+} 
+
+.comunity .grid-container .danhmuc p{
+    padding: 6% 2% 6%;
+    cursor: pointer;
+    width: 82%;
+    font-size: 3vmin;
+}
+
+.comunity .grid-container .danhmuc p:hover{ 
+    color: rgb(0, 0, 0); 
+    background-color: rgba(175, 175, 255, 0.984);
+    font-weight: bolder;
+}
+
+.comunity .grid-container .toanbocauhoi{
+    padding: 0% 1% 0% 0%;
+}
+
+.comunity .grid-container .toanbocauhoi .container{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.comunity .grid-container .toanbocauhoi .container button{
+    font-size: 3vmin;
+    height: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.comunity .grid-container .toanbocauhoi .container button:hover{
+    background-color: rgb(102, 102, 251);
+}
+
+.comunity .grid-container .toanbocauhoi .more-info{
+    display: grid;
+    grid-template-columns: 20% 40% 20%;
+    grid-gap: 10%;
+    font-size: 3vmin;
+}
+
+.comunity .grid-container .toanbocauhoi .more-info td{
+    text-align: center;
+    border-bottom: 1px solid blue;
+}
+
+.comunity .grid-container .toanbocauhoi .more-info table .select{
+    border-bottom: 4px solid blue;
+    font-weight: bolder;
+    background-color: linear-gradient(blue, white);
+}
+
+.comunity .grid-container .toanbocauhoi .more-info select{
+    font-size: 2.5vmin;
+    height: 80%;
+}
+
+.comunity .grid-container .toanbocauhoi .ds-cauhoi{
+    padding: 5% 1% 5% 1%;
+} 
+
+.comunity .grid-container .toanbocauhoi .cauhoi{
+    border-radius: 10px;
+    border: 1px solid rgb(119, 119, 255);
+    padding: 2% 1% 2% 1%; 
+    display: grid;
+    grid-template-columns: 15% 70% 10%;
+    grid-gap: 2%;
+    margin-top: 1%;
+    cursor: pointer;
+} 
+
+.comunity .grid-container .toanbocauhoi .cauhoi:hover{
+    box-shadow: 3px 3px 4px 4px rgba(0, 0, 255, 0.206);
+}
+
+.comunity .grid-container .toanbocauhoi .cauhoi .info{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.comunity .grid-container .toanbocauhoi .cauhoi .info img{
+    border-radius: 100%;
+    width: 10vmin;
+}
+
+.comunity .grid-container .toanbocauhoi .cauhoi .noidung{
+    text-align: left;
+    font-size: 2.5vmin;
+    text-align: justify;
+}
+
+.comunity .grid-container .toanbocauhoi .cauhoi .noidung .title{
+    margin-top: 0%;
+    font-weight: bolder;
+    font-size: 3.3vmin;
+}
+
+.comunity .grid-container .toanbocauhoi .cauhoi .noidung .list-hastag{
+    position: absolute;
+
+}
+
+.comunity .grid-container .toanbocauhoi .cauhoi .noidung .list-hastag .hastag{
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 2.5vmin;
+    background-color: rgba(255, 166, 0, 0.333);
+}
+
+
+.comunity .grid-container .toanbocauhoi .change-page {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.comunity .grid-container .toanbocauhoi .change-page li {
+    margin: 0 0.8vmin;
+}
+
+.comunity .grid-container .toanbocauhoi .change-page a {
+    border-radius: 0.8vmin;
+    text-decoration: none;
+    padding: 0.8vmin 1.6vmin 0.8vmin 1.6vmin;
+    color: #000000;
+    font-size: 3vmin;
+}
+
+.comunity .grid-container .toanbocauhoi .change-page a[href="#1"] {
+    background-color: var(--page-hover);
+    color: white;
+    font-weight: bold;
+}
+
+.comunity .grid-container .toanbocauhoi .change-page a:hover {
+    color: rgb(255, 255, 255);
+    background-color: var(--page-hover);
+    font-weight: bolder;
+    font-weight: bold;
+}
+
+.comunity .grid-container .toanbocauhoi .change-page .icon {
+    border: 0.3vmin solid rgba(0, 0, 0, 0.272);
+    border-radius: 0.8vmin;
+    width: 1vmin;
+    height: 3.3vmin;
+    cursor: pointer;
+    padding: 0.8vmin 1.6vmin 0.8vmin 1.6vmin;
+}
+
+.comunity .grid-container .toanbocauhoi .change-page i {
+    font-size: 3vmin;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+    color: black;
+}
+
+.comunity .grid-container .toanbocauhoi .change-page .icon:hover {
+    font-weight: bold;
+    border-color: var(--page-hover);
+    color: rgb(255, 255, 255);
+    background-color: var(--page-hover);
+}

@@ -28,9 +28,7 @@ loadHTML("../template/footer.html", "footer");
 loadHTML("../template/modern-login.html", "modern-login");
 
 loadCSS("../assets/css/header.css");
-loadCSS("../assets/css/intro-aboutus.css");
-loadCSS("../assets/css/history.css");
-loadCSS("../assets/css/ourteam.css");
+loadCSS("../assets/css/comunity.css");
 loadCSS("../assets/css/footer.css");
 loadCSS("../assets/css/modern-login.css");
 
